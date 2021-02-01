@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html",
+            "title": "Akses FTP Menggunakan Command Line di Linux",
+            "summary": null,
+            "content_text": "Gunakan perintah ftp jika tidak pakai ssl ftp-ssl jika pakai ssl, seperti berikut:ftp-sslHasil:root@new:~# ftp-sslftp&gt; Konek ke ftp server dengan perintah open &lt;hostname&gt; lalu masukan user dan password, contoh:ftp&gt; open hostname.domain.comConnected to hostname.domain.com.220 ProFTPD Server (ProFTPD) [123.123.123.123]Name (hostname.domain.com:root): kuro234 AUTH TLS successful[SSL Cipher TLS_AES_256_GCM_SHA384]200 PBSZ 0 successful200 Protection set to Private[Encrypted data transfer.]331 Password required for kuroPassword:230 User kuro logged inRemote system type is UNIX.Using binary mode to transfer files.ftp&gt; Untuk perintah-perintah nya dibawah ini:            Command      Details                  help or ?      list semua perintah yang tersedia              cd      pindah directory              lcd      pindah directory di local              ls      untuk list file di server ftp              mkdir      membuat directory di server ftp              pwd      menunjukan path saat ini              delete      hapus file di server ftp              rmdir      hapus directory di server ftp              get      download file dari server ftp ke local              mget      download beberapa file dari server ftp ke local              put      upload file dari local ke server ftp              mput      upload beberapa file dari local ke server ftp              quit      untuk keluar dari server ftp      ",
+            "content_html": "<p>Gunakan perintah <code>ftp</code> jika tidak pakai ssl <code>ftp-ssl</code> jika pakai ssl, seperti berikut:</p><pre><code>ftp-ssl</code></pre><p>Hasil:</p><pre><code>root@new:~# ftp-sslftp&gt; </code></pre><p>Konek ke ftp server dengan perintah <code>open &lt;hostname&gt;</code> lalu masukan user dan password, contoh:</p><pre><code>ftp&gt; open hostname.domain.comConnected to hostname.domain.com.220 ProFTPD Server (ProFTPD) [123.123.123.123]Name (hostname.domain.com:root): kuro234 AUTH TLS successful[SSL Cipher TLS_AES_256_GCM_SHA384]200 PBSZ 0 successful200 Protection set to Private[Encrypted data transfer.]331 Password required for kuroPassword:230 User kuro logged inRemote system type is UNIX.Using binary mode to transfer files.ftp&gt; </code></pre><p>Untuk perintah-perintah nya dibawah ini:</p><table>  <thead>    <tr>      <th>Command</th>      <th>Details</th>    </tr>  </thead>  <tbody>    <tr>      <td>help or ?</td>      <td>list semua perintah yang tersedia</td>    </tr>    <tr>      <td>cd</td>      <td>pindah directory</td>    </tr>    <tr>      <td>lcd</td>      <td>pindah directory di local</td>    </tr>    <tr>      <td>ls</td>      <td>untuk list file di server ftp</td>    </tr>    <tr>      <td>mkdir</td>      <td>membuat directory di server ftp</td>    </tr>    <tr>      <td>pwd</td>      <td>menunjukan path saat ini</td>    </tr>    <tr>      <td>delete</td>      <td>hapus file di server ftp</td>    </tr>    <tr>      <td>rmdir</td>      <td>hapus directory di server ftp</td>    </tr>    <tr>      <td>get</td>      <td>download file dari server ftp ke local</td>    </tr>    <tr>      <td>mget</td>      <td>download beberapa file dari server ftp ke local</td>    </tr>    <tr>      <td>put</td>      <td>upload file dari local ke server ftp</td>    </tr>    <tr>      <td>mput</td>      <td>upload beberapa file dari local ke server ftp</td>    </tr>    <tr>      <td>quit</td>      <td>untuk keluar dari server ftp</td>    </tr>  </tbody></table>",
+            "url": "https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html",
+            
+            
+            
+            "tags": ["ftp","cli"],
+            
+            "date_published": "2021-02-02T00:00:00+07:00",
+            "date_modified": "2021-02-02T00:00:00+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2020/08/install-plesk-panel-obisidian.html",
             "title": "Install Plesk Panel Obsidian",
             "summary": null,

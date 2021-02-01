@@ -4,13 +4,111 @@
  <title>Iqbal Birrul Walidain</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T01:26:24+07:00</updated>
+ <updated>2021-02-02T04:02:15+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Akses FTP Menggunakan Command Line di Linux</title>
+   <link href="https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html"/>
+   <updated>2021-02-02T00:00:00+07:00</updated>
+   <id>https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux</id>
+   <content type="html">&lt;p&gt;Gunakan perintah &lt;code&gt;ftp&lt;/code&gt; jika tidak pakai ssl &lt;code&gt;ftp-ssl&lt;/code&gt; jika pakai ssl, seperti berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ftp-ssl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hasil:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;root@new:~# ftp-ssl
+ftp&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Konek ke ftp server dengan perintah &lt;code&gt;open &amp;lt;hostname&amp;gt;&lt;/code&gt; lalu masukan user dan password, contoh:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ftp&amp;gt; open hostname.domain.com
+Connected to hostname.domain.com.
+220 ProFTPD Server (ProFTPD) [123.123.123.123]
+Name (hostname.domain.com:root): kuro
+234 AUTH TLS successful
+[SSL Cipher TLS_AES_256_GCM_SHA384]
+200 PBSZ 0 successful
+200 Protection set to Private
+[Encrypted data transfer.]
+331 Password required for kuro
+Password:
+230 User kuro logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Untuk perintah-perintah nya dibawah ini:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Details&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;help or ?&lt;/td&gt;
+      &lt;td&gt;list semua perintah yang tersedia&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cd&lt;/td&gt;
+      &lt;td&gt;pindah directory&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;lcd&lt;/td&gt;
+      &lt;td&gt;pindah directory di local&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls&lt;/td&gt;
+      &lt;td&gt;untuk list file di server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mkdir&lt;/td&gt;
+      &lt;td&gt;membuat directory di server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pwd&lt;/td&gt;
+      &lt;td&gt;menunjukan path saat ini&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;delete&lt;/td&gt;
+      &lt;td&gt;hapus file di server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rmdir&lt;/td&gt;
+      &lt;td&gt;hapus directory di server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;get&lt;/td&gt;
+      &lt;td&gt;download file dari server ftp ke local&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mget&lt;/td&gt;
+      &lt;td&gt;download beberapa file dari server ftp ke local&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;put&lt;/td&gt;
+      &lt;td&gt;upload file dari local ke server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mput&lt;/td&gt;
+      &lt;td&gt;upload beberapa file dari local ke server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;quit&lt;/td&gt;
+      &lt;td&gt;untuk keluar dari server ftp&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Install Plesk Panel Obsidian</title>

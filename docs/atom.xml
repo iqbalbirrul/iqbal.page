@@ -4,7 +4,7 @@
  <title>Iqbal Birrul Walidain</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T00:42:56+07:00</updated>
+ <updated>2021-02-02T01:06:17+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name></name>
@@ -13,19 +13,2663 @@
 
  
  <entry>
-   <title>Places where you can learn how to code</title>
-   <link href="https://iqbal.page/2015/07/31/places-where-you-can-learn-how-to-code/"/>
-   <updated>2015-07-31T00:00:00+07:00</updated>
-   <id>https://iqbal.page/2015/07/31/places-where-you-can-learn-how-to-code</id>
-   <content type="html">&lt;p&gt;Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.&lt;/p&gt;
+   <title>Install Plesk Panel Obsidian</title>
+   <link href="https://iqbal.page/2020/08/12/install-plesk-panel-obisidian/"/>
+   <updated>2020-08-12T09:59:41+07:00</updated>
+   <id>https://iqbal.page/2020/08/12/install-plesk-panel-obisidian</id>
+   <content type="html">&lt;h2 id=&quot;plesk-panel&quot;&gt;Plesk Panel&lt;/h2&gt;
 
-&lt;p&gt;Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90’s. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.&lt;/p&gt;
+&lt;p&gt;Plesk merupakan Control Panel yang cukup terkenal di dunia hosting setelah cPanel. Plesk sendiri adalah Control Panel berbayar sama seperti cPanel, namun kita bisa mendapatkan Trial nya selama 15 hari.&lt;/p&gt;
 
-&lt;p&gt;VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato franzen. Shaman iceland pour-over intelligentsia typewriter tilde, pitchfork copper mug. Wayfarers kickstarter adaptogen vinyl beard kombucha. Organic pinterest master cleanse, mixtape fam gentrify lo-fi kogi.&lt;/p&gt;
+&lt;h2 id=&quot;requirements-linux&quot;&gt;Requirements Linux&lt;/h2&gt;
 
-&lt;p&gt;Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.&lt;/p&gt;
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware&lt;/h3&gt;
 
-&lt;p&gt;Actually hella you probably haven’t heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.&lt;/p&gt;
+&lt;p&gt;Berikut ini adalah requirements yang saya rekomendasikan.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Minimum RAM 2 GB&lt;/li&gt;
+  &lt;li&gt;Minimum CPU 2 Core&lt;/li&gt;
+  &lt;li&gt;Minimum Storage 40 GB&lt;/li&gt;
+  &lt;li&gt;1 IP Publik&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Silakan dilihat pada docs resmi Plesk Panel, untuk rekomendasi dari tim Plesk: https://docs.plesk.com/release-notes/obsidian/hardware-requirements/&lt;/p&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;p&gt;Sistem operasi yang didukung Plesk Panel adalah sebagai berikut:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Debian 8 &amp;amp; 9 64-bit&lt;/li&gt;
+  &lt;li&gt;Ubuntu 16.04, 18.04 &amp;amp; 20.04 64-bit&lt;/li&gt;
+  &lt;li&gt;CentOS 6, 7 &amp;amp; 8 64-bit&lt;/li&gt;
+  &lt;li&gt;RHEL 6, 7 &amp;amp; 8 64-bit&lt;/li&gt;
+  &lt;li&gt;CloudLinux 6.x, 7.1 &amp;amp; terbaru 64-bit&lt;/li&gt;
+  &lt;li&gt;Virtuozzo Linux 7 64-bit&lt;/li&gt;
+  &lt;li&gt;Windows: https://docs.plesk.com/release-notes/obsidian/software-requirements/#s2-2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk sistem operasi yang saya gunakan saat ini adalah CentOS 7 64-bit.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Login ke VPS sebagai user &lt;code&gt;root&lt;/code&gt;, kemudian update sistem operasi terlebih dahulu dengan perintah berikut:&lt;/p&gt;
+
+    &lt;pre&gt;
+yum update -y
+&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setelah update selesai, install Plesk Panel dengan perintah berikut:&lt;/p&gt;
+
+    &lt;pre&gt;
+sh &amp;lt;(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
+&lt;/pre&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install_centos.png&quot; alt=&quot;Installation Command&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setelah installasi selesai, klik tautan yang tersedia pada instruksi untuk membuka setup pada web browser.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-finish_centos.png&quot; alt=&quot;Installation Completed&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pada setup web, masukan data-data yang dibutukan seperti nama, email, password dan lisensi lalu klik &lt;strong&gt;Enter Plesk&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb_centos.png&quot; alt=&quot;Web Setup&quot; /&gt;&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;*) &lt;em&gt;Untuk lesensi trial/percobaan bisa didapatkan melalui tautan berikut: https://www.plesk.com/plesk-free-download/&lt;/em&gt;
+Silakan daftar menggunakan email.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tunggu sampai proses initializing selesai.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb2_centos.png&quot; alt=&quot;Initializing&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setelah proses initializing selesai, maka kita akan dibawa ke halaman dashboard Plesk Panel.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard.png&quot; alt=&quot;Dashboard Plesk&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tambah-domain&quot;&gt;Tambah Domain&lt;/h2&gt;
+
+&lt;p&gt;Setelah installasi selesai, sekarang kita tambahkan domain pada Plesk Panel.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Klik &lt;strong&gt;Add Domain&lt;/strong&gt; pada dashboard Plesk Panel, kemudian masukan data-data yang dibutuhkan lalu klik &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain.png&quot; alt=&quot;Add a Domain&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setelah itu tunggu sampai proses penambahan domain selesai.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain-finish.png&quot; alt=&quot;Add a Domain Completed&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Berikut ini merupakan tampilan default dari laman website yang ditambahkan pada Plesk Panel.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-default-pages.png&quot; alt=&quot;Plesk Default Pages&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Installasi dan penambahan domain pada Plesk Panel telah selesai, semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Remote Access MySQL atau MariaDB</title>
+   <link href="https://iqbal.page/2020/06/19/remote-access-mysql-mariadb/"/>
+   <updated>2020-06-19T22:54:07+07:00</updated>
+   <id>https://iqbal.page/2020/06/19/remote-access-mysql-mariadb</id>
+   <content type="html">&lt;h2 id=&quot;remote-access-mysqlmariadb&quot;&gt;Remote Access MySQL/MariaDB&lt;/h2&gt;
+
+&lt;h3 id=&quot;konfigurasi&quot;&gt;Konfigurasi&lt;/h3&gt;
+
+&lt;p&gt;Konfigurasi MariaDB dengan merubah bind address dari &lt;code&gt;127.0.0.1&lt;/code&gt; menjadi &lt;code&gt;0.0.0.0&lt;/code&gt;, kemudian restart service.&lt;/p&gt;
+
+&lt;pre&gt;
+root@db:~# vim /etc/mysql/mariadb.conf.d/50-server.cnf
+
+###
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+bind-address            = 0.0.0.0
+###
+
+root@db:~# systemctl restart mariadb
+&lt;/pre&gt;
+
+&lt;p&gt;Cek ketersediaan port database:&lt;/p&gt;
+
+&lt;pre&gt;
+root@db:~# netstat -tulpn | grep 3306
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      3675/mysqld         
+&lt;/pre&gt;
+
+&lt;p&gt;Buat user MySQL/MariaDB:&lt;/p&gt;
+
+&lt;pre&gt;
+root@db:~# mysql -u root -p
+Enter password: 
+&lt;/pre&gt;
+&lt;pre&gt;
+MariaDB [(none)]&amp;gt; use mysql
+
+Database changed
+MariaDB [mysql]&amp;gt; CREATE USER 'username'@'CLIENT_IP' IDENTIFIED BY 'password';
+Query OK, 0 rows affected (0.00 sec)
+&lt;/pre&gt;
+
+&lt;p&gt;Cek privileges dari user tersebut:&lt;/p&gt;
+
+&lt;pre&gt;
+select * from user where user='username' \G
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-privileges1.png&quot; alt=&quot;Privileges 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;User tersebut belum mendapatkan hak akses. Tambahkan hak akses terlebih dahulu pada user tersebut.&lt;/p&gt;
+
+&lt;pre&gt;
+MariaDB [mysql]&amp;gt; GRANT ALL ON *.* to 'username'@'CLIENT_IP';
+MariaDB [mysql]&amp;gt; update user SET Grant_priv='Y'  WHERE User = 'kilat';
+&lt;/pre&gt;
+
+&lt;p&gt;Cek kembali privileges dari user tersebut.&lt;/p&gt;
+
+&lt;pre&gt;
+select * from user where user='username' \G
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-privileges2.png&quot; alt=&quot;Privileges 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sekarang user tersebut sudah mendapatkan hak akses penuh pada MySQL/MariaDB.&lt;/p&gt;
+
+&lt;h3 id=&quot;percobaan&quot;&gt;Percobaan&lt;/h3&gt;
+
+&lt;p&gt;Tes koneksi ke database menggunakan telnet:&lt;/p&gt;
+
+&lt;pre&gt;
+$ telnet IP_DATABASE 3306
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-testing1.png&quot; alt=&quot;Testing 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tes login ke MySQL/MariaDB:&lt;/p&gt;
+
+&lt;pre&gt;
+$ mysql -h IP_DATABASE -u username -p
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-testing2.png&quot; alt=&quot;Testing 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mengamankan SSH dengan Fail2ban</title>
+   <link href="https://iqbal.page/2020/04/07/fail2ban/"/>
+   <updated>2020-04-07T01:37:48+07:00</updated>
+   <id>https://iqbal.page/2020/04/07/fail2ban</id>
+   <content type="html">&lt;p&gt;Disini saya akan menggunakan fail2ban untuk meminimalisir serangan brute force ke service SSH.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-repository&quot;&gt;Update repository&lt;/h2&gt;
+
+&lt;p&gt;Ubuntu 18.04 LTS&lt;/p&gt;
+&lt;pre&gt;
+apt update -y
+apt upgrade -y
+&lt;/pre&gt;
+
+&lt;p&gt;CentOS 7&lt;/p&gt;
+&lt;pre&gt;
+yum install epel-release -y
+yum update -y
+yum upgrade -y
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;install-fail2ban&quot;&gt;Install Fail2ban&lt;/h2&gt;
+
+&lt;p&gt;Ubuntu 18.04 LTS&lt;/p&gt;
+&lt;pre&gt;
+apt install fail2ban -y
+&lt;/pre&gt;
+
+&lt;p&gt;CentOS 7&lt;/p&gt;
+&lt;pre&gt;
+yum install fail2ban -y
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;start-fail2ban&quot;&gt;Start fail2ban&lt;/h3&gt;
+
+&lt;pre&gt;
+systemctl start fail2ban
+systemctl enable fail2ban
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;konfigurasi-fail2ban&quot;&gt;Konfigurasi fail2ban&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Salin file &lt;code&gt;jail.conf&lt;/code&gt; ke &lt;code&gt;jail.local&lt;/code&gt;
+    &lt;pre&gt;
+  cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+  &lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buat konfigurasi&lt;/p&gt;
+
+    &lt;pre&gt;
+  vim /etc/fail2ban/jail.local
+  &lt;/pre&gt;
+
+    &lt;p&gt;Masukan konfigurasi seperti berikut terlebih dahulu:&lt;/p&gt;
+
+    &lt;pre&gt;
+  ignoreip = 127.0.0.1/8 ::1 (pengecualian IP untuk tidak diban pada saat gagal login)
+  bantime = -1 (Banned permanen IP)
+  findtime = 300s (waktu yang ditentukan, apakah IP layak di ban)
+  maxretry = 3 (3x percobaan gagal= banned)
+  &lt;/pre&gt;
+
+    &lt;p&gt;Buat konfigurasi untuk SSH:&lt;/p&gt;
+
+    &lt;pre&gt;
+  [sshd]
+  enabled = true
+  port    = ssh
+  logpath = %(sshd_log)s
+  backend = %(sshd_backend)s
+  &lt;/pre&gt;
+    &lt;p&gt;Simpan dan restart fail2ban&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;status-jail-fail2ban&quot;&gt;Status jail fail2ban&lt;/h3&gt;
+
+&lt;p&gt;Untuk melihat status jail fail2ban dapat menggunakan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;
+fail2ban-client status sshd
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-jail-status.png&quot; alt=&quot;Jail status&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Masukan perintah berikut untuk melihat log fail2ban:&lt;/p&gt;
+
+&lt;pre&gt;
+tail -f /var/log/fail2ban.log
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-banned-ip.png&quot; alt=&quot;Log fail2ban&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;unban-ip&quot;&gt;Unban IP&lt;/h3&gt;
+
+&lt;p&gt;Untuk melakukan unban IP, dapat menggunakan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;
+fail2ban-client set sshd unbanip IP_ADDRESS
+&lt;/pre&gt;
+
+&lt;p&gt;Sekian dan terima kasih..&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Deploy Hugo ke Netlify</title>
+   <link href="https://iqbal.page/2020/03/29/hugo-netlify/"/>
+   <updated>2020-03-29T20:06:09+07:00</updated>
+   <id>https://iqbal.page/2020/03/29/hugo-netlify</id>
+   <content type="html">&lt;h2 id=&quot;konfigurasi-netlify&quot;&gt;Konfigurasi Netlify&lt;/h2&gt;
+
+&lt;p&gt;Buat konfigurasi Netlify pada repository terlebih dahulu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buat file &lt;code&gt;netlify.toml&lt;/code&gt; pada root project Hugo:&lt;/p&gt;
+
+    &lt;pre&gt;
+  [build]
+  publish = &quot;public&quot;
+  command = &quot;hugo --gc --minify&quot;
+
+  [context.production.environment]
+  HUGO_VERSION = &quot;0.68.3&quot;
+  HUGO_ENV = &quot;production&quot;
+  HUGO_ENABLEGITINFO = &quot;true&quot;
+
+  [context.split1]
+  command = &quot;hugo --gc --minify --enableGitInfo&quot;
+
+  [context.split1.environment]
+  HUGO_VERSION = &quot;0.68.3&quot;
+  HUGO_ENV = &quot;production&quot;
+
+  [context.deploy-preview]
+  command = &quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;
+
+  [context.deploy-preview.environment]
+  HUGO_VERSION = &quot;0.68.3&quot;
+
+  [context.branch-deploy]
+  command = &quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;
+
+  [context.branch-deploy.environment]
+  HUGO_VERSION = &quot;0.68.3&quot;
+
+  [context.next.environment]
+  HUGO_ENABLEGITINFO = &quot;true&quot;
+  &lt;/pre&gt;
+
+    &lt;p&gt;Konfigurasi ini berguna agar netlify dapat membaca versi hugo dan perintah yang digunakan untuk deploy.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Push ke repository.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;daftar-netlify&quot;&gt;Daftar Netlify&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buka website &lt;a href=&quot;https://netlify.com&quot;&gt;Netlify&lt;/a&gt;, dan buat akun.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apabila akun sudah dibuat, klik New Site from Git.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-new-site.png&quot; alt=&quot;New Site&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pilih antara GitHub, GitLab atau BitBucket tempat dimana repository Hugo sebelumnya dideploy.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deployment.png&quot; alt=&quot;Continuous Deployment&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pilih repository.
+  &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-repo.png&quot; alt=&quot;Select Repository&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Klik Deploy Site.
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deploy-site.png&quot; alt=&quot;Deploy Site&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tunggu beberapa saat, dan Hugo berhasil dideploy ke Netlify.
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deploy-success.png&quot; alt=&quot;Deploy Success&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Nantinya setiap kita melakukan update konten dan push repository, maka website pada Netlify akan secara otomatis terupdate.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ubah-subdomain&quot;&gt;Ubah Subdomain&lt;/h3&gt;
+
+&lt;p&gt;Pada screenshot diatas, kita mendapatkan subdomain &lt;code&gt;quirky-einstein-28a6c9.netlify.com&lt;/code&gt;. Subdomain ini dapat kita ubah.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Masuk ke Site Settings
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-site-settings.png&quot; alt=&quot;Site Settings&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pada Site Details, klik Change site name
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name.png&quot; alt=&quot;Site Details&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ubah subdomain, sesuai keinginan (bila tersedia) lalu klik Save.
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name-save.png&quot; alt=&quot;Change Site Name&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Subdomain berhasil diubah.
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name-success.png&quot; alt=&quot;New Site Details&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Akses subdomain
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-subdomain.png&quot; alt=&quot;Website Hugo&quot; /&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-subdomain2.png&quot; alt=&quot;Website Hugo&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Selesai..&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sumber:&lt;/strong&gt; https://gohugo.io/documentation/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Deploy Hugo ke Github Pages</title>
+   <link href="https://iqbal.page/2020/03/28/hugo-github-pages/"/>
+   <updated>2020-03-28T18:17:13+07:00</updated>
+   <id>https://iqbal.page/2020/03/28/hugo-github-pages</id>
+   <content type="html">&lt;h2 id=&quot;buat-repositori&quot;&gt;Buat Repositori&lt;/h2&gt;
+
+&lt;p&gt;Yang pertama adalah siapkan 2 repository GitHub, sebagai berikut:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Repo 1: bloghugo (sebagai repositori project)&lt;/li&gt;
+  &lt;li&gt;Repo 2: &lt;em&gt;username&lt;/em&gt;.github.io (untuk github pages)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project.png&quot; alt=&quot;Repositori Project&quot; /&gt;
+Repositori &lt;code&gt;bloghugo&lt;/code&gt; berfungsi untuk menyimpan semua file project Hugo. Repositori ini bisa digunakan sebagai backup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages.png&quot; alt=&quot;GitHub Pages&quot; /&gt;
+Sementara repositori &lt;code&gt;username.github.io&lt;/code&gt; untuk menyimpan file yang ada di &lt;code&gt;public&lt;/code&gt; atau hasil render dari Hugo.&lt;/p&gt;
+
+&lt;p&gt;Semua file statis yang ada di repositori &lt;code&gt;username.github.io&lt;/code&gt;, nantinya akan diakses melalui https://username.github.io.&lt;/p&gt;
+
+&lt;h2 id=&quot;remote-repositori&quot;&gt;Remote Repositori&lt;/h2&gt;
+
+&lt;p&gt;Remote kedua repositori:&lt;/p&gt;
+
+&lt;pre&gt;
+git init
+git remote add origin https://github.com/iqbalbirrul/bloghugo.git
+git submodule add -b master https://github.com/iqbalbirrul/iqbalbirrul.github.io.git public
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;buat-file-bash&quot;&gt;Buat file Bash&lt;/h2&gt;
+
+&lt;pre&gt;
+#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# tambah perubahan
+git add -A
+
+# buat commit
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# push
+git push origin master
+
+# Genterate
+hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
+
+# pindah ke public
+cd public
+# tambahkan perubahan
+git add -A
+
+# buat commit
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# pushb
+git push origin master
+
+# Balik ke direktori sebelumnya
+cd ..
+&amp;lt;/pre&amp;gt;
+
+Beri permission pada file bash:
+
+&lt;pre&gt;
+chmod +x deploy.sh
+&lt;/pre&gt;
+
+## Deploy Git
+
+Eksekusi file bash:
+
+&lt;pre&gt;
+./deploy.sh
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~/bloghugo# ./deploy.sh 
+Deploying updates to GitHub...
+warning: adding embedded git repository: public
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add &lt;url&gt; public
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached public
+hint: 
+hint: See &quot;git help submodule&quot; for more information.
+[master (root-commit) b9575c2] rebuilding site Sun Mar 29 00:52:44 WIB 2020
+ 99 files changed, 9267 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 100644 archetypes/default.md
+ create mode 100644 config.toml
+ create mode 100644 content/posts/my-first-post.md
+ create mode 100755 deploy.sh
+ create mode 160000 public
+ create mode 100644 themes/ananke/CHANGELOG.md
+ create mode 100755 themes/ananke/LICENSE.md
+ create mode 100644 themes/ananke/README.md
+ create mode 100755 themes/ananke/archetypes/default.md
+ create mode 100644 themes/ananke/data/webpack_assets.json
+ create mode 100644 themes/ananke/exampleSite/config.toml
+ create mode 100644 themes/ananke/exampleSite/content/_index.md
+ create mode 100644 themes/ananke/exampleSite/content/about/_index.md
+ create mode 100644 themes/ananke/exampleSite/content/contact.md
+ create mode 100644 themes/ananke/exampleSite/content/post/_index.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-1.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-2.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-3.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-4.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-5.md
+ create mode 100644 themes/ananke/exampleSite/content/post/chapter-6.md
+ create mode 100644 themes/ananke/exampleSite/static/images/Pope-Edouard-de-Beaumont-1844.jpg
+ create mode 100644 themes/ananke/exampleSite/static/images/Victor_Hugo-Hunchback.jpg
+ create mode 100644 themes/ananke/exampleSite/static/images/esmeralda.jpg
+ create mode 100644 themes/ananke/exampleSite/static/images/notebook.jpg
+ create mode 100644 themes/ananke/i18n/de.toml
+ create mode 100644 themes/ananke/i18n/en.toml
+ create mode 100644 themes/ananke/i18n/es.toml
+ create mode 100644 themes/ananke/i18n/fr.toml
+ create mode 100644 themes/ananke/i18n/it.toml
+ create mode 100644 themes/ananke/i18n/nl.toml
+ create mode 100644 themes/ananke/i18n/pt.toml
+ create mode 100644 themes/ananke/i18n/ru.toml
+ create mode 100644 themes/ananke/i18n/sv.toml
+ create mode 100644 themes/ananke/i18n/uk.toml
+ create mode 100644 themes/ananke/i18n/zh.toml
+ create mode 100644 themes/ananke/images/screenshot.png
+ create mode 100644 themes/ananke/images/tn.png
+ create mode 100755 themes/ananke/layouts/404.html
+ create mode 100755 themes/ananke/layouts/_default/baseof.html
+ create mode 100755 themes/ananke/layouts/_default/list.html
+ create mode 100755 themes/ananke/layouts/_default/single.html
+ create mode 100644 themes/ananke/layouts/_default/taxonomy.html
+ create mode 100644 themes/ananke/layouts/_default/terms.html
+ create mode 100755 themes/ananke/layouts/index.html
+ create mode 100644 themes/ananke/layouts/page/single.html
+ create mode 100644 themes/ananke/layouts/partials/commento.html
+ create mode 100644 themes/ananke/layouts/partials/i18nlist.html
+ create mode 100644 themes/ananke/layouts/partials/menu-contextual.html
+ create mode 100644 themes/ananke/layouts/partials/new-window-icon.html
+ create mode 100644 themes/ananke/layouts/partials/page-header.html
+ create mode 100644 themes/ananke/layouts/partials/site-favicon.html
+ create mode 100755 themes/ananke/layouts/partials/site-footer.html
+ create mode 100755 themes/ananke/layouts/partials/site-header.html
+ create mode 100644 themes/ananke/layouts/partials/site-navigation.html
+ create mode 100644 themes/ananke/layouts/partials/site-scripts.html
+ create mode 100644 themes/ananke/layouts/partials/social-follow.html
+ create mode 100644 themes/ananke/layouts/partials/social-share.html
+ create mode 100644 themes/ananke/layouts/partials/summary-with-image.html
+ create mode 100644 themes/ananke/layouts/partials/summary.html
+ create mode 100644 themes/ananke/layouts/partials/svg/facebook.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/github.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/gitlab.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/instagram.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/keybase.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/linkedin.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/mastodon.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/medium.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/new-window.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/slack.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/stackoverflow.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/twitter.svg
+ create mode 100644 themes/ananke/layouts/partials/svg/youtube.svg
+ create mode 100644 themes/ananke/layouts/partials/tags.html
+ create mode 100644 themes/ananke/layouts/post/list.html
+ create mode 100644 themes/ananke/layouts/post/summary-with-image.html
+ create mode 100644 themes/ananke/layouts/post/summary.html
+ create mode 100644 themes/ananke/layouts/robots.txt
+ create mode 100644 themes/ananke/layouts/shortcodes/form-contact.html
+ create mode 100644 themes/ananke/package-lock.json
+ create mode 100755 themes/ananke/package.json
+ create mode 100644 themes/ananke/src/css/_code.css
+ create mode 100644 themes/ananke/src/css/_hugo-internal-templates.css
+ create mode 100644 themes/ananke/src/css/_social-icons.css
+ create mode 100644 themes/ananke/src/css/_styles.css
+ create mode 100644 themes/ananke/src/css/_tachyons.css
+ create mode 100644 themes/ananke/src/css/main.css
+ create mode 100644 themes/ananke/src/css/postcss.config.js
+ create mode 100644 themes/ananke/src/js/main.js
+ create mode 100644 themes/ananke/src/package-lock.json
+ create mode 100644 themes/ananke/src/package.json
+ create mode 100644 themes/ananke/src/readme.md
+ create mode 100644 themes/ananke/src/webpack.config.js
+ create mode 100644 themes/ananke/stackbit.yaml
+ create mode 100644 themes/ananke/static/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css
+ create mode 100644 themes/ananke/static/dist/js/app.3fc0f988d21662902933.js
+ create mode 100644 themes/ananke/static/images/gohugo-default-sample-hero-image.jpg
+ create mode 100755 themes/ananke/theme.toml
+Username for 'https://github.com': iqbalbirrul
+Password for 'https://iqbalbirrul@github.com': 
+Counting objects: 130, done.
+Compressing objects: 100% (119/119), done.
+Writing objects: 100% (130/130), 2.63 MiB | 1.76 MiB/s, done.
+Total 130 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/iqbalbirrul/bloghugo.git
+ * [new branch]      master -&amp;gt; master
+Building sites … WARN 2020/03/29 00:53:01 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+
+                   | EN  
+-------------------+-----
+  Pages            | 11  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  3  
+  Processed images |  0  
+  Aliases          |  1  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 74 ms
+[master 4a1930f] rebuilding site Sun Mar 29 00:53:01 WIB 2020
+ 10 files changed, 38 insertions(+), 38 deletions(-)
+Username for 'https://github.com': iqbalbirrul
+Password for 'https://iqbalbirrul@github.com': 
+Counting objects: 16, done.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 1.51 KiB | 771.00 KiB/s, done.
+Total 16 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
+To https://github.com/iqbalbirrul/iqbalbirrul.github.io.git
+   fb0dad3..4a1930f  master -&amp;gt; master
+root@static:~/bloghugo# 
+&amp;lt;/pre&amp;gt;
+
+Deploy selesai..
+
+![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project-deployed.png)
+![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages-deployed.png)
+
+Sekarang, akses alamat _https://username.github.io_.
+
+![GitHub Pages berhasil di buat](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/iqbalbirrul-github-pages.png)
+
+Hugo berhasil di deploy ke GitHub Pages..
+
+Sekian, semoga bermanfaat..
+
+**Sumber:** https://gohugo.io/hosting-and-deployment/hosting-on-github/
+&lt;/url&gt;&lt;/pre&gt;&lt;/yourtheme&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Membuat Website Statis menggunakan Hugo</title>
+   <link href="https://iqbal.page/2020/03/28/hugo/"/>
+   <updated>2020-03-28T16:06:22+07:00</updated>
+   <id>https://iqbal.page/2020/03/28/hugo</id>
+   <content type="html">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Git&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt; - Generator Hugo&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Text Editor&lt;/strong&gt; - Untuk edit konfigurasi dan edit konten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install-hugo&quot;&gt;Install Hugo&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sistem Operasi yang saya gunakan adalah &lt;strong&gt;Ubuntu 18.04 LTS&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Download file &lt;code&gt;.deb&lt;/code&gt; hugo di laman &lt;a href=&quot;https://github.com/gohugoio/hugo/releases&quot;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;, kemudian install.&lt;/p&gt;
+
+&lt;pre&gt;
+root@static:~# wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~# dpkg -i hugo_extended_0.68.3_Linux-64bit.deb
+(Reading database ... 101872 files and directories currently installed.)
+Preparing to unpack hugo_extended_0.68.3_Linux-64bit.deb ...
+Unpacking hugo (0.68.3) over (0.64.1) ...
+Setting up hugo (0.68.3) ...
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~# hugo version
+Hugo Static Site Generator v0.68.3-157669A0/extended linux/amd64 BuildDate: 2020-03-24T12:13:38Z
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;create-a-new-site&quot;&gt;Create a New Site&lt;/h3&gt;
+
+&lt;p&gt;Buat website baru dengan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;
+root@static:~# hugo new site namablog
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~# hugo new site bloghugo
+Congratulations! Your new Hugo site is created in /root/bloghugo.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+&amp;lt;/pre&amp;gt;
+
+### Add a Theme
+
+Download tema terlebih dahulu dengan perintah dibawah ini.
+
+&lt;pre&gt;
+root@static:~# cd bloghugo
+root@static:~/bloghugo# git init
+root@static:~/bloghugo# git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+&lt;/pre&gt;
+
+**Note**: tema dapat Anda unduh di laman https://themes.gohugo.io/
+
+Kemudian, tambahkan tema ke konfigurasi Hugo.
+
+&lt;pre&gt;
+echo 'theme = &quot;ananke&quot;' &amp;gt;&amp;gt; config.toml
+&lt;/pre&gt;
+
+### Add Some Content
+
+Tambahkan sebuah konten ke website Hugo.
+
+&lt;pre&gt;
+hugo new posts/my-first-post.md
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~/bloghugo# hugo new posts/my-first-post.md
+/root/bloghugo/content/posts/my-first-post.md created
+&lt;/pre&gt;
+
+Anda juga dapat membuat konten file secara manual ke directory `content/posts`.
+
+Edit file yang dusah dibuat, kira-kira menjadi seperti berikut:
+
+**Catatan:** konten atau artikel ditulis menggunakan _markdown_
+
+&lt;pre&gt;
+---
+title: &quot;My First Post&quot;
+date: 2019-03-26T08:47:11+01:00
+draft: true
+---
+
+Halo,
+
+Ini adalah post pertama saya di website statis Hugo.
+
+Sekian...
+&lt;/pre&gt;
+
+Edit file `.md` menggunakan `vim` jika Anda pengguna server atau sublime, vscode jika Anda pengguna linux desktop.
+
+### Start the Hugo server
+
+Kemudian, jalankan hugo dengan perintah berikut:
+
+&lt;pre&gt;
+hugo server -D
+&lt;/pre&gt;
+
+&lt;pre&gt;
+root@static:~/bloghugo# hugo server -D
+Building sites …
+
+                   | EN  
+-------------------+-----
+  Pages            | 10  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  3  
+  Processed images |  0  
+  Aliases          |  1  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Built in 53 ms
+Watching for changes in /root/bloghugo/{archetypes,content,data,layouts,static,themes}
+Watching for config changes in /root/bloghugo/config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/pre&gt;
+
+Akses website hugo dengan alamat [http://127.0.0.1:1313/](http://127.0.0.1:1313/) atau [http://hostname:1313/](http://hostname:1313/).
+
+![Hugo Localhost](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/localhost-hugo-site.png)
+
+Sekian, semoga bermanfaat...
+
+**Sumber:** [https://gohugo.io/documentation/](https://gohugo.io/documentation/)
+&lt;/FORMAT&gt;&lt;/FILENAME&gt;&lt;/SECTIONNAME&gt;&lt;/THEMENAME&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Setup Bind DNS Server CentOS 7</title>
+   <link href="https://iqbal.page/2020/02/08/setup-bind-dns-server-centos-7/"/>
+   <updated>2020-02-08T23:28:04+07:00</updated>
+   <id>https://iqbal.page/2020/02/08/setup-bind-dns-server-centos-7</id>
+   <content type="html">&lt;p&gt;DNS, stands for Domain Name System, translates hostnames or URLs into IP addresses. For example, if we type &lt;strong&gt;red.my.id&lt;/strong&gt; in browser, the DNS server translates the domain name into its associated ip address. Since the IP addresses are hard to remember all time, DNS servers are used to translate the hostnames like &lt;strong&gt;red.my.id&lt;/strong&gt; to &lt;code&gt;104.xx.xx.xxx&lt;/code&gt;. So it makes easy to remember the domain names instead of its IP address.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;dns-server-installation&quot;&gt;DNS Server Installation&lt;/h2&gt;
+
+&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+
+&lt;h4 id=&quot;operating-system&quot;&gt;Operating System&lt;/h4&gt;
+
+&lt;pre&gt;
+Operating System     : CentOS 7 minimal server
+Hostname             : dns01.dapur.my.id
+IP Address           : 117.53.44.164
+&lt;/pre&gt;
+
+&lt;p&gt;Domain name ex : &lt;strong&gt;dapur.my.id&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&quot;private-name-server&quot;&gt;Private Name Server&lt;/h5&gt;
+
+&lt;pre&gt;
+IPv4 Glue records for dapur.my.id
+ns1.dapur.my.id.	43200	IN	A	117.53.44.164
+ns2.dapur.my.id.	43200	IN	A	117.53.44.164
+
+There are no IPv6 Glue records for dapur.my.id
+&lt;/pre&gt;
+
+&lt;h5 id=&quot;install-and-configure-bind-dns-server&quot;&gt;Install and configure Bind DNS Server&lt;/h5&gt;
+
+&lt;h5 id=&quot;install-bind-dns-server&quot;&gt;Install Bind DNS Server&lt;/h5&gt;
+
+&lt;pre&gt;
+yum update -y
+yum install bind bind-utils -y
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;configure-bind-dns-server&quot;&gt;Configure Bind DNS Server&lt;/h4&gt;
+
+&lt;p&gt;Edit file &lt;code&gt;/etc/named.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+mv /etc/named.conf /etc/named.conf-backup
+vim /etc/named.conf
+&lt;/pre&gt;
+
+&lt;p&gt;Add the following lines:&lt;/p&gt;
+
+&lt;pre&gt;
+options {
+        listen-on port 53 { 127.0.0.1; 117.53.44.164; };
+        directory &quot;/var/named&quot;;
+        dump-file &quot;/var/named/data/cache_dump.db&quot;;
+        statistics-file &quot;/var/named/data/named_stats.txt&quot;;
+        memstatistics-file &quot;/var/named/data/named_mem_stats.txt&quot;;
+
+        allow-query { 127.0.0.1; 117.53.44.164; any; };
+        allow-query-cache { 127.0.0.1; 117.53.44.164; any ;};
+        };
+
+logging {
+        channel default_debug {
+                file &quot;data/named.run&quot;;
+                severity dynamic;
+                };
+        };
+
+zone &quot;dapur.my.id&quot; {
+                type master;
+                file &quot;/var/named/dapur.fwd&quot;;
+                };
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;create-zone-file&quot;&gt;Create Zone file&lt;/h4&gt;
+
+&lt;p&gt;Create forward and reverse zone files which we mentioned in the ‘‘/etc/named.conf’’ file.&lt;/p&gt;
+
+&lt;h4 id=&quot;create-dns-zone&quot;&gt;Create DNS Zone&lt;/h4&gt;
+
+&lt;p&gt;Create &lt;code&gt;dapur.fwd&lt;/code&gt; file in the &lt;code&gt;/var/named&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;Add the following lines:&lt;/p&gt;
+
+&lt;pre&gt;
+$TTL 86400
+@       IN      SOA      ns1.dapur.my.id. root.dapur.my.id.(
+                                2019100914      ;Serial
+                                3600            ;Refresh
+                                1800            ;Retry
+                                604800          ;Expire
+                                86400           ;Minimum TTL
+)
+
+@       IN      NS      ns1.dapur.my.id.
+@       IN      NS      ns2.dapur.my.id.
+
+@       IN      A       117.53.44.164
+ns1     IN      A       117.53.44.164
+ns2     IN      A       117.53.44.164
+
+www     IN      CNAME   dapur.my.id.
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;check-configuration-file&quot;&gt;Check configuration file&lt;/h4&gt;
+
+&lt;p&gt;Check DNS default configuration file:&lt;/p&gt;
+
+&lt;pre&gt;
+named-checkconf /etc/named.conf
+&lt;/pre&gt;
+
+&lt;p&gt;If it returns nothing, the configuration file is valid.&lt;/p&gt;
+
+&lt;p&gt;Check zone file:&lt;/p&gt;
+
+&lt;pre&gt;
+named-checkzone dapur.my.id /var/named/dapur.fwd
+&lt;/pre&gt;
+
+&lt;p&gt;Sample output:&lt;/p&gt;
+
+&lt;pre&gt;
+zone dapur.my.id/IN: loaded serial 2019100914
+OK
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;start-dns-server&quot;&gt;Start DNS server&lt;/h4&gt;
+
+&lt;pre&gt;
+systemctl start named
+systemctl enable named
+systemctl status named
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;test-dns-server&quot;&gt;Test DNS Server&lt;/h3&gt;
+
+&lt;pre&gt;
+dig dapur.my.id
+&lt;/pre&gt;
+
+&lt;p&gt;Sample output:&lt;/p&gt;
+
+&lt;pre&gt;
+[root@dns01 ~]# dig dapur.my.id
+
+; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.11.4-P2-RedHat-9.11.4-9.P2.el7 &amp;lt;&amp;lt;&amp;gt;&amp;gt; dapur.my.id
+;; global options: +cmd
+;; Got answer:
+;; -&amp;gt;&amp;gt;HEADER&amp;lt;&amp;lt;- opcode: QUERY, status: NOERROR, id: 16079
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;dapur.my.id.                   IN      A
+
+;; ANSWER SECTION:
+dapur.my.id.            86400   IN      A       117.53.44.164
+
+;; Query time: 3 msec
+;; SERVER: 43.224.19.110#53(43.224.19.110)
+;; WHEN: Wed Oct 09 12:06:56 WIB 2019
+;; MSG SIZE  rcvd: 56
+&lt;/pre&gt;
+
+&lt;pre&gt;
+nslookup dapur.my.id
+&lt;/pre&gt;
+
+&lt;p&gt;Sample output:&lt;/p&gt;
+
+&lt;pre&gt;
+Server:         43.224.19.110
+Address:        43.224.19.110#53
+
+Non-authoritative answer:
+Name:   dapur.my.id
+Address: 117.53.44.164
+&lt;/pre&gt;
+
+&lt;p&gt;To make sure DNS is resolved, you can use a website like &lt;strong&gt;https://intodns.com&lt;/strong&gt; or &lt;strong&gt;https://whatsmydns.com&lt;/strong&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Konfigurasi DNS Server Di Ubuntu 18.04 LTS</title>
+   <link href="https://iqbal.page/2019/07/09/konfigurasi-dns-server-di-ubuntu-18-04-lts/"/>
+   <updated>2019-07-09T08:27:04+07:00</updated>
+   <id>https://iqbal.page/2019/07/09/konfigurasi-dns-server-di-ubuntu-18-04-lts</id>
+   <content type="html">&lt;h1 id=&quot;dns&quot;&gt;DNS&lt;/h1&gt;
+&lt;p&gt;DNS (Domain Name System) adalah layanan yang menerjemahkan nama domain situs web seperti, contoh: &lt;code&gt;google.com&lt;/code&gt; menjadi alamat IP (IP Address) sehingga pengguna internet bisa membuka situs tujuan dengan cepat.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fungsi-dns&quot;&gt;Fungsi DNS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Melakukan identifikasi alamat komputer dalam suatu jaringan.&lt;/li&gt;
+  &lt;li&gt;Mentranskripsikan nama domain menjadi IP Address.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;konsep-atau-cara-kerja-dns&quot;&gt;Konsep atau cara kerja DNS&lt;/h2&gt;
+&lt;p&gt;Untuk menjalankan tugasnya, DNS server memerlukan program resolver untuk menghubungkan setiap komputer pengguna dengan DNS server. Program resolver yang dimaksud adalah web browser dan mail client.&lt;/p&gt;
+
+&lt;h3 id=&quot;komponen-komponen-dns-server&quot;&gt;Komponen-komponen DNS Server&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;DNS Resolver : adalah klien yang merupakan komputer pengguna, pihak yang membuat permintaan DNS dari suatu program aplikasi&lt;/li&gt;
+  &lt;li&gt;Recursive DNS server : adalah pihak yang melakukan pencarian melalui DNS berdasarkan permintaan resolver, kemudian memberikan jawaban pada resolver tersebut.&lt;/li&gt;
+  &lt;li&gt;Authoritative DNS server : pihak yang memberikan respon setelah recursive melakukan pencarian. Respon dapat berupa sebuah jawaban maupun delegasi ke DNS server lainnya.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cara-kerja-dns&quot;&gt;Cara Kerja DNS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mencari alamat host pada file HOSTS, bila ada berikan alamatnya dan proses selesai.&lt;/li&gt;
+  &lt;li&gt;Mencari pada data cache yang dibuat oleh resolver untuk menyimpan hasil permintaan sebelumnya, bila ada simpan dalam data cache, berikan 	hasilnya dan selesai.&lt;/li&gt;
+  &lt;li&gt;Mencari pada alamat Server DNS pertama yang telah ditentukan oleh user.&lt;/li&gt;
+  &lt;li&gt;Server DNS yang ditunjuk akan mencari nama domain pada cache-nya.&lt;/li&gt;
+  &lt;li&gt;Apabila tidak ketemu, pencarian dilakukan dengan melihat file database domain (zones) yang dimiliki oleh server.&lt;/li&gt;
+  &lt;li&gt;Apabila tetap tidak menemukan, maka server ini akan menghubungi Server DNS lain yang sudah dikaitkan dengan server ini. Jika ketemu simpan dalam cache dan berikan hasilnya.&lt;/li&gt;
+  &lt;li&gt;Apabila pada Server DNS pertama tidak ditemukan pencarian dilanjutkan pada Server DNS kedua dan seterusnya dengan proses yang sama seperti diatas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;manfaat-dns-server&quot;&gt;Manfaat DNS Server&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Alamat sebuah situs web atau blog, menjadi lebih mudah untuk diingat.&lt;/li&gt;
+  &lt;li&gt;DNS memudahkan kita untuk mengakses website tertentu tanpa harus repot mengetikan alamat IP yang berupa angka panjang seperti &lt;code&gt;112.108.11.11&lt;/code&gt;. Kita cukup mengingat nama domain website yang kita tuju seperti &lt;code&gt;yahoo.com&lt;/code&gt;, &lt;code&gt;google.com&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;membuat-dns-server&quot;&gt;Membuat DNS Server&lt;/h2&gt;
+&lt;p&gt;Saya belajar membuat DNS server menggunakan sistem operasi Ubuntu Server 18.04 LTS.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Langkah pertama yaitu install &lt;code&gt;bind9&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:~# apt update
+root@cloudsrv2:~# apt install bind9 bind9utils
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Konfigurasi &lt;code&gt;bind9&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:~# cd /etc/bind/
+root@cloudsrv2:/etc/bind# vi named.conf
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit file &lt;code&gt;named.conf&lt;/code&gt; menjadi seperti berikut:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+include &quot;/etc/bind/named.conf.options&quot;;
+include &quot;/etc/bind/named.conf.local&quot;;
+
+# include &quot;/etc/bind/named.conf.default-zones&quot;;
+
+include &quot;/etc/bind/named.conf.external&quot;;
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit file &lt;code&gt;named.conf.options&lt;/code&gt;, menjadi seperti berikut:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:/etc/bind# vi named.conf.options
+# buat konfigurasi seperti berikut
+options {
+        directory &quot;/var/cache/bind&quot;;
+        allow-query { localhost; 117.53.46.186; };
+        allow-transfer { localhost; 117.53.46.186; };
+        allow-recursion { localhost; 117.53.46.186; };
+
+        dnssec-validation auto;
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { none; };
+};
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buat file &lt;code&gt;named.conf.external&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:/etc/bind# vi named.conf.external
+
+# masukan konfigurasi seperti berikut
+
+view &quot;external&quot; {
+        match-clients { any; };
+        allow-query { any; };
+        recursion no;
+
+        zone &quot;iqbalbirrul.web.id&quot; { # sesuaikan nama domain
+                type master;
+                file &quot;/etc/bind/server1.db&quot;;
+                allow-update { none; };
+        };
+};                       
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buat file zone untuk record-record DNS &lt;code&gt;server1.db&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:/etc/bind# vi server1.db
+
+# buat zone sebagai berikut:
+# untuk record-record, silakan menyesuaikan
+
+$TTL 86400
+@       IN      SOA      ns1.iqbalbirrul.web.id. root.iqbalbirrul.web.id.(
+                                2019070914      ;Serial
+                                3600            ;Refresh
+                                1800            ;Retry
+                                604800          ;Expire
+                                86400           ;Minimum TTL
+)
+
+@       IN      NS      ns1.iqbalbirrul.web.id.
+@       IN      NS      ns2.iqbalbirrul.web.id.
+
+@       IN      A       117.53.46.186
+ns1     IN      A       117.53.46.186
+ns2     IN      A       117.53.46.186
+
+cloudsrv2       IN      A       117.53.46.186
+
+www     IN      CNAME iqbalbirrul.web.id.
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Konfigurasi selesai, sekarang jalankan service &lt;code&gt;bind9&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+root@cloudsrv2:~# systemctl start bind9
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;private-nameserver&quot;&gt;Private Nameserver&lt;/h3&gt;
+
+&lt;p&gt;Setelah membuat DNS server, silakan membuat private nameserver/glue record untuk domain pada penyedia nama domain.&lt;/p&gt;
+
+&lt;p&gt;Berikut nameserver yang harus di tambahkan:&lt;/p&gt;
+
+&lt;pre&gt;
+Nameserver: ns1
+IP Address: IP Address DNS Server
+
+Nameserver: ns2
+IP Address: IP Address DNS Server
+&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kemudian ubah nameserver domain ke private nameserver yang telah dibuat.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sebagai catatan, perubahan nameserver pada domain akan membuat domain mengalami propagasi. Propagasi sendiri diperlukan waktu maksimal 48 Jam, lama atau tidaknya proses propagasi tergantung dari resolver ISP yang digunakan.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kemudian, test apakah domain sudah terhubung ke nameserver dengan cara berikut:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+iqbal@ThinkPad-E450:~$ dig iqbalbirrul.web.id +short
+117.53.46.186
+iqbal@ThinkPad-E450:~$ nslookup iqbalbirrul.web.id
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	iqbalbirrul.web.id
+Address: 117.53.46.186
+&lt;/pre&gt;
+
+&lt;p&gt;Konfigurasi selesai, semoga bermanfaat&lt;/p&gt;
+
+&lt;p&gt;Sumber : https://www.server-world.info/en/note?os=Ubuntu_18.04&amp;amp;p=dns&amp;amp;f=1&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Setup Custom Email gratis dengan Zoho Mail</title>
+   <link href="https://iqbal.page/2019/04/17/setup-custom-email-with-zoho/"/>
+   <updated>2019-04-17T18:57:12+07:00</updated>
+   <id>https://iqbal.page/2019/04/17/setup-custom-email-with-zoho</id>
+   <content type="html">&lt;p&gt;Zoho Mail sebagai salah satu produk Zoho, merupakan layanan mail hosting pihak ketiga. Zoho menawarkan layanan email gratis hingga 5 user untuk tiap domain yang Anda daftarkan.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;![Logo Zoho&lt;/td&gt;
+      &lt;td&gt;sumber: zoho.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-logo.png)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Zoho adalah salah satu aplikasi online yang menyediakan berbagai fasilitas untuk kebutuhan bisnis sehari-hari. Aplikasinya beragam mulai dari aplikasi untuk kebutuhan sales &amp;amp; marketing, finance hingga email. Zoho juga menyediakan tools untuk menunjang produktivitas kerja seperti document creator, spreadsheet, tools presentasi bahkan hingga mencakup sosial media management.&lt;/p&gt;
+
+&lt;p&gt;Selengkapnya dapat Anda lihat pada laman resminya: https://www.zoho.com/workplace/&lt;/p&gt;
+
+&lt;p&gt;Berikut ini langkah-langkah untuk setup akun email gratis dengan custom domain di Zoho.&lt;/p&gt;
+
+&lt;h2 id=&quot;daftar-akun-zoho&quot;&gt;Daftar Akun Zoho&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pertama masuk ke laman berikut: https://www.zoho.com/mail/
+    &lt;ul&gt;
+      &lt;li&gt;Klik &lt;strong&gt;Sign Up&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian klik &lt;strong&gt;Get Started&lt;/strong&gt; pada &lt;strong&gt;FREE PLAN&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Masukan nama domain-nya (&lt;em&gt;misal: kwt.web.id&lt;/em&gt;) » klik &lt;strong&gt;Add&lt;/strong&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-1.png&quot; alt=&quot;Gambar 1: Masukan nama domain&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Lengkapi data-data yang diperlukan dan centang (&lt;em&gt;I agree to the Terms of Service and Privacy Policy.&lt;/em&gt;) kemudian klik &lt;strong&gt;PROCEED&lt;/strong&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-2.png&quot; alt=&quot;Gambar 2: Lengkapi data-data yang diperlukan&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Klik &lt;strong&gt;Sign Up&lt;/strong&gt; kembali
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-3.png&quot; alt=&quot;Gambar 3: Konfirmasi data-data&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Anda akan disuruh untuk memverifikasi akun dengan memasukan kode yang telah dikirimkan ke nomor ponsel yang Anda inputkan sebelumnya. Kemudian klik &lt;strong&gt;VERIFIKASI TELEPON SELULAR&lt;/strong&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-4.png&quot; alt=&quot;Gambar 4: Verifikasi telepon selular&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Selanjutnya, Anda akan disuruh untuk mengaktifkan Autentikasi Dua Faktor, Anda bisa men-skip tahap ini &lt;em&gt;terlebih dahulu&lt;/em&gt; dengan klik &lt;em&gt;&lt;strong&gt;Ingatkan saya nanti&lt;/strong&gt;&lt;/em&gt; atau Anda dapat mengaktifkannya untuk keamanan akun.
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-5.png&quot; alt=&quot;Gambar 5: Aktifkan autentikasi dua faktor&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;domain-setup&quot;&gt;Domain Setup&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Verifikasi Domain.
+    &lt;ul&gt;
+      &lt;li&gt;Pilih DNS manager: &lt;strong&gt;Others&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Pilih verifikasi menggunakan CNAME atau dapat menggunakan metode Upload Files.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-6.png&quot; alt=&quot;Gambar 6: Pilih verifikasi menggunakan CNAME&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian tambahkan CNAME tersebut pada DNS management domain Anda.&lt;/li&gt;
+      &lt;li&gt;Penambahan record DNS pada domain akan membuat domain mengalami propagasi dan proses propagasi biasa memakan waktu 48 Jam tergantung ISP yang Anda gunakan.&lt;/li&gt;
+      &lt;li&gt;Apabila CNAME telah ditambahkan, klik &lt;strong&gt;Proceed to CNAME Verification&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-7.png&quot; alt=&quot;Gambar 7: CNAME sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian klik &lt;strong&gt;Verify Now&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-8.png&quot; alt=&quot;Gambar 8: Verify Now&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian klik &lt;strong&gt;Create Account&lt;/strong&gt; (isi sama seperti di step 3 saat mendaftarkan akun)
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-9.png&quot; alt=&quot;Gambar 9: Create Administrator Account &quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add User
+    &lt;ul&gt;
+      &lt;li&gt;Klik &lt;strong&gt;Proceed to Add Users&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-10.png&quot; alt=&quot;Gambar 10: Add User&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Tambahkan user atau bisa di skip untuk melanjutkan prosesnya.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-11.png&quot; alt=&quot;Gambar 11: Tambah user&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;User sudah ditambahkan, kemudian klik &lt;strong&gt;Back to Setup&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-12.png&quot; alt=&quot;Gambar 12: User sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create Groups
+    &lt;ul&gt;
+      &lt;li&gt;Anda dapat melewati tahap ini jika tidak diperlukan group untuk distribution list atau dapat Anda lanjutkan dengan klik &lt;strong&gt;Proceed to Create Groups&lt;/strong&gt;.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-13.png&quot; alt=&quot;Gambar 13: Create Groups 1&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Klik &lt;strong&gt;Back to Setup&lt;/strong&gt; untuk kembali ke &lt;strong&gt;Domain Setup&lt;/strong&gt;, atau klik &lt;strong&gt;Add Group&lt;/strong&gt; untuk membuat group.
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-14.png&quot; alt=&quot;Gambar 14: Create Groups 2&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Configure Email Delivery
+    &lt;ul&gt;
+      &lt;li&gt;Kemudian tambahkan mx record yang tertera pada gambar 15 ke DNS management domain
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-15.png&quot; alt=&quot;Gambar 15: Tambahkan MX record pada DNS management&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Apabila MX record sudah ditambahkan, cek dengan menekan tombol &lt;strong&gt;MX Lookup&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-17.png&quot; alt=&quot;Gambar 17: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian klik &lt;strong&gt;OK&lt;/strong&gt; lalu klik &lt;strong&gt;Next&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-16.png&quot; alt=&quot;Gambar 16: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SPF/DKIM
+    &lt;ul&gt;
+      &lt;li&gt;Tambahkan SPF record pada DNS management domain
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-18.png&quot; alt=&quot;Gambar 18: &quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Klik Procees to Configure DKIM untuk konfigurasi DKIM
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-19.png&quot; alt=&quot;Gambar 19: DKIM&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Klik tombol edit untuk mengaktifkan DKIM
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-20.png&quot; alt=&quot;Gambar 20: Edit DKIM&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian klik &lt;strong&gt;Add Selector&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-21.png&quot; alt=&quot;Gambar 21: Add Selector&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Masukan nama Selector kemudian klik &lt;strong&gt;Save&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-22.png&quot; alt=&quot;Gambar 22: Simpan perubahan&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Tambahkan record TXT yang dihasilkan pada DNS management domain kemudian klik &lt;strong&gt;Verify&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-23.png&quot; alt=&quot;Gambar 23: Tambah record DKIM&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Pastikan record SPF dan DKIM sudah resolve pada domain
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-24.png&quot; alt=&quot;Gambar 24: SPF dan DKIM sudah resolve&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Klik &lt;strong&gt;Back to Setup&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Email Migration dan Mobile Acces
+    &lt;ul&gt;
+      &lt;li&gt;Tahap ini dapat di skip&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;test-pengiriman-email&quot;&gt;Test Pengiriman Email&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Test Kirim email ke email lain
+    &lt;ul&gt;
+      &lt;li&gt;Masuk ke https://mail.zoho.com/zm/&lt;/li&gt;
+      &lt;li&gt;Klik New Mail&lt;/li&gt;
+      &lt;li&gt;Masukan email tujuan, subjek, isi email kemudian &lt;strong&gt;Send&lt;/strong&gt;
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-25.png&quot; alt=&quot;Gambar 25: Test kirim email&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Kemudian periksa pada kotak masuk email tujuan
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-26.png&quot; alt=&quot;Gambar 26: Email sudah masuk&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;SPF dan DKIM bekerja
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-27.png&quot; alt=&quot;Gambar 27: SPF dan DKIM bekerja&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Test menerima email
+ &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-28.png&quot; alt=&quot;Gambar 28: berhasil menerima email&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Selesai dan email siap digunakan..&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Informasi tambahan:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CNAME record : Canonical Name digunakan sebagai alias&lt;/li&gt;
+  &lt;li&gt;MX record : Record untuk pertukaran email (mail exchange). Fungsinya adalah untuk mengarahkan pengirim email dari luar ke mail server&lt;/li&gt;
+  &lt;li&gt;TXT record: Record untuk data acak, biasanya digunakan untuk record SPF dan DKIM&lt;/li&gt;
+  &lt;li&gt;SPF record (Sender Policy Framework): Menentukan server dan alamat IP yang berwenang untuk mengirim email dari domain anda. Fitur ini bekerja untuk mencegah email spam keluar.&lt;/li&gt;
+  &lt;li&gt;DKIM record (DomainKeys Identified Mail): Merupakan sarana verifikasi email yang masuk. Hal ini memastikan bahwa email yang masuk tidak dimodifikasi dari pengirim. Fitur ini bekerja untuk mencegah pesan spam yang masuk.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Make a Private Git Repository Using GitLab CE</title>
+   <link href="https://iqbal.page/2019/02/23/make-a-private-git-repository-using-gitlab-ce/"/>
+   <updated>2019-02-23T15:19:01+07:00</updated>
+   <id>https://iqbal.page/2019/02/23/make-a-private-git-repository-using-gitlab-ce</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;GitLab Community Edition (CE)&lt;/strong&gt; adalah platform pengembangan end-to-end perangkat lunak open source dengan built-in version control, issue tracking, code review, CI/CD, dan banyak lagi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce.png&quot; alt=&quot;GitLab CE&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;requirments&quot;&gt;Requirments&lt;/h1&gt;
+
+&lt;p&gt;Installasi ini menggunakan sistem operasi CentOS 7:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fresh install CentOS 7 Server dengan IP Public ex: &lt;em&gt;&lt;code&gt;117.53.46.186&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Sudo User&lt;/li&gt;
+  &lt;li&gt;Domain yang mengarah ke IP Server (CentOS 7) ex: &lt;a href=&quot;https://repo.iqbal.es&quot;&gt;&lt;em&gt;repo.iqbal.es&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RAM minimal 4GB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;tahap-installasi&quot;&gt;Tahap Installasi&lt;/h1&gt;
+
+&lt;p&gt;Login menggunakan SSH sebagai root user.&lt;/p&gt;
+
+&lt;h2 id=&quot;tambah-swap&quot;&gt;Tambah Swap&lt;/h2&gt;
+
+&lt;p&gt;Saat menggunakan GitLab CE 11.x pada server dengan RAM 4GB, diperlukan untuk menyiapkan partisi swap 4GB agar berjalan lancar.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;dd if=/dev/zero of=/swapfile count=4096 bs=1M
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo '/swapfile   none    swap    sw    0   0' | tee -a /etc/fstab
+free -m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Catatan&lt;/strong&gt;: Jika Anda menggunakan ukuran server yang berbeda, ukuran partisi swap dapat menyesuaikan.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Untuk tujuan kinerja sistem, disarankan untuk mengkonfigurasi pengaturan kernel swappiness ke nilai terendah, misal &lt;code&gt;10&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo 'vm.swappiness=10' | tee -a /etc/sysctl.conf
+sudo sysctl -p
+cat /proc/sys/vm/swappiness
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Output dari perintah cat adalah &lt;code&gt;10&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-hostname-dengan-fqdn&quot;&gt;Setup Hostname dengan FQDN&lt;/h2&gt;
+
+&lt;p&gt;Ubah hostname server dengan FQDN (ex : repo.iqbal.es) dengan perintah berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hostnamectl set-hostname repo.iqbal.es
+hostname -f
+# Output //
+repo.iqbal.es.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;ubah-rule-firewall&quot;&gt;Ubah Rule Firewall&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install firewalld -y
+systemctl start firewalld
+systemctl enable firewalld
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+systemctl restart firewalld
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;install-repository-epel-dan-update-system&quot;&gt;Install Repository Epel dan Update system&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y epel-release
+yum -y update &amp;amp;&amp;amp; shutdown -r now
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Login kembali setelah server berjalan lagi.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-paket-paket-yang-dibutuhkan&quot;&gt;Install paket-paket yang dibutuhkan&lt;/h3&gt;
+&lt;p&gt;Sebelum menginstall GitLab CE, install terlebih dahulu paket yang dibutuhkan.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y curl policycoreutils-python openssh-server openssh-clients
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jika ingin menggunakan postfix agar mengirimkan notifikasi email, silakan install postfix dan ubah rule dari firewlld:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;yum install -y postfix
+systemctl enable postfix
+systemctl start postfix
+firewall-cmd --permanent --add-service=smtp
+firewall-cmd --permanent --add-service=pop3
+firewall-cmd --permanent --add-service=imap
+firewall-cmd --permanent --add-service=smtps
+firewall-cmd --permanent --add-service=pop3s
+firewall-cmd --permanent --add-service=imaps
+systemctl restart firewalld
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: Setelah Postfix diinstal, Anda perlu mengkonfigurasi Postfix dengan mengedit file konfigurasi pada &lt;code&gt;/etc/postfix/main.cf&lt;/code&gt; sesuai dengan pengaturan server Anda.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tambah-gitlab-repository-dan-install-gitlab-ce&quot;&gt;Tambah GitLab Repository dan Install GitLab CE&lt;/h3&gt;
+
+&lt;p&gt;Install Repository GitLab CE&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Selanjutnya, install GitLab CE&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo EXTERNAL_URL=&quot;http://gitlab.example.com&quot; yum install -y gitlab-ce
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ubah &lt;code&gt;http://gitlab.examle.com&lt;/code&gt; menggunakan domain atau subdomain, misal &lt;code&gt;http://repo.iqbal.es&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Installasi berjalan kurang lebih 5 sampai 10 menit.&lt;/p&gt;
+
+&lt;p&gt;Setelah installasi selesai, akses domain atau subdomain Anda dan login sebagai Administrator menggunakan :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User : root&lt;/li&gt;
+  &lt;li&gt;Password : &amp;lt; password baru &amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mengaktifkan-ssl-dengan-lets-encrypt&quot;&gt;Mengaktifkan SSL dengan Let’s Encrypt&lt;/h3&gt;
+
+&lt;p&gt;Edit file &lt;code&gt;/etc/gitlab/gitlab.rb&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;vi /etc/gitlab/gitlab.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cari baris berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;external_url 'http://gitlab.example.com' // subdomain Anda
+# letsencrypt['enable'] = nil
+# letsencrypt['contact_emails'] = [] # This should be an array of email addresses to add as contacts
+# letsencrypt['group'] = 'root'
+# letsencrypt['owner'] = 'root'
+# letsencrypt['wwwroot'] = '/var/opt/gitlab/nginx/www'
+# See http://docs.gitlab.com/omnibus/settings/ssl.html#automatic-renewal for more on these sesttings
+# letsencrypt['auto_renew'] = true
+# letsencrypt['auto_renew_hour'] = 0
+# letsencrypt['auto_renew_minute'] = nil # Should be a number or cron expression, if specified.
+# letsencrypt['auto_renew_day_of_month'] = &quot;*/4&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ubah menjadi seperti berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;external_url 'https://gitlab.example.com' // subdomain Anda
+letsencrypt['enable'] = nil
+letsencrypt['contact_emails'] = ['repository@gitlab.example.com'] # This should be an array of email addresses to add as contacts
+letsencrypt['group'] = 'root'
+letsencrypt['key_size'] = 2048
+letsencrypt['owner'] = 'root'
+letsencrypt['wwwroot'] = '/var/opt/gitlab/nginx/www'
+# See http://docs.gitlab.com/omnibus/settings/ssl.html#automatic-renewal for more on these sesttings
+letsencrypt['auto_renew'] = true
+letsencrypt['auto_renew_hour'] = 0
+letsencrypt['auto_renew_minute'] = nil # Should be a number or cron expression, if specified.
+letsencrypt['auto_renew_day_of_month'] = &quot;*/4&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Simpan dengan perintah &lt;code&gt;wq&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Update konfigurasi GitLab dengan perintah berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;gitlab-ctl reconfigure
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah proses reconfigure selesai, semua pengguna akan otomatis menggunakan protocol HTTPS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce-site.png&quot; alt=&quot;https://repo.iqbal.es&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce-dashboard.png&quot; alt=&quot;Dashboard GitLab CE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Untuk installasi pada sistem operasi lain, silakan ikuti tautan berikut:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://about.gitlab.com/install&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sumber&lt;/strong&gt; : &lt;a href=&quot;https://vultr.com/docs/how-to-install-gitlab-community-edition-ce-11-x-on-centos-7&quot;&gt;https://vultr.com/docs/how-to-install-gitlab-community-edition-ce-11-x-on-centos-7&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Install Jekyll</title>
+   <link href="https://iqbal.page/2019/02/21/install-jekyll/"/>
+   <updated>2019-02-21T17:28:51+07:00</updated>
+   <id>https://iqbal.page/2019/02/21/install-jekyll</id>
+   <content type="html">&lt;p&gt;Jekyll adalah generator situs web statis sederhana, yang diperuntukan untuk situs pribadi, proyek, atau organisasi.&lt;/p&gt;
+
+&lt;p&gt;Jekyll ditulis dalam bahasa pemrograman &lt;code&gt;Ruby&lt;/code&gt; oleh &lt;strong&gt;Tom Preston-Werner&lt;/strong&gt;, co-founder GitHub, dan didistribusikan di bawah lisensi &lt;a href=&quot;https://id.wikipedia.org/wiki/Sumber_terbuka&quot;&gt;sumber terbuka&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/jekyll-logo.png&quot; alt=&quot;Jekyll&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;installasi-jekyll&quot;&gt;Installasi Jekyll&lt;/h1&gt;
+&lt;p&gt;Jekyll dapat diinstal pada sistem operasi macOS, Ubuntu, &lt;a href=&quot;https://jekyllrb.com/docs/installation/other-linux&quot;&gt;Distro Linux Lain&lt;/a&gt;, Windows.&lt;/p&gt;
+
+&lt;p&gt;Pada tulisan ini, installasi menggunakan sistem operasi Ubuntu 18.04 LTS&lt;/p&gt;
+
+&lt;h2 id=&quot;requirments&quot;&gt;Requirments&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;Ruby&lt;/a&gt; version &lt;code&gt;2.2.5&lt;/code&gt; or above, including all development headers (ruby version can be checked by running &lt;code&gt;ruby -v&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubygems.org/pages/download&quot;&gt;RubyGems&lt;/a&gt; (which you can check by running &lt;code&gt;gem -v&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gcc.gnu.org/install/&quot;&gt;GCC&lt;/a&gt; and &lt;a href=&quot;https://www.gnu.org/software/make/&quot;&gt;Make&lt;/a&gt; (in case your system doesn’t have them installed, which you can check by running &lt;code&gt;gcc -v&lt;/code&gt;,&lt;code&gt;g++ -v&lt;/code&gt; and &lt;code&gt;make -v&lt;/code&gt; in your system’s command line interface)&lt;/li&gt;
+  &lt;li&gt;Translate sendiri lah&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installasi-di-ubuntu-1804-lts&quot;&gt;Installasi di Ubuntu 18.04 LTS&lt;/h2&gt;
+
+&lt;p&gt;Sebelum Jekyll di install, terlebih dahulu install paket yang dibutuhkan&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ sudo apt update
+$ sudo apt install ruby-full build-essential zlib1g-dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Usahakan tidak menggunakan root saat install &lt;code&gt;Ruby Gems&lt;/code&gt;. Oleh karena itu, buat directory installasi &lt;code&gt;gem&lt;/code&gt; untuk user Anda.&lt;/p&gt;
+
+&lt;p&gt;Tambahkan beberapa konfigurasi pada file &lt;code&gt;./bashrc&lt;/code&gt; dengan perintah berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ echo '# Install Ruby Gems to ~/gems' &amp;gt;&amp;gt; ~/.bashrc
+$ echo 'export GEM_HOME=&quot;$HOME/gems&quot;' &amp;gt;&amp;gt; ~/.bashrc
+$ echo 'export PATH=&quot;$HOME/gems/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc
+$ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Selanjutnya, install jekyll dengan perintah berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ gem install jekyll bundler
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sekarang Jekyll siap digunakan.&lt;/p&gt;
+
+&lt;h2 id=&quot;buat-blog-dengan-jekyll&quot;&gt;Buat Blog dengan Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Siapkan directory untuk Jekyll&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ mkdir Jekyll
+$ cd Jekyll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kemudian buat Jekyll Site.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;~/Jekyll$ jekyll new iqbal-jekyll
+~/Jekyll$ cd iqbal-jekyll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jalankan Jekyllnya&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;~/Jekyll/iqbal-jekyll$ bundle exec jekyll serve
+Configuration file: /home/iqbal/Jekyll/iqbal-jekyll/_config.yml
+            Source: /home/iqbal/Jekyll/iqbal-jekyll
+       Destination: /home/iqbal/Jekyll/iqbal-jekyll/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.424 seconds.
+ Auto-regeneration: enabled for '/home/iqbal/Jekyll/iqbal-jekyll'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Akses jekyll dengan alamat &lt;a href=&quot;http://localhost:4000/&quot;&gt;&lt;em&gt;http://localhost:4000/&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/jekyll-localhost.png&quot; alt=&quot;Localhost Jekyll&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;konfigurasi-jekyll&quot;&gt;Konfigurasi Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Untuk configurasi Jekyll sendiri berada pada file &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;title: Iqbal Birrul Walidain
+email: kontak@iqbalbirrul.com
+description: &amp;gt;- # this means to ignore newlines until &quot;baseurl:&quot;
+  This is just another Jekyll site jekyll.iqbal.es
+baseurl: &quot;&quot; # the subpath of your site, e.g. /blog
+url: &quot;&quot; # the base hostname &amp;amp; protocol for your site, e.g. http://example.com
+twitter_username: iqbalbirrul
+github_username:  iqbalbirrul
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Untuk dokumentasi dari jekyll tentang tema, deploy dan migrasi dari wordpress atau blogger, silakan ikuti tautan berikut:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://jekyllrb.com/docs/&lt;/li&gt;
+  &lt;li&gt;https://jekyllrb.com/docs/usage/&lt;/li&gt;
+  &lt;li&gt;https://jekyllrb.com/docs/templates/&lt;/li&gt;
+  &lt;li&gt;http://import.jekyllrb.com/&lt;/li&gt;
+  &lt;li&gt;https://jekyllrb.com/docs/deployment/&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Generate SSL Let's Encrypt di CentOS 7</title>
+   <link href="https://iqbal.page/2019/02/15/generate-ssl-lets-encrypt/"/>
+   <updated>2019-02-15T02:40:14+07:00</updated>
+   <id>https://iqbal.page/2019/02/15/generate-ssl-lets-encrypt</id>
+   <content type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;![Let’s Encrypt&lt;/td&gt;
+      &lt;td&gt;https://seeklogo.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/ssl-letsencrypt.png)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Install terlebih dahulu repository &lt;code&gt;epel-release&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# yum install epel-release -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cloning source Let’s Encrypt dari github:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt; # yum install git
+ # git clone https://github.com/letsencrypt/letsencrypt
+ # cd letsencrypt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Berikut command untuk generate SSL Let’s Encrypt:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt; # ./letsencrypt-auto certonly --standalone --email -d -d www.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sebagai contoh:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt; # ./letsencrypt-auto certonly --standalone --email kontak@iqbalbirrul.com -d ssl.iqbal.es
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sebagai catatan : domain harus terpointing ke IP Address server tempat SSL Let’s Encrypt di generate&lt;/p&gt;
+
+&lt;p&gt;Berikut outputnya:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;[root@cloudsrv1 letsencrypt]# ./letsencrypt-auto certonly --standalone --email kontak@iqbalbirrul.com -d ssl.iqbal.es
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator standalone, Installer None
+Obtaining a new certificate
+Performing the following challenges:
+http-01 challenge for ssl.iqbal.es
+Waiting for verification...
+Cleaning up challenges
+
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/ssl.iqbal.es/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/ssl.iqbal.es/privkey.pem
+   Your cert will expire on 2019-05-15. To obtain a new or tweaked
+   version of this certificate in the future, simply run
+   letsencrypt-auto again. To non-interactively renew *all* of your
+   certificates, run &quot;letsencrypt-auto renew&quot;
+ - If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note : Perhatikan juga target folder hasil generate ssl (/etc/letsencrypt/live/ssl.iqbal.es/fullchain.pem)&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat…&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Server Block Nginx</title>
+   <link href="https://iqbal.page/2019/01/01/server-blocks-nginx/"/>
+   <updated>2019-01-01T08:59:48+07:00</updated>
+   <id>https://iqbal.page/2019/01/01/server-blocks-nginx</id>
+   <content type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;![Nginx Logo&lt;/td&gt;
+      &lt;td&gt;https://dwglogo.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/nginx-logo.png)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Berikut contoh konfigurasi server block Nginx:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+  listen 80;
+  listen [::]:80;
+
+  server_name say.iqbal.es;
+  root /var/www/say.iqbal;
+
+  index index.html index.php;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Server block jika menggunakan php-fpm:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+ listen 89;
+ listen [::]:89;
+
+ server_name _;
+ root /var/www/whois;
+
+ index index.php;
+
+ location ~* \.php$ {
+ fastcgi_pass unix:/run/php/php-fpm.sock;
+ include	fastcgi_params;
+ fastcgi_param	SCRIPT_FILENAME	$document_root$fastcgi_script_name;
+ fastcgi_param	SCRIPT_NAME	$fastcgi_script_name;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jika menggunakan SSL, berikut contoh konfigurasinya:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+  listen 80;
+  listen [::]:80;
+
+  server_name say.iqbal.es;
+  return 301 https://$server_name$request_uri;
+}
+server {
+        listen 443;
+        server_name say.iqbal.es;
+        root /var/www/say.iqbal;
+
+        index index.html index.php;
+
+        ssl on;
+        ssl_certificate     /etc/letsencrypt/live/say.iqbal.es/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/say.iqbal.es/privkey.pem;
+        ssl_session_timeout 15m;
+        ssl_protocols SSLv3 TLSv1;
+        ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+        ssl_prefer_server_ciphers on;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;/generate-ssl-lets-encrypt-di-centos-7/&quot;&gt;Generate SSL Let’s Encrypt di CentOS 7&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan ini untuk konfigurasi Nginx sebagai Reverse Proxy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+  listen 80;
+  listen [::]:80;
+
+  server_name k.iqbal.es;
+
+  location / {
+      proxy_pass http://k.iqbal.es:6969;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Semoga bermanfaat :3&lt;/p&gt;
+
+&lt;p&gt;Sumber : &lt;a href=&quot;https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/&quot;&gt;https://www.nginx.com&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Membuat Halaman '404 Not Found' di GitHub Pages</title>
+   <link href="https://iqbal.page/2018/03/22/membuat-halaman-404-not-found-di-github-pages/"/>
+   <updated>2018-03-22T21:29:00+07:00</updated>
+   <id>https://iqbal.page/2018/03/22/membuat-halaman-404-not-found-di-github-pages</id>
+   <content type="html">&lt;p&gt;Untuk yang sering otak-atik GitHub Pages pasti tahu, bahwa di GitHub Pages jika kita mengakses halaman yang error/tidak ada, maka muncul halaman &lt;code&gt;404 Not Found&lt;/code&gt; bawaan dari GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/404.png&quot; alt=&quot;404 Not Found&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mau sebagus apapun template yang kita buat di GitHub Pages, pasti jika terdapat halaman yang tidak ada, maka akan ditampilkan dengan halaman &lt;code&gt;404 Not Found&lt;/code&gt; bawaan GitHub Pages.
+Untuk mengatasi hal tersebut sangatlah mudah, supaya halaman &lt;code&gt;404 Not Found&lt;/code&gt; bisa sesuai dengan keinginan kita/sama seperti template yang kita buat.
+Untuk Blog statis (Hexo, Jekyll), caranya cukup mudah. Cukup buat halaman &lt;code&gt;404.md&lt;/code&gt; atau &lt;code&gt;404.html&lt;/code&gt; lalu letakan di folder &lt;code&gt;/source&lt;/code&gt;, Kemudian deploy. Dan untuk Halaman yang dibuat secara manual, cukup buat &lt;code&gt;404.html&lt;/code&gt; dan letakan di root folder GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;Selesai, silahkan akses halaman yang sekiranya tidak ada pada GitHub Pages yang dibuat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mengaktifkan SSL Gratis Cloudflare di GitHub Pages (Custom Domain)</title>
+   <link href="https://iqbal.page/2018/02/16/ssl-gratis-cloudflare/"/>
+   <updated>2018-02-16T04:15:00+07:00</updated>
+   <id>https://iqbal.page/2018/02/16/ssl-gratis-cloudflare</id>
+   <content type="html">&lt;p&gt;Sebenarnya, di GitHub sudah tersedia ssl gratis untuk setiap halaman yang dibuat (&lt;em&gt;GitHub Pages&lt;/em&gt;). Namun untuk yang menggunakan nama domain sendiri atau custom domain, github tidak menyediakan ssl gratis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare.png&quot; alt=&quot;Cloudflare&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Contoh halaman github menggunakan ssl :
+&lt;code&gt;https://iqbalbirrul.github.io&lt;/code&gt;
+Lihat pada &lt;code&gt;https&lt;/code&gt; yang menandakan ssl-nya aktif.
+Sedangkan untuk custom domain, &lt;code&gt;http://www.iqbalbirrul.com&lt;/code&gt; tidak diberi ssl.&lt;/p&gt;
+
+&lt;h5 id=&quot;mengapa-menggunakan-ssl&quot;&gt;Mengapa menggunakan SSL?&lt;/h5&gt;
+&lt;p&gt;Situs saya &lt;code&gt;https://www.iqbalbirrul.com&lt;/code&gt;, menggunakan platform blogging &lt;code&gt;Hexo.io&lt;/code&gt; di GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;Saya sendiri menggunakan ssl karena senang saja dan ingin terlihat keren saja blognya &lt;em&gt;&lt;strong&gt;(blognya keren pake ssl)&lt;/strong&gt;&lt;/em&gt;, dan saya sudah menggunakan ssl sejak menggunakan platform WordPress, dengan ssl gratis dari &lt;code&gt;Let's Encrypt&lt;/code&gt;. Terlebih lagi, situs/blog yang menggunakan ssl/https cenderung lebih disukai oleh mesin pencari dan meningkatkan kualitas &lt;strong&gt;SEO&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;mengaktifkan-ssl-cloudflare&quot;&gt;Mengaktifkan SSL Cloudflare&lt;/h5&gt;
+&lt;p&gt;Langkah pertama, buatlah akun &lt;a href=&quot;https://cloudflare.com&quot;&gt;Cloudflare&lt;/a&gt; dan setting agar domain mengarah ke &lt;code&gt;name server&lt;/code&gt; Cloudflare.
+Jika domain sudah mengarah ke &lt;code&gt;name server&lt;/code&gt; Cloudflare, masuk ke menu &lt;strong&gt;DNS&lt;/strong&gt; dan setting dns di Cloudflare agar mengarah ke GitHub Pages , contoh seperti pada gambar dibawah ini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-1.png&quot; alt=&quot;DNS Cloudflare&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Artinya, situs GitHub Pages kita akan melewati Cloudflare, baru kemudian diteruskan ke client.
+Setelah domain berhasil di arahkan ke GitHub Pages, masuk ke menu &lt;strong&gt;Crypto&lt;/strong&gt;, lalu atur ssl-nya menjadi &lt;strong&gt;Full&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-2.png&quot; alt=&quot;Mengaktifkan SSL&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ada 4 pilihan, &lt;code&gt;Off, Flexible, Full, dan Full (strict)&lt;/code&gt;. Perbedaannya seperti ini:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-3.png&quot; alt=&quot;Cloudflare SSL Modules&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;membuat-page-rules&quot;&gt;Membuat Page Rules&lt;/h5&gt;
+&lt;p&gt;Agar &lt;code&gt;http&lt;/code&gt; diarahkan ke &lt;code&gt;https&lt;/code&gt;, maka buatlah page rules.
+Masuk ke menu &lt;strong&gt;Page Rules&lt;/strong&gt;, kemudian tambahkan &lt;em&gt;rules&lt;/em&gt; seperti ini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-4.png&quot; alt=&quot;301 - Permanent Redirect&quot; /&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-5.png&quot; alt=&quot;Always Use HTTPS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tambahkan juga &lt;em&gt;rules&lt;/em&gt; untuk chace-nya, seperti ini:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-6.png&quot; alt=&quot;Chace Everything&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;mengubah-cname&quot;&gt;Mengubah CNAME&lt;/h5&gt;
+&lt;p&gt;Karena kita ingin menggunakan alamat domain dengan &lt;code&gt;https&lt;/code&gt;, maka perlu mengubah konfigurasi pada setelan situs.
+Di Hexo, buka &lt;code&gt;_config.yml&lt;/code&gt; lalu setting sesuaikan seperti berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;url: https://www.iqbalbirrul.com
+root: /
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tambahkan file &lt;code&gt;CNAME&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;www.iqbalbirrul.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;lalu masukan ke dalam folder &lt;code&gt;/source&lt;/code&gt;.
+Lalu generate dan deploy. Dan ssl-pun sudah aktif sepenuhnya.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-7.png&quot; alt=&quot;Iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
+
+&lt;p&gt;NB: Untuk platform blog statis lainnya, dimohon untuk menyesuaikan.&lt;/p&gt;
+
+&lt;p&gt;sumber:
+&lt;a href=&quot;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&quot;&gt;blog.cloudflare.com&lt;/a&gt;, &lt;a href=&quot;https://www.petanikode.com/ssl-untuk-github-pages&quot;&gt;www.petanikode.com&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unsur Intrinsik Novel Sekuntum Ruh dalam Merah</title>
+   <link href="https://iqbal.page/2017/09/22/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah/"/>
+   <updated>2017-09-22T21:42:00+07:00</updated>
+   <id>https://iqbal.page/2017/09/22/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah</id>
+   <content type="html">&lt;p&gt;Kemarin, waktu saya masih duduk di bangku kelas 3 SMK, saya dan semua jurusan di kelas 3 diberi tugas untuk membuat laporan &lt;code&gt;Identifikasi Unsur Intrinsik Novel&lt;/code&gt;, dan saya membuat laporan tentang sebuah Novel yang sangat luar biasa (menurut saya) yaitu &lt;code&gt;Sekuntum Ruh dalam Merah&lt;/code&gt; karya &lt;code&gt;NANING PRANOTO&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/srdm-1.png&quot; alt=&quot;Sekuntum Ruh dalam Merah&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan sekarang saya akan membagikan hasil final Laporan yang sudah saya buat. Anda dapat mengunduh file tersebut di &lt;a href=&quot;https://earth-id-jkt-1.bal.web.id/assets/dokumen/2017/sekuntum-ruh-dalam-merah-iqbalbirrul.com.pdf&quot;&gt;&lt;strong&gt;sini&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jika ada kesalahan kata dalam file laporan yang saya buat, mohon untuk dimaklumi :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sekian, dan semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Migrasi ke Platform Hexo</title>
+   <link href="https://iqbal.page/2017/09/08/migrasi-ke-platform-hexo/"/>
+   <updated>2017-09-08T06:11:00+07:00</updated>
+   <id>https://iqbal.page/2017/09/08/migrasi-ke-platform-hexo</id>
+   <content type="html">&lt;p&gt;Sebelumnya, saya adalah pengguna layanan Blogger.com, setelah beberapa bulan saya membeli layanan Shared Hosting dan berMigrasi ke Platform Wordpress Self-Host.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Namun saya kurang puas, karena saya harus membeli Layanan dengan spesifikasi yang tinggi untuk sebuah situs Wordpress yang powerfull hehe.
+Saya memutuskan untuk bermigrasi ke Platform Hexo, sebuah Framework blog sederhana tapi POWERFULL yang didukung oleh NodeJs. Baca juga:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/cara-install-nodejs-di-linux-ubuntu-16.04&quot;&gt;Cara Install NodeJS di Linux Ubuntu 16.04&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/membuat-blog-dengan-framework-hexo-di-github&quot;&gt;Membuat Blog dengan Framework Hexo di GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Saya memigrasikan artikel saya di Wordpress ke Hexo dengan menggunakan perintah:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ npm install hexo-migrator-wordpress --save
+$ hexo migrate wordpress &amp;lt;source&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lalu saya edit menggunakan plugin yang sudah dibuat oleh Hexo agar bisa mengolah konten melalui GUInya, yaitu dengan menginstall plugin &lt;code&gt;hexo-admin&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ npm install --save hexo-admin
+$ hexo server -d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kemudian buka &lt;code&gt;localhost:4000/admin/&lt;/code&gt; dan saya pun mulai mengedit konten yang sudah saya migrasikan, dari mulai mengganti tautan yang rusak, memindahkan gambar yang masih ngehost di hostinnya, dan lain-lain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo-localhost-1.png&quot; alt=&quot;https://iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gambar diatas adalah tampilan dari situs ini.&lt;/p&gt;
+
+&lt;p&gt;Sekian dan terima kasih :).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Installasi GNS3 di Ubuntu 16.04</title>
+   <link href="https://iqbal.page/2017/09/05/installasi-gns3-di-ubuntu-16-04/"/>
+   <updated>2017-09-05T17:09:00+07:00</updated>
+   <id>https://iqbal.page/2017/09/05/installasi-gns3-di-ubuntu-16-04</id>
+   <content type="html">&lt;p&gt;Baiklah, langsung saja, bagaimana cara install GNS3. Sebelumnya, dalam hal ini sistem operasi yang digunakan adalah Ubuntu 16.04.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-1.png&quot; alt=&quot;GNS3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Catatan: Prosedur instalasi ini dapat pula dilakukan di Ubuntu (atau bahkan distro lain, utamanya turunan Debian) versi lain dengan penyesuaian.&lt;/p&gt;
+
+&lt;p&gt;Tambahkan PPA GNS3&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo add-apt-repository ppa:gns3/ppa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tekan Enter, Ketikkan password, lalu Enter lagi. Lalu update repository kita dengan perintah :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo apt update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jika proses di atas sudah selesai, kita dapat menginstall GNS3 :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo apt install gns3-gui
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Selesai instalasi, aplikasi GNS3 dapat diakses melalui menu &lt;code&gt;Aplikasi &amp;gt; Edukasi &amp;gt; GNS3&lt;/code&gt;, atau dengan mengetikkan perintah di terminal :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  gns3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tampilannya sebagai berikut :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-2.png&quot; alt=&quot;Tampilan GNS3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sebagai tambahan yang diperlukan, kita juga meng-install &lt;code&gt;qemu&lt;/code&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install qemu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Qemu digunakan untuk menjalankan OS MikroTik di dalam GNS3.&lt;/p&gt;
+
+&lt;p&gt;Lihat video ini, bisa di copas lho :).&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://asciinema.org/a/136309.js&quot; id=&quot;asciicast-136309&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Sumber :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://wiki.smktikwt.sch.id/doku.php/MikroTik/Install_GNS3_di_Ubuntu_16.04&lt;/li&gt;
+  &lt;li&gt;https://www.gns3.com&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Membuat Blog dengan Framework Hexo di GitHub</title>
+   <link href="https://iqbal.page/2017/06/02/membuat-blog-dengan-framework-hexo-di-github/"/>
+   <updated>2017-06-02T12:34:00+07:00</updated>
+   <id>https://iqbal.page/2017/06/02/membuat-blog-dengan-framework-hexo-di-github</id>
+   <content type="html">&lt;p&gt;Hexo adalah framework blog sederhana tapi powerful yang didukung oleh Node.js. Web statis generator ini super cepat dan hanya membutuhkan waktu beberapa detik untuk membangun website yang lengkap.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hexo mendukung semua fitur GitHub-flavored Markdown dan sebagian besar plugin Octopress. Salah satu keuntungan utama dari Hexo adalah memungkinkan Anda untuk mentransfer blog atau situs ke web host dengan satu perintah.&lt;/p&gt;
+
+&lt;p&gt;Pastikan kamu sudah Install Git.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install git-core
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Install NodeJS, bisa lihat disini: &lt;a href=&quot;/cara-install-nodejs-di-linux-ubuntu-16.04&quot;&gt;Cara Install NodeJS di Linux Ubuntu 16.04&lt;/a&gt;
+Jika sudah terinstall Git dan NodeJS, sekarang kita install Hexo dengan perintah berikut.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm install -g hexo-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Setelah Hexo terinstal , jalankan perintah berikut untuk menginisialisasi Hexo di target&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo init &amp;lt;folder&amp;gt;
+cd &amp;lt;folder&amp;gt;
+npm install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Setelah menjalankan perintah diatas, maka folder tadi akan terlihat seperti ini.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Edit file configurasi di &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Di dalam file &lt;code&gt;_config.yml&lt;/code&gt; kamu harus menghubungkan ke repository git kamu agar mudah di deploy oleh Hexo.&lt;/p&gt;
+
+&lt;p&gt;Pertama, install terlebih dahulu Plugin &lt;code&gt;hexo-deployer-plugin&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lalu masukan configurasi berikut kedalam file &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;deploy:
+  type: git
+  repo: &amp;lt;repository url&amp;gt;
+  branch: [branch]
+  message: [message]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Untuk membuat artikel.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo new post &amp;lt;title&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate terlebih dahulu website Hexo-nya.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo generate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lalu deploy ke github.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Atau bisa juga menjalankan di server lokal kita dengan perintah berikut.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lalu buka &lt;code&gt;http://localhost:4000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Selesai, selamat mencoba dan semoga bermanfaat.&lt;/p&gt;
+
+&lt;p&gt;Sumber :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hexo.io&quot;&gt;Hexo.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara Install NodeJS di Linux Ubuntu 16.04</title>
+   <link href="https://iqbal.page/2017/06/02/cara-install-nodejs-di-linux-ubuntu-16-04/"/>
+   <updated>2017-06-02T12:33:00+07:00</updated>
+   <id>https://iqbal.page/2017/06/02/cara-install-nodejs-di-linux-ubuntu-16-04</id>
+   <content type="html">&lt;p&gt;Singkat cerita, NodeJS adalah sebuah framework Javascript yang dapat dijalankan di server dan dapat mengelola maupun mengolah request data dari client.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/nodejs-img.png&quot; alt=&quot;NodeJS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tentu saja prosedur pengolahan maupun pengembangan NodeJS tidak sama dengan server side programming pada umumnya seperti PHP atau pun ASP. Prosedur dan pengolahan antara NodeJS dan bahasa pemrograman web lain akan saya bahas pada artikel lain.
+Berikut cara installasi nya:&lt;/p&gt;
+
+&lt;p&gt;Install menggunakan nvm.&lt;/p&gt;
+
+&lt;pre&gt;
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+&lt;/pre&gt;
+
+&lt;p&gt;atau&lt;/p&gt;
+
+&lt;pre&gt;
+wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+&lt;/pre&gt;
+
+&lt;p&gt;Tutup terminal kemudian buka kembali Terminal dan masukan perintah berikut untuk menginstall NodeJS.&lt;/p&gt;
+
+&lt;pre&gt;
+nvm install stable
+&lt;/pre&gt;
+
+&lt;p&gt;Untuk lebih mudah melakukan installasi, bisa mendownload installer sesuai dengan sistem operasi kalian pada website &lt;a href=&quot;https://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai, Semoga bermanfaat :D.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cek Kecepatan Koneksi Internet Melalui Terminal Linux</title>
+   <link href="https://iqbal.page/2017/03/28/cek-kecepatan-koneksi-internet-melalui-terminal-linux/"/>
+   <updated>2017-03-28T12:13:00+07:00</updated>
+   <id>https://iqbal.page/2017/03/28/cek-kecepatan-koneksi-internet-melalui-terminal-linux</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/speedtest.png&quot; alt=&quot;Speedtest&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seringkali kita sebagai pengguna internet ingin mengetahui berapa kecepatan koneksi internet milik kita. Jika kamu pengguna linux untuk mengecek kecepatan koneksi internet kamu sangatlah mudah. Kita tidak perlu menunggu loading dari situs pengetes koneksi seperti &lt;code&gt;speedtest.net, speedtest.cbn.net.id, speedtest.telin.co.id&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kita hanya perlu menginstall tool speedtest pada linux kita sebegai berikut&lt;/p&gt;
+
+&lt;pre&gt;
+sudo apt install speedtest-cli
+&lt;/pre&gt;
+
+&lt;p&gt;Jika sudah lalu ketikan &lt;code&gt;speedtest&lt;/code&gt; pada terminal lalu tekan enter, maka akan mengukur berapa kecepatan koneksi internet kamu :) .&lt;/p&gt;
+
+&lt;pre&gt;
+$ speedtest
+Retrieving speedtest.net configuration...
+Retrieving speedtest.net server list...
+Testing from XL (112.215.173.161)...
+Selecting best server based on latency...
+Hosted by PT INDOSATM2 (Jakarta) [0.74 km]: 91.777 ms
+Testing download speed........................................
+Download: 0.07 Mbit/s
+Testing upload speed..................................................
+Upload: 0.05 Mbit/s
+$
+&lt;/pre&gt;
+
+&lt;p&gt;Selesai. Sangat mudah bukan.. semoga bermanfaat :) .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Install Driver WiFi BCM43142 BlankOn X Tambora</title>
+   <link href="https://iqbal.page/2017/01/28/install-driver-wifi-BCM43142-blankon-x-tambora/"/>
+   <updated>2017-01-28T23:05:00+07:00</updated>
+   <id>https://iqbal.page/2017/01/28/install-driver-wifi-BCM43142-blankon-x-tambora</id>
+   <content type="html">&lt;p&gt;Langsung saja buka &lt;code&gt;sources.list&lt;/code&gt; dan tambahkan repository berikut :&lt;/p&gt;
+
+&lt;pre&gt;
+# Debian 8 &quot;Jessie&quot;
+deb http://httpredir.debian.org/debian/ jessie main contrib non-free
+&lt;/pre&gt;
+
+&lt;p&gt;Lalu update dan install &lt;code&gt;linux-image&lt;/code&gt;, &lt;code&gt;linux-header&lt;/code&gt; dan &lt;code&gt;broadcom-sta-dkms&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+apt-get update
+apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') broadcom-sta-dkms
+&lt;/pre&gt;
+
+&lt;p&gt;Kemudian unload modul yang bermasalah&lt;/p&gt;
+
+&lt;pre&gt;
+modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+&lt;/pre&gt;
+
+&lt;p&gt;dan load modul &lt;code&gt;wl&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+modprobe wl
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/wlan.png&quot; alt=&quot;successful&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mengalihkan Request HTTP ke HTTPS</title>
+   <link href="https://iqbal.page/2017/01/13/mengalihkan-request-http-ke-https/"/>
+   <updated>2017-01-13T07:44:00+07:00</updated>
+   <id>https://iqbal.page/2017/01/13/mengalihkan-request-http-ke-https</id>
+   <content type="html">&lt;p&gt;Beberapa hari lalu beli hosting dan gratis SSL dari &lt;strong&gt;Let’s Encrypt&lt;/strong&gt; di &lt;a href=&quot;http://idhosts.co.id&quot;&gt;&lt;strong&gt;IDHosts.co.id&lt;/strong&gt;&lt;/a&gt; dan langsung konfigurasi supaya SSLnya aktif.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/https-img.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Setelah aktif domain saya sudah bisa diakses melalui &lt;code&gt;https://iqbalbirrul.web.id&lt;/code&gt; namun jika diakses menggunakan protokol &lt;code&gt;http://&lt;/code&gt; saja tidak langsung mengarah ke &lt;code&gt;https://iqbalbirrul.web.id&lt;/code&gt;, dan untuk mengatasinya saya mencari cara di google dan menemukan cara untuk mengalihkan request &lt;code&gt;http&lt;/code&gt; ke &lt;code&gt;https&lt;/code&gt;. Berikut caranya.&lt;/p&gt;
+
+&lt;p&gt;Buka file manager lewat cpanel atau FTP, lalu edit file &lt;code&gt;.htaccess&lt;/code&gt; yang terletak didalam folder root &lt;code&gt;public_html&lt;/code&gt; dan masukan kode berikut kedalam file &lt;code&gt;.htaccess&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+&lt;/pre&gt;
+
+&lt;p&gt;Jika sudah, sekarang domain saya sudah bisa mengakses  &lt;code&gt;http://iqbalbirrul.web.id&lt;/code&gt; akan langsung mengarah ke &lt;code&gt;https://iqbalbirrul.web.id&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan proses sudah selesai, sekian dan semoga bermanfaat.&lt;/p&gt;
+
+&lt;p&gt;sumber dan gambar :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;//google.com&quot;&gt;google.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//orangorangan.com&quot;&gt;orangorangan.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Linux : BunsenLabs, Distro Ringan Turunan Debian Jessie</title>
+   <link href="https://iqbal.page/2016/12/28/linux-bunsenlabs-distro-ringan-turunan-debian-jessie/"/>
+   <updated>2016-12-28T17:00:00+07:00</updated>
+   <id>https://iqbal.page/2016/12/28/linux-bunsenlabs-distro-ringan-turunan-debian-jessie</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.bunsenlabs.org&quot;&gt;BunsenLabs&lt;/a&gt; merupakan Distro Linux turunan Debian “Jessie”. Distro ini adalah lanjutan dari Distro Linux &lt;a href=&quot;http://distrowatch.com/crunchbang&quot;&gt;Crunchbang&lt;/a&gt;. Versi rilis terbarunya yaitu Hydrogen RC2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/bunsenlabs.png&quot; alt=&quot;BunsenLabs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Distro ini sangat ringan karena menggunakan &lt;a href=&quot;http://openbox.org/wiki/Main_Page&quot;&gt;Openbox&lt;/a&gt; sebagai window managernya. Dan juga menggunakan Thunar sebagai File Managernya.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/bunsenlabs-thunar.png&quot; alt=&quot;Thunar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aplikasi lain yang terinstall pada BunsenLabs yaitu tint2 panel, conky system monitor, iceweasel, vlc, dan lain lain. Juga dilengkapi software editing seperti Inkscape dan Gimp.&lt;/p&gt;
+
+&lt;p&gt;Keunggulan distro ini ialah sedikitnya memori ram yang digunakan ketika idle (tidak menjalankan aplikasi), tetapi masih dibawah &lt;strong&gt;Lubuntu&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Untuk mendapatkan BunsenLabs, bisa di unduh melalui halaman resmi &lt;a href=&quot;https://www.bunsenlabs.org/installation.html&quot;&gt;BunsenLabs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Untuk membuat USB Bootable, usahakan menggunakan linux dengan perintah di terminal :&lt;/p&gt;
+
+&lt;pre&gt;
+dd if=/path/to/bunsenlab.iso of=/dev/sd{letter}
+&lt;/pre&gt;
+
+&lt;p&gt;karena jika menggunakan YUMI atau Unetbootin di windows akan menimbulkan error.&lt;/p&gt;
+
+&lt;p&gt;Sekian, semoga bermanfaat.&lt;/p&gt;
+
+&lt;p&gt;Sumber :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://linuxsec.org&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Download Video YouTube melalui Terminal Linux</title>
+   <link href="https://iqbal.page/2016/12/28/download-video-youtube-melalui-terminal-linux/"/>
+   <updated>2016-12-28T15:03:00+07:00</updated>
+   <id>https://iqbal.page/2016/12/28/download-video-youtube-melalui-terminal-linux</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://youtube.com&quot;&gt;YouTube&lt;/a&gt; adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/youtube.png&quot; alt=&quot;YouTube&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pertama, Install terlebih dahulu YouTube Downloadernya.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install youtube-dl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Setelah ter install, copy url video youtube yang akan di download. contoh&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;youtube-dl https://www.youtube.com/watch?v=FVdQQwXM89Y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;kemudian Enter. Tinggal tunggu video selesai di Unduh :D.&lt;/p&gt;
+
+&lt;p&gt;Selesai..
+Semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tutorial GIMP : Membuat Efek Anyaman</title>
+   <link href="https://iqbal.page/2016/05/09/tutorial-gimp-membuat-efek-anyaman/"/>
+   <updated>2016-05-09T01:44:00+07:00</updated>
+   <id>https://iqbal.page/2016/05/09/tutorial-gimp-membuat-efek-anyaman</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;/tutorial-gimp-membuat-efek-anyaman&quot;&gt;Membuat Efek Anyaman&lt;/a&gt;- Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-anyaman.png&quot; alt=&quot;Efek Anyaman&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disini saya akan memberikan tutorial yang mudah dipahami, dan bahkan sangat mudah dengan menggunakan GIMP 2.8, dan kita tidak perlu repot-repot menyeleksi, add layer, dan seterusnya.
+Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/strong&gt; terlebih dahulu. Download G’MIC &lt;a href=&quot;http://gmic.eu/download.shtml&quot;&gt;di sini sana sini&lt;/a&gt; (sesuaikan dengan System).&lt;/p&gt;
+
+&lt;p&gt;Berikut tutorialnya :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Buka Foto yang ingin sobat beri efek pada aplikasi GIMP.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-1.png&quot; alt=&quot;Expo Produk Cilacap&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lalu pada menu Filter, Pilih G’MIC.&lt;/li&gt;
+  &lt;li&gt;Pada jendela G’MIC, pilih &lt;code&gt;Patterns &amp;gt; Weave&lt;/code&gt;, lalu sesuaikan dengan keinginan sobat.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-2.png&quot; alt=&quot;G'mic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan hasilnya,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-hasil-1.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sangat mudah bukan? nah terima kasih sudah berkunjung.&lt;/p&gt;
+
+&lt;p&gt;Sumber.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://www.timkicau.com/2013/07/tutorial-gimp-membuat-efek-ketupat-pada_6.html&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gmic.eu/&quot;&gt;G’MIC &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Definisi Multi-Boot atau Dual-Boot</title>
+   <link href="https://iqbal.page/2016/03/23/definisi-multiboot-atau-dualboot/"/>
+   <updated>2016-03-23T06:23:00+07:00</updated>
+   <id>https://iqbal.page/2016/03/23/definisi-multiboot-atau-dualboot</id>
+   <content type="html">&lt;p&gt;Multi-Boot atau Dual-Boot, adalah nama atau sebutan untuk menginstall dua sistem operasi atau lebih pada satu komputer, misalnya Ubuntu (Linux) dengan Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dua sistem operasi atau lebih dapat diinstall pada harddisk yang sama namun pada partisi yang terpisah, atau dua sistem operasi atau lebih yang diinstall pada partisi yang sama namun hard disk yang terpisah. Hal ini memungkinkan bila komputer memiliki lebih dari satu hard disk yang terinstall.&lt;/p&gt;
+
+&lt;p&gt;Dengan meng install dua sistem operasi atau lebih akan lebih menguntungkan bila dibandingkan hanya meng install satu sistem operasi saja. Tapi tentu saja untuk meng install lebih dari satu sistem operasi, kapasitas hard disk harus mencukupi dan komputer harus memenuhi syarat sistem minimum yang ditentukan oleh masing-masing sistem operasi.&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat, Terimakasih :) .&lt;/p&gt;
+
+&lt;p&gt;Sumber : &lt;a href=&quot;http://mulyonoeko.mywapblog.com/&quot;&gt;mulyonoeko.mywapblog.com&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Browsing Melalui Terminal Linux? Coba Deh!!</title>
+   <link href="https://iqbal.page/2016/03/19/browsing-melalui-terminal-linux-coba-deh/"/>
+   <updated>2016-03-19T17:30:00+07:00</updated>
+   <id>https://iqbal.page/2016/03/19/browsing-melalui-terminal-linux-coba-deh</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png&quot; alt=&quot;Elinks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux??
+Saya rasa sudah banyak yang pernah mencobanya.&lt;/p&gt;
+
+&lt;p&gt;Langsung saja, pertama sobat harus menginstall &lt;code&gt;elinks&lt;/code&gt;, seperti biasa :&lt;/p&gt;
+
+&lt;pre&gt;
+sudo apt-get install elinks
+&lt;/pre&gt;
+
+&lt;p&gt;ika sudah terinstall, buka &lt;code&gt;elinks&lt;/code&gt; dengan mengetikan perintah &lt;code&gt;elinks&lt;/code&gt; di Terminal, maka akan muncul tampilan seperti gambar di bawah.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-1.png&quot; alt=&quot;Masukan URL&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bisa juga dengan menggunakan perintah &lt;code&gt;elinks namadomain.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+Tombol penggunaan
+g : untuk membuka url dialog
+t : untuk membuka tab baru
+c : untuk menutup tab saat ini
+esc : untuk menampilkan toolbar
+&lt;/pre&gt;
+
+&lt;p&gt;Ini screenshot hasil Browsing saya di &lt;code&gt;Elinks&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-4.png&quot; alt=&quot;Facebook&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-5.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-6.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nah gimana?? menarik bukan??&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat, thanks :) .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara melihat Cuaca di Terminal Linux</title>
+   <link href="https://iqbal.page/2016/03/13/cara-melihat-cuaca-di-terminal-linux/"/>
+   <updated>2016-03-13T13:15:00+07:00</updated>
+   <id>https://iqbal.page/2016/03/13/cara-melihat-cuaca-di-terminal-linux</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca.png&quot; alt=&quot;Cuaca&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Langsung simak saja, gak terlalu ribet kok :) .&lt;/p&gt;
+
+&lt;p&gt;Pertama yang harusa dilakukan adalah Install &lt;code&gt;curl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+sudo apt-get install curl
+&lt;/pre&gt;
+
+&lt;p&gt;Jika sudah terinstall langsung saja,&lt;/p&gt;
+
+&lt;pre&gt;
+curl http://wttr.in/namakotamu
+&lt;/pre&gt;
+&lt;p&gt;Lihat gambar di bawah :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca_1.png&quot; alt=&quot;Wttr.in&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;mudah bukan ??
+semoga bermanfaat :) , thanks :D .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Menjalankan Aplikasi Windows di Linux</title>
+   <link href="https://iqbal.page/2016/02/29/menjalankan-aplikasi-windows-di-linux/"/>
+   <updated>2016-02-29T08:16:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/29/menjalankan-aplikasi-windows-di-linux</id>
+   <content type="html">&lt;p&gt;Selamat sore kawan :D udah 1ato2 hari nggak Posting nih :p.
+Dan sekarang saya mau Sharing Tentang &lt;a href=&quot;/menjalankan-aplikasi-windows-di-linux&quot;&gt;Cara menjalan Aplikasi &lt;em&gt;Windows&lt;/em&gt; di Linux.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine.png&quot; alt=&quot;Wine&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apakah sobat pernah berpikir bahwa aplikasi &lt;em&gt;Windows&lt;/em&gt; tidak bisa dijalankan di Lain sistem operasi? Jawabannya adalah tentu saja bisa. Ada beberapa cara untuk menjalankan aplikasi &lt;em&gt;Windows&lt;/em&gt; di linux kita tercinta ini seperti menggunakan Virtual Machine, PlayOnLinux, Wine, dan Remote Desktop. Tapi kali saya akan menggunakan Wine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/Wine_Line.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wine merupakan salah satu Software gratis untuk menjalankan aplikasi Windows di Linux. Tetapi tidak semua aplikasi &lt;em&gt;Windows&lt;/em&gt; dapat dijalankan di oleh Wine, untuk mengetahui apa saja yang dapat di jalankan oleh Wine lihat di &lt;a href=&quot;http://appdb.winehq.org/&quot;&gt;Wine Application Database&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Caranya :&lt;/p&gt;
+
+&lt;p&gt;Pertama Install Wine terlebih dahulu dengan mengetikan perintah berikut di terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install wine
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;lalu masukan password dan tekan enter, dan tunggu hingga Installasi selesai.&lt;/p&gt;
+
+&lt;p&gt;Pastikan Wine sudah terinstall dengan membuka &lt;code&gt;Menu &amp;gt; Wine&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kemudian siapkan aplikasi &lt;em&gt;Windows&lt;/em&gt; yang akan di install, pada kasus ini saya akan install Line Desktop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_1.png&quot; alt=&quot;Line App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Klik kana pada &lt;code&gt;LineInst.exe&lt;/code&gt; lalu pilih Buka dengan Wine.&lt;/p&gt;
+
+&lt;p&gt;Kemudian lanjutkan proses installasi seperti saat menginstall aplikasi di &lt;em&gt;Windows&lt;/em&gt; dan tunggu sampai Installasi selesai.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_2.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_3.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika sudah selesai maka aplikasi akan otomatis berada di Desktop, jika tidak ada bisa buka di &lt;code&gt;Menu &amp;gt; Wine &amp;gt; Nama Aplikasi&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_4.png&quot; alt=&quot;Aplikasi sudah terinstall&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jalankan aplikasi layaknya menggunakan aplikasi tersebut di &lt;em&gt;Windows&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_5.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat :D.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara Install Aplikasi Atom di Linux Mint Via PPA [32bit + 64bit]</title>
+   <link href="https://iqbal.page/2016/02/26/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit/"/>
+   <updated>2016-02-26T09:46:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/26/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit</id>
+   <content type="html">&lt;p&gt;Atom adalah sebuah Aplikasi teks editor seperti halnya Notepad++ di &lt;em&gt;Windows.&lt;/em&gt;  Atom sendiri adalah Aplikasi yang bersifat Cross Platform yang artinya bisa dijalankan dibeberapa sistem operasi seperti Linux dan Mac OsX.&lt;/p&gt;
+
+&lt;p&gt;Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pertama tambahkan repository berikut :&lt;/p&gt;
+
+&lt;pre&gt;
+sudo add-apt-repository ppa:webupd8team/atom
+&lt;/pre&gt;
+
+&lt;p&gt;Kemudian ketikan&lt;/p&gt;
+
+&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;
+
+&lt;p&gt;Setelah update selesai tingggal langkah terakhir yaitu install Atom-nya dengan cara seperti biasa yakni :&lt;/p&gt;
+
+&lt;pre&gt;
+sudo apt-get install atom
+&lt;/pre&gt;
+
+&lt;p&gt;Tunggu hingga Installasi selesai, jika sudah selesai buka Atom di &lt;code&gt;Menu &amp;gt; Pengembang &amp;gt; Atom&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ini dia penampakan Aplikasi Atom&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom_1.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat :) .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara mudah Merekam layar Desktop di Linux</title>
+   <link href="https://iqbal.page/2016/02/25/cara-mudah-merekam-layar-desktop-di-linux/"/>
+   <updated>2016-02-25T09:32:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/25/cara-mudah-merekam-layar-desktop-di-linux</id>
+   <content type="html">&lt;p&gt;Hallo :D kali ini saya akan share tentang &lt;a href=&quot;/cara-mudah-merekam-layar-desktop-di-linux&quot;&gt;Cara mudah Merekam layar Desktop di Linux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop.png&quot; alt=&quot;Record My Desktop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.
+Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install recordmydesktop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_1.png&quot; alt=&quot;Installasi Recordmydesktop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika sudah selesai, jalankan &lt;code&gt;RecordMyDesktop&lt;/code&gt; melalui terminal, dengan perintah &lt;code&gt;recordmydesktop&lt;/code&gt; maka akan secara otomatis merekam layar Desktop sobat.&lt;/p&gt;
+
+&lt;p&gt;Proses rekam akan terilihat seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_2.png&quot; alt=&quot;Proses Rekam&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tekan Ctrl+C untuk Stop dan otomatis menyimpan hasil rekaman.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_3.png&quot; alt=&quot;Setop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;File hasil rekaman akan masuk ke folde Home ex : &lt;code&gt;/home/iqbal/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_4.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nah mudah kan :D , semoga bermanfaat :) .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara cek Whois Domain lewat Terminal Linux</title>
+   <link href="https://iqbal.page/2016/02/24/cara-cek-whois-domain-lewat-terminal-linux/"/>
+   <updated>2016-02-24T11:57:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/24/cara-cek-whois-domain-lewat-terminal-linux</id>
+   <content type="html">&lt;p&gt;Yap kali ini saya akan ngeshare &lt;a href=&quot;/cara-cek-whois-domain-lewat-terminal-linux&quot;&gt;Cara Whois Nama Domain lewat Terminal Linux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois.png&quot; alt=&quot;Whois Record&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Biasanya orang-orang ngecek Whois domain lewat beberapa website seperti &lt;code&gt;who.is, whois.domaintools.com, whois.pandi.id (.id only), whois.icann.org, whois.net, whois.com, whois.namecheckup.com&lt;/code&gt; dan masih banyak lagi.&lt;/p&gt;
+
+&lt;p&gt;Dan sekarang tinggal Lewat Terminal Linux, Cek Whois di Linux emang sudah lama ada, tapi Iqbal hanya sekedar berbagi. BERBAGI GAK DOSA KAN??&lt;/p&gt;
+
+&lt;p&gt;Ok, langsung saja.&lt;/p&gt;
+
+&lt;p&gt;Pertama install dulu whoisnya, tentunya lewat Terminal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install whois
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_1.png&quot; alt=&quot;Installasi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Masukan Password dan tunggu hingga selesai.&lt;/p&gt;
+
+&lt;p&gt;Untuk melakukan Whois cuku ketikan &lt;code&gt;whois namadomain.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;di terminal (tanpa tanda petik).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_2.png&quot; alt=&quot;Cek Whois&quot; /&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_3.png&quot; alt=&quot;Cek Whois&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nah mudah bukan?? selamat mencoba :) .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Webcamnya Linux ya Cheese!!</title>
+   <link href="https://iqbal.page/2016/02/24/webcamnya-linux-ya-cheese/"/>
+   <updated>2016-02-24T07:59:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/24/webcamnya-linux-ya-cheese</id>
+   <content type="html">&lt;p&gt;Selamat sore :) iya sore karena mulai nulis jam 17:47 hehe :D.&lt;/p&gt;
+
+&lt;p&gt;Sore ini saya mau sharing tentang Cheese, iya aplikasi Webcam di Linux GRATISS :). Ukurannya juga nggak terlalu besar cuma sekitar 182 kb.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ini cara installnya,&lt;/p&gt;
+
+&lt;p&gt;Pertama, buka terminal dan ketikan perintah&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install cheese
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;tekan enter dan tunggu hingga installasi selesai.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_1.png&quot; alt=&quot;Proses Installasi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika sudah selesai, buka Aplikasi Cheese di &lt;code&gt;Menu &amp;gt; Multimedia &amp;gt; Cheese&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_2.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Itulah tampilan Cheese, untuk mengambil gambar tingga klik &lt;code&gt;Take a Photo&lt;/code&gt;. ooh iya untuk Recorder juga bisa lho :) .&lt;/p&gt;
+
+&lt;p&gt;Dan ini adalah hasil Jepretan Cheese dengan Kamera laptop yang agak burem hahaha.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_3.png&quot; alt=&quot;Hasil Jepretan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat :), terima kasih sudah berkunjung :).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cara membuat Bootable dengan Aplikasi Multisystem di Linux</title>
+   <link href="https://iqbal.page/2016/02/23/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux/"/>
+   <updated>2016-02-23T22:27:00+07:00</updated>
+   <id>https://iqbal.page/2016/02/23/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux</id>
+   <content type="html">&lt;p&gt;Multisystem adalah aplikasi di linux Ubuntu dan turunannya yang memungkinkan seseorang untuk dapat membuat multiboot sistem operasi pada media Flashdisk. Dengan aplikasi Multisystem ini kita dapat menambah atau membuat beberapa bootable atau installer sistem operasi seperti Windows, Linux (Ubuntu, Linux Mint) dan masih banyak lagi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kini saya akan membagikan Cara membuat Bootable dengan Aplikasi Multisystem di Linux.&lt;/p&gt;
+
+&lt;p&gt;Pertama, download terlebih dahulu installer multisystemnya, di &lt;a href=&quot;http://idsly.com/EjGo59PM&quot;&gt;SINI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ekastrak file &lt;code&gt;tar.bz2&lt;/code&gt; tersebut, lalu Anda akan mendapati file &lt;code&gt;.sh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Install Multisystem dengan mengetikan perintah berikut di Terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_1.png&quot; alt=&quot;Installasi 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Masukan password, dan tunggu Installasi hingga selesai.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_2.png&quot; alt=&quot;Installasi Selesai&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Masukan USB FlashDisk ke Komputer, ukuran FlashDisk minimal 8 GB dan pastikan sudah di Format menggunakan filesystem &lt;code&gt;fat32&lt;/code&gt;.
+Buka aplikasi multisystem. &lt;code&gt;Menu &amp;gt; Accessories &amp;gt; Multisystem&lt;/code&gt;, lalu klik Konfirmasi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_3.png&quot; alt=&quot;Interface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika muncul dialog Harap konfirmasi &lt;code&gt;installasi grub2 di volume:/dev/sdb1&lt;/code&gt; klik Ok.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_4.png&quot; alt=&quot;Installasi Grub2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lalu klik ikon CD untuk memilih file &lt;code&gt;.iso&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-5.png&quot; alt=&quot;Memilih File .iso&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pilih file .iso yang akan di jadikan Installer, lalu klik OK.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-6.png&quot; alt=&quot;Pilih File&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Masukan Password lalu tekan Enter dan tunggu hingga Proses pembuatan Installer selesai.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.iqbal.gdn/assets/images/multisystem-7.png&quot; alt=&quot;Masukan Password&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Untuk menambahkan Installer Lainnya, caranya sama saja.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-8.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kemudian tes Installer untuk melihat sudah berjalan dengan baik atau belum dengan klik menu &lt;code&gt;Boot &amp;gt; Tes LiveUSB Anda di Qemu&lt;/code&gt;, lalu masukan Password dan tekan Enter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-9.png&quot; alt=&quot;Password Again&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ini adalah tampilan Bootable saat proses Booting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-10.png&quot; alt=&quot;Tampilan Bootable&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai, semoga bermanfaat :).&lt;/p&gt;
 </content>
  </entry>
  

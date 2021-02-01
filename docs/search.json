@@ -2,12 +2,386 @@
   
     {
 
-      "title"    : "Places where you can learn how to code",
-      "url"      : "/2015/07/31/places-where-you-can-learn-how-to-code/",
+      "title"    : "Install Plesk Panel Obsidian",
+      "url"      : "/2020/08/12/install-plesk-panel-obisidian/",
       "category" : "",
-      "tags"     : "coding",
-      "date"     : "2015-07-31 00:00:00 +0700",
-      "description" : "There many different options to learn to code online, so in this article, find places you can learn to code"
+      "tags"     : "plesk, ubuntu, centos",
+      "date"     : "2020-08-12 09:59:41 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Remote Access MySQL atau MariaDB",
+      "url"      : "/2020/06/19/remote-access-mysql-mariadb/",
+      "category" : "",
+      "tags"     : "mysql, mariadb",
+      "date"     : "2020-06-19 22:54:07 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Mengamankan SSH dengan Fail2ban",
+      "url"      : "/2020/04/07/fail2ban/",
+      "category" : "",
+      "tags"     : "fail2ban, ubuntu, centos",
+      "date"     : "2020-04-07 01:37:48 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Deploy Hugo ke Netlify",
+      "url"      : "/2020/03/29/hugo-netlify/",
+      "category" : "",
+      "tags"     : "hugo, netlify",
+      "date"     : "2020-03-29 20:06:09 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Deploy Hugo ke Github Pages",
+      "url"      : "/2020/03/28/hugo-github-pages/",
+      "category" : "",
+      "tags"     : "github, hugo",
+      "date"     : "2020-03-28 18:17:13 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Membuat Website Statis menggunakan Hugo",
+      "url"      : "/2020/03/28/hugo/",
+      "category" : "",
+      "tags"     : "hugo, git",
+      "date"     : "2020-03-28 16:06:22 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Setup Bind DNS Server CentOS 7",
+      "url"      : "/2020/02/08/setup-bind-dns-server-centos-7/",
+      "category" : "",
+      "tags"     : "dns, centos, bind9",
+      "date"     : "2020-02-08 23:28:04 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Konfigurasi DNS Server Di Ubuntu 18.04 LTS",
+      "url"      : "/2019/07/09/konfigurasi-dns-server-di-ubuntu-18-04-lts/",
+      "category" : "",
+      "tags"     : "bind9, ubuntu, dns",
+      "date"     : "2019-07-09 08:27:04 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Setup Custom Email gratis dengan Zoho Mail",
+      "url"      : "/2019/04/17/setup-custom-email-with-zoho/",
+      "category" : "",
+      "tags"     : "zoho, email hosting",
+      "date"     : "2019-04-17 18:57:12 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Make a Private Git Repository Using GitLab CE",
+      "url"      : "/2019/02/23/make-a-private-git-repository-using-gitlab-ce/",
+      "category" : "",
+      "tags"     : "gitlab, gitlab ce",
+      "date"     : "2019-02-23 15:19:01 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Install Jekyll",
+      "url"      : "/2019/02/21/install-jekyll/",
+      "category" : "",
+      "tags"     : "jekyll, ruby",
+      "date"     : "2019-02-21 17:28:51 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Generate SSL Let&#39;s Encrypt di CentOS 7",
+      "url"      : "/2019/02/15/generate-ssl-lets-encrypt/",
+      "category" : "",
+      "tags"     : "ssl, let's encrypt, centos 7",
+      "date"     : "2019-02-15 02:40:14 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Server Block Nginx",
+      "url"      : "/2019/01/01/server-blocks-nginx/",
+      "category" : "",
+      "tags"     : "nginx, web server",
+      "date"     : "2019-01-01 08:59:48 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Membuat Halaman &#39;404 Not Found&#39; di GitHub Pages",
+      "url"      : "/2018/03/22/membuat-halaman-404-not-found-di-github-pages/",
+      "category" : "",
+      "tags"     : "hexo, github",
+      "date"     : "2018-03-22 21:29:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Mengaktifkan SSL Gratis Cloudflare di GitHub Pages (Custom Domain)",
+      "url"      : "/2018/02/16/ssl-gratis-cloudflare/",
+      "category" : "",
+      "tags"     : "ssl, cloudflare",
+      "date"     : "2018-02-16 04:15:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Unsur Intrinsik Novel Sekuntum Ruh dalam Merah",
+      "url"      : "/2017/09/22/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah/",
+      "category" : "",
+      "tags"     : "srdm",
+      "date"     : "2017-09-22 21:42:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Migrasi ke Platform Hexo",
+      "url"      : "/2017/09/08/migrasi-ke-platform-hexo/",
+      "category" : "",
+      "tags"     : "hexo, github, nodejs",
+      "date"     : "2017-09-08 06:11:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Installasi GNS3 di Ubuntu 16.04",
+      "url"      : "/2017/09/05/installasi-gns3-di-ubuntu-16-04/",
+      "category" : "",
+      "tags"     : "gns3, ubuntu",
+      "date"     : "2017-09-05 17:09:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Membuat Blog dengan Framework Hexo di GitHub",
+      "url"      : "/2017/06/02/membuat-blog-dengan-framework-hexo-di-github/",
+      "category" : "",
+      "tags"     : "hexo, nodejs",
+      "date"     : "2017-06-02 12:34:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara Install NodeJS di Linux Ubuntu 16.04",
+      "url"      : "/2017/06/02/cara-install-nodejs-di-linux-ubuntu-16-04/",
+      "category" : "",
+      "tags"     : "ubuntu, nodejs",
+      "date"     : "2017-06-02 12:33:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cek Kecepatan Koneksi Internet Melalui Terminal Linux",
+      "url"      : "/2017/03/28/cek-kecepatan-koneksi-internet-melalui-terminal-linux/",
+      "category" : "",
+      "tags"     : "speedtest, cli",
+      "date"     : "2017-03-28 12:13:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Install Driver WiFi BCM43142 BlankOn X Tambora",
+      "url"      : "/2017/01/28/install-driver-wifi-BCM43142-blankon-x-tambora/",
+      "category" : "",
+      "tags"     : "blankon, driver, wifi",
+      "date"     : "2017-01-28 23:05:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Mengalihkan Request HTTP ke HTTPS",
+      "url"      : "/2017/01/13/mengalihkan-request-http-ke-https/",
+      "category" : "",
+      "tags"     : "ssl",
+      "date"     : "2017-01-13 07:44:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Linux : BunsenLabs, Distro Ringan Turunan Debian Jessie",
+      "url"      : "/2016/12/28/linux-bunsenlabs-distro-ringan-turunan-debian-jessie/",
+      "category" : "",
+      "tags"     : "bunsenlabs, debian, crunchbang",
+      "date"     : "2016-12-28 17:00:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Download Video YouTube melalui Terminal Linux",
+      "url"      : "/2016/12/28/download-video-youtube-melalui-terminal-linux/",
+      "category" : "",
+      "tags"     : "youtube, cli",
+      "date"     : "2016-12-28 15:03:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Tutorial GIMP : Membuat Efek Anyaman",
+      "url"      : "/2016/05/09/tutorial-gimp-membuat-efek-anyaman/",
+      "category" : "",
+      "tags"     : "gimp, multimedia",
+      "date"     : "2016-05-09 01:44:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Definisi Multi-Boot atau Dual-Boot",
+      "url"      : "/2016/03/23/definisi-multiboot-atau-dualboot/",
+      "category" : "",
+      "tags"     : "multiboot, dualboot",
+      "date"     : "2016-03-23 06:23:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Browsing Melalui Terminal Linux? Coba Deh!!",
+      "url"      : "/2016/03/19/browsing-melalui-terminal-linux-coba-deh/",
+      "category" : "",
+      "tags"     : "elinks",
+      "date"     : "2016-03-19 17:30:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara melihat Cuaca di Terminal Linux",
+      "url"      : "/2016/03/13/cara-melihat-cuaca-di-terminal-linux/",
+      "category" : "",
+      "tags"     : "cli, cuaca, curl",
+      "date"     : "2016-03-13 13:15:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Menjalankan Aplikasi Windows di Linux",
+      "url"      : "/2016/02/29/menjalankan-aplikasi-windows-di-linux/",
+      "category" : "",
+      "tags"     : "windows, line, wine",
+      "date"     : "2016-02-29 08:16:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara Install Aplikasi Atom di Linux Mint Via PPA [32bit + 64bit]",
+      "url"      : "/2016/02/26/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit/",
+      "category" : "",
+      "tags"     : "atom",
+      "date"     : "2016-02-26 09:46:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara mudah Merekam layar Desktop di Linux",
+      "url"      : "/2016/02/25/cara-mudah-merekam-layar-desktop-di-linux/",
+      "category" : "",
+      "tags"     : "multimedia, recordmydesktop",
+      "date"     : "2016-02-25 09:32:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara cek Whois Domain lewat Terminal Linux",
+      "url"      : "/2016/02/24/cara-cek-whois-domain-lewat-terminal-linux/",
+      "category" : "",
+      "tags"     : "domaintools, whois",
+      "date"     : "2016-02-24 11:57:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Webcamnya Linux ya Cheese!!",
+      "url"      : "/2016/02/24/webcamnya-linux-ya-cheese/",
+      "category" : "",
+      "tags"     : "cheese, webcam",
+      "date"     : "2016-02-24 07:59:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Cara membuat Bootable dengan Aplikasi Multisystem di Linux",
+      "url"      : "/2016/02/23/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux/",
+      "category" : "",
+      "tags"     : "multisystem, bootable",
+      "date"     : "2016-02-23 22:27:00 +0700",
+      "description" : ""
 
     } 
   

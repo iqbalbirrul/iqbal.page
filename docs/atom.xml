@@ -4,7 +4,7 @@
  <title>Iqbal Birrul Walidain</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T01:13:30+07:00</updated>
+ <updated>2021-02-02T01:25:59+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -129,9 +129,7 @@ Silakan daftar menggunakan email.&lt;/p&gt;
    <link href="https://iqbal.page/2020/06/remote-access-mysql-mariadb.html"/>
    <updated>2020-06-19T22:54:07+07:00</updated>
    <id>https://iqbal.page/2020/06/remote-access-mysql-mariadb</id>
-   <content type="html">&lt;h2 id=&quot;remote-access-mysqlmariadb&quot;&gt;Remote Access MySQL/MariaDB&lt;/h2&gt;
-
-&lt;h3 id=&quot;konfigurasi&quot;&gt;Konfigurasi&lt;/h3&gt;
+   <content type="html">&lt;h2 id=&quot;konfigurasi&quot;&gt;Konfigurasi&lt;/h2&gt;
 
 &lt;p&gt;Konfigurasi MariaDB dengan merubah bind address dari &lt;code&gt;127.0.0.1&lt;/code&gt; menjadi &lt;code&gt;0.0.0.0&lt;/code&gt;, kemudian restart service.&lt;/p&gt;
 

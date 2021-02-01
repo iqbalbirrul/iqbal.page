@@ -9,9 +9,7 @@ tags:
 author: iqbal
 ---
 
-## Remote Access MySQL/MariaDB
-
-### Konfigurasi
+## Konfigurasi
 
 Konfigurasi MariaDB dengan merubah bind address dari `127.0.0.1` menjadi `0.0.0.0`, kemudian restart service.
 

@@ -4,16 +4,16 @@ title: Iqbal Birrul Walidain
 description: Personal Blogs
 
 twitter:
-  username: #iqbalbirrul
+  username: iqbalbirrul
   card: summary
-  creator: #yourusername
+  creator: iqbalbirrul
 author:
-  twitter: #yourusername
-  name: #yourusername
+  twitter: iqbalbirrul
+  name: iqbalbirrul
   avatar:
-  email: #youremail
-  url: #yoururl
-permalink: pretty
+  email: iqbalbirrul@gmail.com
+  url: https://iqbal.page
+permalink: /:year/:month/:title.html
 
 baseurl: ""
 

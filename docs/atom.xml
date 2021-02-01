@@ -4,19 +4,19 @@
  <title>Iqbal Birrul Walidain</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T01:06:30+07:00</updated>
+ <updated>2021-02-02T01:13:30+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
-   <name></name>
-   <email></email>
+   <name>iqbalbirrul</name>
+   <email>iqbalbirrul@gmail.com</email>
  </author>
 
  
  <entry>
    <title>Install Plesk Panel Obsidian</title>
-   <link href="https://iqbal.page/2020/08/12/install-plesk-panel-obisidian/"/>
+   <link href="https://iqbal.page/2020/08/install-plesk-panel-obisidian.html"/>
    <updated>2020-08-12T09:59:41+07:00</updated>
-   <id>https://iqbal.page/2020/08/12/install-plesk-panel-obisidian</id>
+   <id>https://iqbal.page/2020/08/install-plesk-panel-obisidian</id>
    <content type="html">&lt;h2 id=&quot;plesk-panel&quot;&gt;Plesk Panel&lt;/h2&gt;
 
 &lt;p&gt;Plesk merupakan Control Panel yang cukup terkenal di dunia hosting setelah cPanel. Plesk sendiri adalah Control Panel berbayar sama seperti cPanel, namun kita bisa mendapatkan Trial nya selama 15 hari.&lt;/p&gt;
@@ -126,9 +126,9 @@ Silakan daftar menggunakan email.&lt;/p&gt;
  
  <entry>
    <title>Remote Access MySQL atau MariaDB</title>
-   <link href="https://iqbal.page/2020/06/19/remote-access-mysql-mariadb/"/>
+   <link href="https://iqbal.page/2020/06/remote-access-mysql-mariadb.html"/>
    <updated>2020-06-19T22:54:07+07:00</updated>
-   <id>https://iqbal.page/2020/06/19/remote-access-mysql-mariadb</id>
+   <id>https://iqbal.page/2020/06/remote-access-mysql-mariadb</id>
    <content type="html">&lt;h2 id=&quot;remote-access-mysqlmariadb&quot;&gt;Remote Access MySQL/MariaDB&lt;/h2&gt;
 
 &lt;h3 id=&quot;konfigurasi&quot;&gt;Konfigurasi&lt;/h3&gt;
@@ -217,9 +217,9 @@ $ mysql -h IP_DATABASE -u username -p
  
  <entry>
    <title>Mengamankan SSH dengan Fail2ban</title>
-   <link href="https://iqbal.page/2020/04/07/fail2ban/"/>
+   <link href="https://iqbal.page/2020/04/fail2ban.html"/>
    <updated>2020-04-07T01:37:48+07:00</updated>
-   <id>https://iqbal.page/2020/04/07/fail2ban</id>
+   <id>https://iqbal.page/2020/04/fail2ban</id>
    <content type="html">&lt;p&gt;Disini saya akan menggunakan fail2ban untuk meminimalisir serangan brute force ke service SSH.&lt;/p&gt;
 
 &lt;h2 id=&quot;update-repository&quot;&gt;Update repository&lt;/h2&gt;
@@ -325,9 +325,9 @@ fail2ban-client set sshd unbanip IP_ADDRESS
  
  <entry>
    <title>Deploy Hugo ke Netlify</title>
-   <link href="https://iqbal.page/2020/03/29/hugo-netlify/"/>
+   <link href="https://iqbal.page/2020/03/hugo-netlify.html"/>
    <updated>2020-03-29T20:06:09+07:00</updated>
-   <id>https://iqbal.page/2020/03/29/hugo-netlify</id>
+   <id>https://iqbal.page/2020/03/hugo-netlify</id>
    <content type="html">&lt;h2 id=&quot;konfigurasi-netlify&quot;&gt;Konfigurasi Netlify&lt;/h2&gt;
 
 &lt;p&gt;Buat konfigurasi Netlify pada repository terlebih dahulu.&lt;/p&gt;
@@ -441,9 +441,9 @@ fail2ban-client set sshd unbanip IP_ADDRESS
  
  <entry>
    <title>Deploy Hugo ke Github Pages</title>
-   <link href="https://iqbal.page/2020/03/28/hugo-github-pages/"/>
+   <link href="https://iqbal.page/2020/03/hugo-github-pages.html"/>
    <updated>2020-03-28T18:17:13+07:00</updated>
-   <id>https://iqbal.page/2020/03/28/hugo-github-pages</id>
+   <id>https://iqbal.page/2020/03/hugo-github-pages</id>
    <content type="html">&lt;h2 id=&quot;buat-repositori&quot;&gt;Buat Repositori&lt;/h2&gt;
 
 &lt;p&gt;Yang pertama adalah siapkan 2 repository GitHub, sebagai berikut:&lt;/p&gt;
@@ -702,9 +702,9 @@ Sekian, semoga bermanfaat..
  
  <entry>
    <title>Membuat Website Statis menggunakan Hugo</title>
-   <link href="https://iqbal.page/2020/03/28/hugo/"/>
+   <link href="https://iqbal.page/2020/03/hugo.html"/>
    <updated>2020-03-28T16:06:22+07:00</updated>
-   <id>https://iqbal.page/2020/03/28/hugo</id>
+   <id>https://iqbal.page/2020/03/hugo</id>
    <content type="html">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -861,9 +861,9 @@ Sekian, semoga bermanfaat...
  
  <entry>
    <title>Setup Bind DNS Server CentOS 7</title>
-   <link href="https://iqbal.page/2020/02/08/setup-bind-dns-server-centos-7/"/>
+   <link href="https://iqbal.page/2020/02/setup-bind-dns-server-centos-7.html"/>
    <updated>2020-02-08T23:28:04+07:00</updated>
-   <id>https://iqbal.page/2020/02/08/setup-bind-dns-server-centos-7</id>
+   <id>https://iqbal.page/2020/02/setup-bind-dns-server-centos-7</id>
    <content type="html">&lt;p&gt;DNS, stands for Domain Name System, translates hostnames or URLs into IP addresses. For example, if we type &lt;strong&gt;red.my.id&lt;/strong&gt; in browser, the DNS server translates the domain name into its associated ip address. Since the IP addresses are hard to remember all time, DNS servers are used to translate the hostnames like &lt;strong&gt;red.my.id&lt;/strong&gt; to &lt;code&gt;104.xx.xx.xxx&lt;/code&gt;. So it makes easy to remember the domain names instead of its IP address.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
@@ -1053,9 +1053,9 @@ Address: 117.53.44.164
  
  <entry>
    <title>Konfigurasi DNS Server Di Ubuntu 18.04 LTS</title>
-   <link href="https://iqbal.page/2019/07/09/konfigurasi-dns-server-di-ubuntu-18-04-lts/"/>
+   <link href="https://iqbal.page/2019/07/konfigurasi-dns-server-di-ubuntu-18-04-lts.html"/>
    <updated>2019-07-09T08:27:04+07:00</updated>
-   <id>https://iqbal.page/2019/07/09/konfigurasi-dns-server-di-ubuntu-18-04-lts</id>
+   <id>https://iqbal.page/2019/07/konfigurasi-dns-server-di-ubuntu-18-04-lts</id>
    <content type="html">&lt;h1 id=&quot;dns&quot;&gt;DNS&lt;/h1&gt;
 &lt;p&gt;DNS (Domain Name System) adalah layanan yang menerjemahkan nama domain situs web seperti, contoh: &lt;code&gt;google.com&lt;/code&gt; menjadi alamat IP (IP Address) sehingga pengguna internet bisa membuka situs tujuan dengan cepat.&lt;/p&gt;
 
@@ -1254,9 +1254,9 @@ Address: 117.53.46.186
  
  <entry>
    <title>Setup Custom Email gratis dengan Zoho Mail</title>
-   <link href="https://iqbal.page/2019/04/17/setup-custom-email-with-zoho/"/>
+   <link href="https://iqbal.page/2019/04/setup-custom-email-with-zoho.html"/>
    <updated>2019-04-17T18:57:12+07:00</updated>
-   <id>https://iqbal.page/2019/04/17/setup-custom-email-with-zoho</id>
+   <id>https://iqbal.page/2019/04/setup-custom-email-with-zoho</id>
    <content type="html">&lt;p&gt;Zoho Mail sebagai salah satu produk Zoho, merupakan layanan mail hosting pihak ketiga. Zoho menawarkan layanan email gratis hingga 5 user untuk tiap domain yang Anda daftarkan.&lt;/p&gt;
 
 &lt;table&gt;
@@ -1404,9 +1404,9 @@ Address: 117.53.46.186
  
  <entry>
    <title>Make a Private Git Repository Using GitLab CE</title>
-   <link href="https://iqbal.page/2019/02/23/make-a-private-git-repository-using-gitlab-ce/"/>
+   <link href="https://iqbal.page/2019/02/make-a-private-git-repository-using-gitlab-ce.html"/>
    <updated>2019-02-23T15:19:01+07:00</updated>
-   <id>https://iqbal.page/2019/02/23/make-a-private-git-repository-using-gitlab-ce</id>
+   <id>https://iqbal.page/2019/02/make-a-private-git-repository-using-gitlab-ce</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;GitLab Community Edition (CE)&lt;/strong&gt; adalah platform pengembangan end-to-end perangkat lunak open source dengan built-in version control, issue tracking, code review, CI/CD, dan banyak lagi.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce.png&quot; alt=&quot;GitLab CE&quot; /&gt;&lt;/p&gt;
@@ -1563,9 +1563,9 @@ letsencrypt['auto_renew_day_of_month'] = &quot;*/4&quot;
  
  <entry>
    <title>Install Jekyll</title>
-   <link href="https://iqbal.page/2019/02/21/install-jekyll/"/>
+   <link href="https://iqbal.page/2019/02/install-jekyll.html"/>
    <updated>2019-02-21T17:28:51+07:00</updated>
-   <id>https://iqbal.page/2019/02/21/install-jekyll</id>
+   <id>https://iqbal.page/2019/02/install-jekyll</id>
    <content type="html">&lt;p&gt;Jekyll adalah generator situs web statis sederhana, yang diperuntukan untuk situs pribadi, proyek, atau organisasi.&lt;/p&gt;
 
 &lt;p&gt;Jekyll ditulis dalam bahasa pemrograman &lt;code&gt;Ruby&lt;/code&gt; oleh &lt;strong&gt;Tom Preston-Werner&lt;/strong&gt;, co-founder GitHub, dan didistribusikan di bawah lisensi &lt;a href=&quot;https://id.wikipedia.org/wiki/Sumber_terbuka&quot;&gt;sumber terbuka&lt;/a&gt;.&lt;/p&gt;
@@ -1670,9 +1670,9 @@ plugins:
  
  <entry>
    <title>Generate SSL Let's Encrypt di CentOS 7</title>
-   <link href="https://iqbal.page/2019/02/15/generate-ssl-lets-encrypt/"/>
+   <link href="https://iqbal.page/2019/02/generate-ssl-lets-encrypt.html"/>
    <updated>2019-02-15T02:40:14+07:00</updated>
-   <id>https://iqbal.page/2019/02/15/generate-ssl-lets-encrypt</id>
+   <id>https://iqbal.page/2019/02/generate-ssl-lets-encrypt</id>
    <content type="html">&lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
@@ -1741,9 +1741,9 @@ IMPORTANT NOTES:
  
  <entry>
    <title>Server Block Nginx</title>
-   <link href="https://iqbal.page/2019/01/01/server-blocks-nginx/"/>
+   <link href="https://iqbal.page/2019/01/server-blocks-nginx.html"/>
    <updated>2019-01-01T08:59:48+07:00</updated>
-   <id>https://iqbal.page/2019/01/01/server-blocks-nginx</id>
+   <id>https://iqbal.page/2019/01/server-blocks-nginx</id>
    <content type="html">&lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
@@ -1835,9 +1835,9 @@ server {
  
  <entry>
    <title>Membuat Halaman '404 Not Found' di GitHub Pages</title>
-   <link href="https://iqbal.page/2018/03/22/membuat-halaman-404-not-found-di-github-pages/"/>
+   <link href="https://iqbal.page/2018/03/membuat-halaman-404-not-found-di-github-pages.html"/>
    <updated>2018-03-22T21:29:00+07:00</updated>
-   <id>https://iqbal.page/2018/03/22/membuat-halaman-404-not-found-di-github-pages</id>
+   <id>https://iqbal.page/2018/03/membuat-halaman-404-not-found-di-github-pages</id>
    <content type="html">&lt;p&gt;Untuk yang sering otak-atik GitHub Pages pasti tahu, bahwa di GitHub Pages jika kita mengakses halaman yang error/tidak ada, maka muncul halaman &lt;code&gt;404 Not Found&lt;/code&gt; bawaan dari GitHub Pages.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/404.png&quot; alt=&quot;404 Not Found&quot; /&gt;&lt;/p&gt;
@@ -1852,9 +1852,9 @@ Untuk Blog statis (Hexo, Jekyll), caranya cukup mudah. Cukup buat halaman &lt;co
  
  <entry>
    <title>Mengaktifkan SSL Gratis Cloudflare di GitHub Pages (Custom Domain)</title>
-   <link href="https://iqbal.page/2018/02/16/ssl-gratis-cloudflare/"/>
+   <link href="https://iqbal.page/2018/02/ssl-gratis-cloudflare.html"/>
    <updated>2018-02-16T04:15:00+07:00</updated>
-   <id>https://iqbal.page/2018/02/16/ssl-gratis-cloudflare</id>
+   <id>https://iqbal.page/2018/02/ssl-gratis-cloudflare</id>
    <content type="html">&lt;p&gt;Sebenarnya, di GitHub sudah tersedia ssl gratis untuk setiap halaman yang dibuat (&lt;em&gt;GitHub Pages&lt;/em&gt;). Namun untuk yang menggunakan nama domain sendiri atau custom domain, github tidak menyediakan ssl gratis.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare.png&quot; alt=&quot;Cloudflare&quot; /&gt;&lt;/p&gt;
@@ -1920,9 +1920,9 @@ Lalu generate dan deploy. Dan ssl-pun sudah aktif sepenuhnya.&lt;/p&gt;
  
  <entry>
    <title>Unsur Intrinsik Novel Sekuntum Ruh dalam Merah</title>
-   <link href="https://iqbal.page/2017/09/22/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah/"/>
+   <link href="https://iqbal.page/2017/09/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah.html"/>
    <updated>2017-09-22T21:42:00+07:00</updated>
-   <id>https://iqbal.page/2017/09/22/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah</id>
+   <id>https://iqbal.page/2017/09/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah</id>
    <content type="html">&lt;p&gt;Kemarin, waktu saya masih duduk di bangku kelas 3 SMK, saya dan semua jurusan di kelas 3 diberi tugas untuk membuat laporan &lt;code&gt;Identifikasi Unsur Intrinsik Novel&lt;/code&gt;, dan saya membuat laporan tentang sebuah Novel yang sangat luar biasa (menurut saya) yaitu &lt;code&gt;Sekuntum Ruh dalam Merah&lt;/code&gt; karya &lt;code&gt;NANING PRANOTO&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/srdm-1.png&quot; alt=&quot;Sekuntum Ruh dalam Merah&quot; /&gt;&lt;/p&gt;
@@ -1939,9 +1939,9 @@ Lalu generate dan deploy. Dan ssl-pun sudah aktif sepenuhnya.&lt;/p&gt;
  
  <entry>
    <title>Migrasi ke Platform Hexo</title>
-   <link href="https://iqbal.page/2017/09/08/migrasi-ke-platform-hexo/"/>
+   <link href="https://iqbal.page/2017/09/migrasi-ke-platform-hexo.html"/>
    <updated>2017-09-08T06:11:00+07:00</updated>
-   <id>https://iqbal.page/2017/09/08/migrasi-ke-platform-hexo</id>
+   <id>https://iqbal.page/2017/09/migrasi-ke-platform-hexo</id>
    <content type="html">&lt;p&gt;Sebelumnya, saya adalah pengguna layanan Blogger.com, setelah beberapa bulan saya membeli layanan Shared Hosting dan berMigrasi ke Platform Wordpress Self-Host.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
@@ -1975,9 +1975,9 @@ $ hexo server -d
  
  <entry>
    <title>Installasi GNS3 di Ubuntu 16.04</title>
-   <link href="https://iqbal.page/2017/09/05/installasi-gns3-di-ubuntu-16-04/"/>
+   <link href="https://iqbal.page/2017/09/installasi-gns3-di-ubuntu-16-04.html"/>
    <updated>2017-09-05T17:09:00+07:00</updated>
-   <id>https://iqbal.page/2017/09/05/installasi-gns3-di-ubuntu-16-04</id>
+   <id>https://iqbal.page/2017/09/installasi-gns3-di-ubuntu-16-04</id>
    <content type="html">&lt;p&gt;Baiklah, langsung saja, bagaimana cara install GNS3. Sebelumnya, dalam hal ini sistem operasi yang digunakan adalah Ubuntu 16.04.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-1.png&quot; alt=&quot;GNS3&quot; /&gt;&lt;/p&gt;
@@ -2019,9 +2019,9 @@ $ hexo server -d
  
  <entry>
    <title>Membuat Blog dengan Framework Hexo di GitHub</title>
-   <link href="https://iqbal.page/2017/06/02/membuat-blog-dengan-framework-hexo-di-github/"/>
+   <link href="https://iqbal.page/2017/06/membuat-blog-dengan-framework-hexo-di-github.html"/>
    <updated>2017-06-02T12:34:00+07:00</updated>
-   <id>https://iqbal.page/2017/06/02/membuat-blog-dengan-framework-hexo-di-github</id>
+   <id>https://iqbal.page/2017/06/membuat-blog-dengan-framework-hexo-di-github</id>
    <content type="html">&lt;p&gt;Hexo adalah framework blog sederhana tapi powerful yang didukung oleh Node.js. Web statis generator ini super cepat dan hanya membutuhkan waktu beberapa detik untuk membangun website yang lengkap.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
@@ -2092,9 +2092,9 @@ npm install
  
  <entry>
    <title>Cara Install NodeJS di Linux Ubuntu 16.04</title>
-   <link href="https://iqbal.page/2017/06/02/cara-install-nodejs-di-linux-ubuntu-16-04/"/>
+   <link href="https://iqbal.page/2017/06/cara-install-nodejs-di-linux-ubuntu-16-04.html"/>
    <updated>2017-06-02T12:33:00+07:00</updated>
-   <id>https://iqbal.page/2017/06/02/cara-install-nodejs-di-linux-ubuntu-16-04</id>
+   <id>https://iqbal.page/2017/06/cara-install-nodejs-di-linux-ubuntu-16-04</id>
    <content type="html">&lt;p&gt;Singkat cerita, NodeJS adalah sebuah framework Javascript yang dapat dijalankan di server dan dapat mengelola maupun mengolah request data dari client.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/nodejs-img.png&quot; alt=&quot;NodeJS&quot; /&gt;&lt;/p&gt;
@@ -2128,9 +2128,9 @@ nvm install stable
  
  <entry>
    <title>Cek Kecepatan Koneksi Internet Melalui Terminal Linux</title>
-   <link href="https://iqbal.page/2017/03/28/cek-kecepatan-koneksi-internet-melalui-terminal-linux/"/>
+   <link href="https://iqbal.page/2017/03/cek-kecepatan-koneksi-internet-melalui-terminal-linux.html"/>
    <updated>2017-03-28T12:13:00+07:00</updated>
-   <id>https://iqbal.page/2017/03/28/cek-kecepatan-koneksi-internet-melalui-terminal-linux</id>
+   <id>https://iqbal.page/2017/03/cek-kecepatan-koneksi-internet-melalui-terminal-linux</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/speedtest.png&quot; alt=&quot;Speedtest&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seringkali kita sebagai pengguna internet ingin mengetahui berapa kecepatan koneksi internet milik kita. Jika kamu pengguna linux untuk mengecek kecepatan koneksi internet kamu sangatlah mudah. Kita tidak perlu menunggu loading dari situs pengetes koneksi seperti &lt;code&gt;speedtest.net, speedtest.cbn.net.id, speedtest.telin.co.id&lt;/code&gt;.&lt;/p&gt;
@@ -2163,9 +2163,9 @@ $
  
  <entry>
    <title>Install Driver WiFi BCM43142 BlankOn X Tambora</title>
-   <link href="https://iqbal.page/2017/01/28/install-driver-wifi-BCM43142-blankon-x-tambora/"/>
+   <link href="https://iqbal.page/2017/01/install-driver-wifi-BCM43142-blankon-x-tambora.html"/>
    <updated>2017-01-28T23:05:00+07:00</updated>
-   <id>https://iqbal.page/2017/01/28/install-driver-wifi-BCM43142-blankon-x-tambora</id>
+   <id>https://iqbal.page/2017/01/install-driver-wifi-BCM43142-blankon-x-tambora</id>
    <content type="html">&lt;p&gt;Langsung saja buka &lt;code&gt;sources.list&lt;/code&gt; dan tambahkan repository berikut :&lt;/p&gt;
 
 &lt;pre&gt;
@@ -2200,9 +2200,9 @@ modprobe wl
  
  <entry>
    <title>Mengalihkan Request HTTP ke HTTPS</title>
-   <link href="https://iqbal.page/2017/01/13/mengalihkan-request-http-ke-https/"/>
+   <link href="https://iqbal.page/2017/01/mengalihkan-request-http-ke-https.html"/>
    <updated>2017-01-13T07:44:00+07:00</updated>
-   <id>https://iqbal.page/2017/01/13/mengalihkan-request-http-ke-https</id>
+   <id>https://iqbal.page/2017/01/mengalihkan-request-http-ke-https</id>
    <content type="html">&lt;p&gt;Beberapa hari lalu beli hosting dan gratis SSL dari &lt;strong&gt;Let’s Encrypt&lt;/strong&gt; di &lt;a href=&quot;http://idhosts.co.id&quot;&gt;&lt;strong&gt;IDHosts.co.id&lt;/strong&gt;&lt;/a&gt; dan langsung konfigurasi supaya SSLnya aktif.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/https-img.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/p&gt;
@@ -2231,9 +2231,9 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
  
  <entry>
    <title>Linux : BunsenLabs, Distro Ringan Turunan Debian Jessie</title>
-   <link href="https://iqbal.page/2016/12/28/linux-bunsenlabs-distro-ringan-turunan-debian-jessie/"/>
+   <link href="https://iqbal.page/2016/12/linux-bunsenlabs-distro-ringan-turunan-debian-jessie.html"/>
    <updated>2016-12-28T17:00:00+07:00</updated>
-   <id>https://iqbal.page/2016/12/28/linux-bunsenlabs-distro-ringan-turunan-debian-jessie</id>
+   <id>https://iqbal.page/2016/12/linux-bunsenlabs-distro-ringan-turunan-debian-jessie</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.bunsenlabs.org&quot;&gt;BunsenLabs&lt;/a&gt; merupakan Distro Linux turunan Debian “Jessie”. Distro ini adalah lanjutan dari Distro Linux &lt;a href=&quot;http://distrowatch.com/crunchbang&quot;&gt;Crunchbang&lt;/a&gt;. Versi rilis terbarunya yaitu Hydrogen RC2.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/bunsenlabs.png&quot; alt=&quot;BunsenLabs&quot; /&gt;&lt;/p&gt;
@@ -2267,9 +2267,9 @@ dd if=/path/to/bunsenlab.iso of=/dev/sd{letter}
  
  <entry>
    <title>Download Video YouTube melalui Terminal Linux</title>
-   <link href="https://iqbal.page/2016/12/28/download-video-youtube-melalui-terminal-linux/"/>
+   <link href="https://iqbal.page/2016/12/download-video-youtube-melalui-terminal-linux.html"/>
    <updated>2016-12-28T15:03:00+07:00</updated>
-   <id>https://iqbal.page/2016/12/28/download-video-youtube-melalui-terminal-linux</id>
+   <id>https://iqbal.page/2016/12/download-video-youtube-melalui-terminal-linux</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://youtube.com&quot;&gt;YouTube&lt;/a&gt; adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/youtube.png&quot; alt=&quot;YouTube&quot; /&gt;&lt;/p&gt;
@@ -2292,9 +2292,9 @@ Semoga bermanfaat.&lt;/p&gt;
  
  <entry>
    <title>Tutorial GIMP : Membuat Efek Anyaman</title>
-   <link href="https://iqbal.page/2016/05/09/tutorial-gimp-membuat-efek-anyaman/"/>
+   <link href="https://iqbal.page/2016/05/tutorial-gimp-membuat-efek-anyaman.html"/>
    <updated>2016-05-09T01:44:00+07:00</updated>
-   <id>https://iqbal.page/2016/05/09/tutorial-gimp-membuat-efek-anyaman</id>
+   <id>https://iqbal.page/2016/05/tutorial-gimp-membuat-efek-anyaman</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;/tutorial-gimp-membuat-efek-anyaman&quot;&gt;Membuat Efek Anyaman&lt;/a&gt;- Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-anyaman.png&quot; alt=&quot;Efek Anyaman&quot; /&gt;&lt;/p&gt;
@@ -2333,9 +2333,9 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
  
  <entry>
    <title>Definisi Multi-Boot atau Dual-Boot</title>
-   <link href="https://iqbal.page/2016/03/23/definisi-multiboot-atau-dualboot/"/>
+   <link href="https://iqbal.page/2016/03/definisi-multiboot-atau-dualboot.html"/>
    <updated>2016-03-23T06:23:00+07:00</updated>
-   <id>https://iqbal.page/2016/03/23/definisi-multiboot-atau-dualboot</id>
+   <id>https://iqbal.page/2016/03/definisi-multiboot-atau-dualboot</id>
    <content type="html">&lt;p&gt;Multi-Boot atau Dual-Boot, adalah nama atau sebutan untuk menginstall dua sistem operasi atau lebih pada satu komputer, misalnya Ubuntu (Linux) dengan Windows.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
@@ -2352,9 +2352,9 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
  
  <entry>
    <title>Browsing Melalui Terminal Linux? Coba Deh!!</title>
-   <link href="https://iqbal.page/2016/03/19/browsing-melalui-terminal-linux-coba-deh/"/>
+   <link href="https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh.html"/>
    <updated>2016-03-19T17:30:00+07:00</updated>
-   <id>https://iqbal.page/2016/03/19/browsing-melalui-terminal-linux-coba-deh</id>
+   <id>https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png&quot; alt=&quot;Elinks&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux??
@@ -2396,9 +2396,9 @@ esc : untuk menampilkan toolbar
  
  <entry>
    <title>Cara melihat Cuaca di Terminal Linux</title>
-   <link href="https://iqbal.page/2016/03/13/cara-melihat-cuaca-di-terminal-linux/"/>
+   <link href="https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux.html"/>
    <updated>2016-03-13T13:15:00+07:00</updated>
-   <id>https://iqbal.page/2016/03/13/cara-melihat-cuaca-di-terminal-linux</id>
+   <id>https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca.png&quot; alt=&quot;Cuaca&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Langsung simak saja, gak terlalu ribet kok :) .&lt;/p&gt;
@@ -2425,9 +2425,9 @@ semoga bermanfaat :) , thanks :D .&lt;/p&gt;
  
  <entry>
    <title>Menjalankan Aplikasi Windows di Linux</title>
-   <link href="https://iqbal.page/2016/02/29/menjalankan-aplikasi-windows-di-linux/"/>
+   <link href="https://iqbal.page/2016/02/menjalankan-aplikasi-windows-di-linux.html"/>
    <updated>2016-02-29T08:16:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/29/menjalankan-aplikasi-windows-di-linux</id>
+   <id>https://iqbal.page/2016/02/menjalankan-aplikasi-windows-di-linux</id>
    <content type="html">&lt;p&gt;Selamat sore kawan :D udah 1ato2 hari nggak Posting nih :p.
 Dan sekarang saya mau Sharing Tentang &lt;a href=&quot;/menjalankan-aplikasi-windows-di-linux&quot;&gt;Cara menjalan Aplikasi &lt;em&gt;Windows&lt;/em&gt; di Linux.&lt;/a&gt;&lt;/p&gt;
 
@@ -2474,9 +2474,9 @@ Dan sekarang saya mau Sharing Tentang &lt;a href=&quot;/menjalankan-aplikasi-win
  
  <entry>
    <title>Cara Install Aplikasi Atom di Linux Mint Via PPA [32bit + 64bit]</title>
-   <link href="https://iqbal.page/2016/02/26/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit/"/>
+   <link href="https://iqbal.page/2016/02/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit.html"/>
    <updated>2016-02-26T09:46:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/26/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit</id>
+   <id>https://iqbal.page/2016/02/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit</id>
    <content type="html">&lt;p&gt;Atom adalah sebuah Aplikasi teks editor seperti halnya Notepad++ di &lt;em&gt;Windows.&lt;/em&gt;  Atom sendiri adalah Aplikasi yang bersifat Cross Platform yang artinya bisa dijalankan dibeberapa sistem operasi seperti Linux dan Mac OsX.&lt;/p&gt;
 
 &lt;p&gt;Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).&lt;/p&gt;
@@ -2513,9 +2513,9 @@ sudo apt-get install atom
  
  <entry>
    <title>Cara mudah Merekam layar Desktop di Linux</title>
-   <link href="https://iqbal.page/2016/02/25/cara-mudah-merekam-layar-desktop-di-linux/"/>
+   <link href="https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux.html"/>
    <updated>2016-02-25T09:32:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/25/cara-mudah-merekam-layar-desktop-di-linux</id>
+   <id>https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux</id>
    <content type="html">&lt;p&gt;Hallo :D kali ini saya akan share tentang &lt;a href=&quot;/cara-mudah-merekam-layar-desktop-di-linux&quot;&gt;Cara mudah Merekam layar Desktop di Linux&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop.png&quot; alt=&quot;Record My Desktop&quot; /&gt;&lt;/p&gt;
@@ -2546,9 +2546,9 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
  
  <entry>
    <title>Cara cek Whois Domain lewat Terminal Linux</title>
-   <link href="https://iqbal.page/2016/02/24/cara-cek-whois-domain-lewat-terminal-linux/"/>
+   <link href="https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux.html"/>
    <updated>2016-02-24T11:57:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/24/cara-cek-whois-domain-lewat-terminal-linux</id>
+   <id>https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux</id>
    <content type="html">&lt;p&gt;Yap kali ini saya akan ngeshare &lt;a href=&quot;/cara-cek-whois-domain-lewat-terminal-linux&quot;&gt;Cara Whois Nama Domain lewat Terminal Linux&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois.png&quot; alt=&quot;Whois Record&quot; /&gt;&lt;/p&gt;
@@ -2580,9 +2580,9 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
  
  <entry>
    <title>Webcamnya Linux ya Cheese!!</title>
-   <link href="https://iqbal.page/2016/02/24/webcamnya-linux-ya-cheese/"/>
+   <link href="https://iqbal.page/2016/02/webcamnya-linux-ya-cheese.html"/>
    <updated>2016-02-24T07:59:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/24/webcamnya-linux-ya-cheese</id>
+   <id>https://iqbal.page/2016/02/webcamnya-linux-ya-cheese</id>
    <content type="html">&lt;p&gt;Selamat sore :) iya sore karena mulai nulis jam 17:47 hehe :D.&lt;/p&gt;
 
 &lt;p&gt;Sore ini saya mau sharing tentang Cheese, iya aplikasi Webcam di Linux GRATISS :). Ukurannya juga nggak terlalu besar cuma sekitar 182 kb.&lt;/p&gt;
@@ -2615,9 +2615,9 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
  
  <entry>
    <title>Cara membuat Bootable dengan Aplikasi Multisystem di Linux</title>
-   <link href="https://iqbal.page/2016/02/23/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux/"/>
+   <link href="https://iqbal.page/2016/02/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux.html"/>
    <updated>2016-02-23T22:27:00+07:00</updated>
-   <id>https://iqbal.page/2016/02/23/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux</id>
+   <id>https://iqbal.page/2016/02/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux</id>
    <content type="html">&lt;p&gt;Multisystem adalah aplikasi di linux Ubuntu dan turunannya yang memungkinkan seseorang untuk dapat membuat multiboot sistem operasi pada media Flashdisk. Dengan aplikasi Multisystem ini kita dapat menambah atau membuat beberapa bootable atau installer sistem operasi seperti Windows, Linux (Ubuntu, Linux Mint) dan masih banyak lagi.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;

@@ -1,9 +1,10 @@
-site: Sidey
-url: #yoururl
-title: Sidey
-description: Simple and minimalistic jekyll blogging theme.
+site: Iqbal
+url: https://iqbal.page
+title: Iqbal Birrul Walidain
+description: Personal Blogs
+
 twitter:
-  username: #yourusername
+  username: #iqbalbirrul
   card: summary
   creator: #yourusername
 author:
@@ -20,6 +21,13 @@ highlighter: none
 
 exclude:
   - .jekyll-cache
+  - deploy.sh
+  - live.sh
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-leaf.gemspec
+  - LICENSE.txt
+  - README.md
   
 compress_html:
   clippings: all
@@ -28,19 +36,25 @@ compress_html:
 sass:
   sass_dir:          _sass
   style:            :compressed
+  
+destination: docs
 
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap  
 
-collections:
+jekyll_admin:
+  hidden_links:
+    - datafiles
+   
+Collections:
   pages:
     output: true
     permalink: /:name
   posts:
     output: true
-    permalink: /:year/:month/:day/:slug
+    permalink: /:year/:month/:title.html
   
 defaults:
   -

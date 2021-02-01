@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Sidey</title>
- <link href="http://192.168.43.2:4000/atom.xml" rel="self"/>
- <link href="http://192.168.43.2:4000/"/>
- <updated>2021-02-02T00:08:50+07:00</updated>
- <id>http://192.168.43.2:4000</id>
+ <title>Iqbal Birrul Walidain</title>
+ <link href="https://iqbal.page/atom.xml" rel="self"/>
+ <link href="https://iqbal.page/"/>
+ <updated>2021-02-02T00:28:29+07:00</updated>
+ <id>https://iqbal.page</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Places where you can learn how to code</title>
-   <link href="http://192.168.43.2:4000/2015/07/31/places-where-you-can-learn-how-to-code/"/>
+   <link href="https://iqbal.page/2015/07/31/places-where-you-can-learn-how-to-code/"/>
    <updated>2015-07-31T00:00:00+07:00</updated>
-   <id>http://192.168.43.2:4000/2015/07/31/places-where-you-can-learn-how-to-code</id>
+   <id>https://iqbal.page/2015/07/31/places-where-you-can-learn-how-to-code</id>
    <content type="html">&lt;p&gt;Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.&lt;/p&gt;
 
 &lt;p&gt;Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90’s. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.&lt;/p&gt;

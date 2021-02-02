@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T10:10:55+07:00</updated>
+ <updated>2021-02-02T10:45:58+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -153,19 +153,18 @@ ftp&amp;gt;
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Login ke VPS sebagai user &lt;code&gt;root&lt;/code&gt;, kemudian update sistem operasi terlebih dahulu dengan perintah berikut:&lt;/p&gt;
+  &lt;li&gt;Login ke VPS sebagai user &lt;code&gt;root&lt;/code&gt;, kemudian update sistem operasi terlebih dahulu dengan perintah berikut:&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;pre&gt;
-yum update -y
-&lt;/pre&gt;
-  &lt;/li&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  yum update -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Setelah update selesai, install Plesk Panel dengan perintah berikut:&lt;/p&gt;
 
-    &lt;pre&gt;
-sh &amp;lt;(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
-&lt;/pre&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sh &amp;lt;(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
+&lt;/code&gt;&lt;/pre&gt;
 
     &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install_centos.png&quot; alt=&quot;Installation Command&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -792,9 +791,9 @@ root@static:~/bloghugo#
  
  <entry>
    <title>Membuat Website Statis menggunakan Hugo</title>
-   <link href="https://iqbal.page/2020/03/hugo.html"/>
+   <link href="https://iqbal.page/2020/03/membuat-website-statis-menggunakan-hugo.html"/>
    <updated>2020-03-28T16:06:22+07:00</updated>
-   <id>https://iqbal.page/2020/03/hugo</id>
+   <id>https://iqbal.page/2020/03/membuat-website-statis-menggunakan-hugo</id>
    <content type="html">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;ul&gt;

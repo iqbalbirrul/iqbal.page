@@ -44,15 +44,15 @@ Untuk sistem operasi yang saya gunakan saat ini adalah CentOS 7 64-bit.
 
 - Login ke VPS sebagai user `root`, kemudian update sistem operasi terlebih dahulu dengan perintah berikut:
 
-  <pre>
+ ```bash
   yum update -y
-  </pre>
+ ```
 
 - Setelah update selesai, install Plesk Panel dengan perintah berikut:
 
-  <pre>
+  ```bash
   sh <(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
-  </pre>
+  ```
 
   ![Installation Command](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install_centos.png)
 

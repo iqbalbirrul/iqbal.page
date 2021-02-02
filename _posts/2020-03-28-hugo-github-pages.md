@@ -27,15 +27,15 @@ Semua file statis yang ada di repositori `username.github.io`, nantinya akan dia
 
 Remote kedua repositori:
 
-<pre>
+```bash
 git init
 git remote add origin https://github.com/iqbalbirrul/bloghugo.git
 git submodule add -b master https://github.com/iqbalbirrul/iqbalbirrul.github.io.git public
-</pre>
+```
 
 ## Buat file Bash
 
-<pre>
+```bash
 #!/bin/bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
@@ -73,23 +73,23 @@ git push origin master
 
 # Balik ke direktori sebelumnya
 cd ..
-</pre>
+```
 
 Beri permission pada file bash:
 
-<pre>
+```bash
 chmod +x deploy.sh
-</pre>
+```
 
 ## Deploy Git
 
 Eksekusi file bash:
 
-<pre>
+```bash
 ./deploy.sh
-</pre>
+```
 
-<pre>
+```bash
 root@static:~/bloghugo# ./deploy.sh 
 Deploying updates to GitHub...
 warning: adding embedded git repository: public
@@ -242,7 +242,7 @@ remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
 To https://github.com/iqbalbirrul/iqbalbirrul.github.io.git
    fb0dad3..4a1930f  master -> master
 root@static:~/bloghugo# 
-</pre>
+```
 
 Deploy selesai..
 

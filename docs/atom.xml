@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-02T04:25:21+07:00</updated>
+ <updated>2021-02-02T10:10:55+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -561,16 +561,14 @@ Sementara repositori &lt;code&gt;username.github.io&lt;/code&gt; untuk menyimpan
 
 &lt;p&gt;Remote kedua repositori:&lt;/p&gt;
 
-&lt;pre&gt;
-git init
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git init
 git remote add origin https://github.com/iqbalbirrul/bloghugo.git
 git submodule add -b master https://github.com/iqbalbirrul/iqbalbirrul.github.io.git public
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;buat-file-bash&quot;&gt;Buat file Bash&lt;/h2&gt;
 
-&lt;pre&gt;
-#!/bin/bash
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;#!/bin/bash
 
 echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
 
@@ -588,7 +586,7 @@ git commit -m &quot;$msg&quot;
 git push origin master
 
 # Genterate
-hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
+hugo # if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`
 
 # pindah ke public
 cd public
@@ -607,24 +605,21 @@ git push origin master
 
 # Balik ke direktori sebelumnya
 cd ..
-&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-Beri permission pada file bash:
+&lt;p&gt;Beri permission pada file bash:&lt;/p&gt;
 
-&lt;pre&gt;
-chmod +x deploy.sh
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;chmod +x deploy.sh
+&lt;/code&gt;&lt;/pre&gt;
 
-## Deploy Git
+&lt;h2 id=&quot;deploy-git&quot;&gt;Deploy Git&lt;/h2&gt;
 
-Eksekusi file bash:
+&lt;p&gt;Eksekusi file bash:&lt;/p&gt;
 
-&lt;pre&gt;
-./deploy.sh
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;./deploy.sh
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;
-root@static:~/bloghugo# ./deploy.sh 
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;root@static:~/bloghugo# ./deploy.sh 
 Deploying updates to GitHub...
 warning: adding embedded git repository: public
 hint: You've added another git repository inside your current repository.
@@ -632,7 +627,7 @@ hint: Clones of the outer repository will not contain the contents of
 hint: the embedded repository and will not know how to obtain it.
 hint: If you meant to add a submodule, use:
 hint: 
-hint:   git submodule add &lt;url&gt; public
+hint:   git submodule add &amp;lt;url&amp;gt; public
 hint: 
 hint: If you added this path by mistake, you can remove it from the
 hint: index with:
@@ -776,23 +771,22 @@ remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
 To https://github.com/iqbalbirrul/iqbalbirrul.github.io.git
    fb0dad3..4a1930f  master -&amp;gt; master
 root@static:~/bloghugo# 
-&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-Deploy selesai..
+&lt;p&gt;Deploy selesai..&lt;/p&gt;
 
-![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project-deployed.png)
-![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages-deployed.png)
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;
+&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;&lt;/p&gt;
 
-Sekarang, akses alamat _https://username.github.io_.
+&lt;p&gt;Sekarang, akses alamat &lt;em&gt;https://username.github.io&lt;/em&gt;.&lt;/p&gt;
 
-![GitHub Pages berhasil di buat](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/iqbalbirrul-github-pages.png)
+&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/iqbalbirrul-github-pages.png&quot; alt=&quot;GitHub Pages berhasil di buat&quot; /&gt;&lt;/p&gt;
 
-Hugo berhasil di deploy ke GitHub Pages..
+&lt;p&gt;Hugo berhasil di deploy ke GitHub Pages..&lt;/p&gt;
 
-Sekian, semoga bermanfaat..
+&lt;p&gt;Sekian, semoga bermanfaat..&lt;/p&gt;
 
-**Sumber:** https://gohugo.io/hosting-and-deployment/hosting-on-github/
-&lt;/url&gt;&lt;/pre&gt;&lt;/yourtheme&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Sumber:&lt;/strong&gt; https://gohugo.io/hosting-and-deployment/hosting-on-github/&lt;/p&gt;
 </content>
  </entry>
  

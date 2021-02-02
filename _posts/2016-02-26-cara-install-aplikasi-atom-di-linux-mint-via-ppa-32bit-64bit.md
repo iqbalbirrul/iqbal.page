@@ -15,21 +15,21 @@ Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual le
 
 Pertama tambahkan repository berikut :
 
-<pre>
+```bash
 sudo add-apt-repository ppa:webupd8team/atom
-</pre>
+```
 
 Kemudian ketikan
 
-<pre>
+```bash
 sudo apt-get update
-</pre>
+```
 
 Setelah update selesai tingggal langkah terakhir yaitu install Atom-nya dengan cara seperti biasa yakni :
 
-<pre>
+```bash
 sudo apt-get install atom
-</pre>
+```
 
 Tunggu hingga Installasi selesai, jika sudah selesai buka Atom di `Menu > Pengembang > Atom`.
 

@@ -25,7 +25,7 @@
     {
 
       "title"    : "Remote Access MySQL atau MariaDB",
-      "url"      : "/2020/06/remote-access-mysql-mariadb.html",
+      "url"      : "/2020/06/remote-access-mysql-atau-mariadb.html",
       "category" : "",
       "tags"     : "mysql, mariadb",
       "date"     : "2020-06-19 22:54:07 +0700",
@@ -36,7 +36,7 @@
     {
 
       "title"    : "Mengamankan SSH dengan Fail2ban",
-      "url"      : "/2020/04/fail2ban.html",
+      "url"      : "/2020/04/mengamankan-ssh-dengan-fail2ban.html",
       "category" : "",
       "tags"     : "fail2ban, ubuntu, centos",
       "date"     : "2020-04-07 01:37:48 +0700",
@@ -47,7 +47,7 @@
     {
 
       "title"    : "Deploy Hugo ke Netlify",
-      "url"      : "/2020/03/hugo-netlify.html",
+      "url"      : "/2020/03/deploy-hugo-ke-netlify.html",
       "category" : "",
       "tags"     : "hugo, netlify",
       "date"     : "2020-03-29 20:06:09 +0700",
@@ -58,7 +58,7 @@
     {
 
       "title"    : "Deploy Hugo ke Github Pages",
-      "url"      : "/2020/03/hugo-github-pages.html",
+      "url"      : "/2020/03/deploy-hugo-ke-github-pages.html",
       "category" : "",
       "tags"     : "github, hugo",
       "date"     : "2020-03-28 18:17:13 +0700",
@@ -102,7 +102,7 @@
     {
 
       "title"    : "Setup Custom Email gratis dengan Zoho Mail",
-      "url"      : "/2019/04/setup-custom-email-with-zoho.html",
+      "url"      : "/2019/04/setup-custom-email-gratis-dengan-zoho-mail.html",
       "category" : "",
       "tags"     : "zoho, email hosting",
       "date"     : "2019-04-17 18:57:12 +0700",
@@ -135,7 +135,7 @@
     {
 
       "title"    : "Generate SSL Let&#39;s Encrypt di CentOS 7",
-      "url"      : "/2019/02/generate-ssl-lets-encrypt.html",
+      "url"      : "/2019/02/generate-ssl-lets-encrypt-di-centos-7.html",
       "category" : "",
       "tags"     : "ssl, let's encrypt, centos 7",
       "date"     : "2019-02-15 02:40:14 +0700",
@@ -168,7 +168,7 @@
     {
 
       "title"    : "Mengaktifkan SSL Gratis Cloudflare di GitHub Pages (Custom Domain)",
-      "url"      : "/2018/02/ssl-gratis-cloudflare.html",
+      "url"      : "/2018/02/mengaktifkan-ssl-gratis-cloudflare-di-github-pages-custom-domain.html",
       "category" : "",
       "tags"     : "ssl, cloudflare",
       "date"     : "2018-02-16 04:15:00 +0700",

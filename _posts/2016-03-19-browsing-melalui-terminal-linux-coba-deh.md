@@ -9,14 +9,13 @@ author: iqbal
 
 ![Elinks](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png)
 
-Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux??
-Saya rasa sudah banyak yang pernah mencobanya.
+Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux? Saya rasa sudah banyak yang pernah mencobanya.
 
 Langsung saja, pertama sobat harus menginstall `elinks`, seperti biasa :
 
-<pre>
+```bash
 sudo apt-get install elinks
-</pre>
+```
 
 ika sudah terinstall, buka `elinks` dengan mengetikan perintah `elinks` di Terminal, maka akan muncul tampilan seperti gambar di bawah.
 
@@ -24,13 +23,13 @@ ika sudah terinstall, buka `elinks` dengan mengetikan perintah `elinks` di Termi
 
 Bisa juga dengan menggunakan perintah `elinks namadomain.com`.
 
-<pre>
+```
 Tombol penggunaan
 g : untuk membuka url dialog
 t : untuk membuka tab baru
 c : untuk menutup tab saat ini
 esc : untuk menampilkan toolbar
-</pre>
+```
 
 Ini screenshot hasil Browsing saya di `Elinks`
 
@@ -39,7 +38,5 @@ Ini screenshot hasil Browsing saya di `Elinks`
 ![Google](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-5.png)
 
 ![Google](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-6.png)
-
-Nah gimana?? menarik bukan??
 
 Semoga bermanfaat, thanks :) .

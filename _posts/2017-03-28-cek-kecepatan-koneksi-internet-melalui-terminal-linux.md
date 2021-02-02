@@ -14,13 +14,13 @@ Seringkali kita sebagai pengguna internet ingin mengetahui berapa kecepatan kone
 
 Kita hanya perlu menginstall tool speedtest pada linux kita sebegai berikut
 
-<pre>
+```bash
 sudo apt install speedtest-cli
-</pre>
+```
 
 Jika sudah lalu ketikan `speedtest` pada terminal lalu tekan enter, maka akan mengukur berapa kecepatan koneksi internet kamu :) .
 
-<pre>
+```bash
 $ speedtest
 Retrieving speedtest.net configuration...
 Retrieving speedtest.net server list...
@@ -31,7 +31,6 @@ Testing download speed........................................
 Download: 0.07 Mbit/s
 Testing upload speed..................................................
 Upload: 0.05 Mbit/s
-$
-</pre>
+```
 
 Selesai. Sangat mudah bukan.. semoga bermanfaat :) .

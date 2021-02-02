@@ -17,21 +17,21 @@ Berikut cara installasi nya:
 
 Install menggunakan nvm.
 
-<pre>
+```bash
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-</pre>
+```
 
 atau
 
-<pre>
+```bash
 wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-</pre>
+```
 
 Tutup terminal kemudian buka kembali Terminal dan masukan perintah berikut untuk menginstall NodeJS.
 
-<pre>
+```bash
 nvm install stable
-</pre>
+```
 
 Untuk lebih mudah melakukan installasi, bisa mendownload installer sesuai dengan sistem operasi kalian pada website [NodeJS](https://nodejs.org)
 

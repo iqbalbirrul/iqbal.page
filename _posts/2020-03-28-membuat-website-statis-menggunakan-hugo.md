@@ -20,32 +20,32 @@ author: iqbal
 
 Download file `.deb` hugo di laman [https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases), kemudian install.
 
-<pre>
+```bash
 root@static:~# wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb
-</pre>
+```
 
-<pre>
+```bash
 root@static:~# dpkg -i hugo_extended_0.68.3_Linux-64bit.deb
 (Reading database ... 101872 files and directories currently installed.)
 Preparing to unpack hugo_extended_0.68.3_Linux-64bit.deb ...
 Unpacking hugo (0.68.3) over (0.64.1) ...
 Setting up hugo (0.68.3) ...
-</pre>
+```
 
-<pre>
+```bash
 root@static:~# hugo version
 Hugo Static Site Generator v0.68.3-157669A0/extended linux/amd64 BuildDate: 2020-03-24T12:13:38Z
-</pre>
+```
 
 ### Create a New Site
 
 Buat website baru dengan perintah berikut:
 
-<pre>
+```bash
 root@static:~# hugo new site namablog
-</pre>
+```
 
-<pre>
+```bash
 root@static:~# hugo new site bloghugo
 Congratulations! Your new Hugo site is created in /root/bloghugo.
 
@@ -59,38 +59,38 @@ Just a few more steps and you're ready to go:
 3. Start the built-in live server via "hugo server".
 
 Visit https://gohugo.io/ for quickstart guide and full documentation.
-</pre>
+```
 
 ### Add a Theme
 
 Download tema terlebih dahulu dengan perintah dibawah ini.
 
-<pre>
+```bash
 root@static:~# cd bloghugo
 root@static:~/bloghugo# git init
 root@static:~/bloghugo# git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</pre>
+```
 
 **Note**: tema dapat Anda unduh di laman https://themes.gohugo.io/
 
 Kemudian, tambahkan tema ke konfigurasi Hugo.
 
-<pre>
+```bash
 echo 'theme = "ananke"' >> config.toml
-</pre>
+```
 
 ### Add Some Content
 
 Tambahkan sebuah konten ke website Hugo.
 
-<pre>
+```bash
 hugo new posts/my-first-post.md
-</pre>
+```
 
-<pre>
+```bash
 root@static:~/bloghugo# hugo new posts/my-first-post.md
 /root/bloghugo/content/posts/my-first-post.md created
-</pre>
+```
 
 Anda juga dapat membuat konten file secara manual ke directory `content/posts`.
 
@@ -98,7 +98,7 @@ Edit file yang dusah dibuat, kira-kira menjadi seperti berikut:
 
 **Catatan:** konten atau artikel ditulis menggunakan _markdown_
 
-<pre>
+```bash
 ---
 title: "My First Post"
 date: 2019-03-26T08:47:11+01:00
@@ -110,7 +110,7 @@ Halo,
 Ini adalah post pertama saya di website statis Hugo.
 
 Sekian...
-</pre>
+```
 
 Edit file `.md` menggunakan `vim` jika Anda pengguna server atau sublime, vscode jika Anda pengguna linux desktop.
 
@@ -118,11 +118,11 @@ Edit file `.md` menggunakan `vim` jika Anda pengguna server atau sublime, vscode
 
 Kemudian, jalankan hugo dengan perintah berikut:
 
-<pre>
+```bash
 hugo server -D
-</pre>
+```
 
-<pre>
+```bash
 root@static:~/bloghugo# hugo server -D
 Building sites …
 
@@ -145,7 +145,7 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-</pre>
+```
 
 Akses website hugo dengan alamat [http://127.0.0.1:1313/](http://127.0.0.1:1313/) atau [http://hostname:1313/](http://hostname:1313/).
 

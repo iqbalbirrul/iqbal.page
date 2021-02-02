@@ -9,11 +9,6 @@ tags:
 author: iqbal
 ---
 
-Selamat sore kawan :D udah 1ato2 hari nggak Posting nih :p.
-Dan sekarang saya mau Sharing Tentang [Cara menjalan Aplikasi _Windows_ di Linux.](/menjalankan-aplikasi-windows-di-linux)
-
-![Wine](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine.png)
-
 Apakah sobat pernah berpikir bahwa aplikasi _Windows_ tidak bisa dijalankan di Lain sistem operasi? Jawabannya adalah tentu saja bisa. Ada beberapa cara untuk menjalankan aplikasi _Windows_ di linux kita tercinta ini seperti menggunakan Virtual Machine, PlayOnLinux, Wine, dan Remote Desktop. Tapi kali saya akan menggunakan Wine.
 
 ![Line](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/Wine_Line.png)
@@ -23,6 +18,7 @@ Wine merupakan salah satu Software gratis untuk menjalankan aplikasi Windows di 
 Caranya :
 
 Pertama Install Wine terlebih dahulu dengan mengetikan perintah berikut di terminal.
+
 ```bash
 sudo apt-get install wine
 ```

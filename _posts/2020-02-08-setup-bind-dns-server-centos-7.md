@@ -21,44 +21,44 @@ DNS, stands for Domain Name System, translates hostnames or URLs into IP address
 
 #### Operating System
 
-<pre>
+```bash
 Operating System     : CentOS 7 minimal server
 Hostname             : dns01.dapur.my.id
 IP Address           : 117.53.44.164
-</pre>
+```
 
 Domain name ex : **dapur.my.id**
 ##### Private Name Server
 
-<pre>
+```bash
 IPv4 Glue records for dapur.my.id
 ns1.dapur.my.id.	43200	IN	A	117.53.44.164
 ns2.dapur.my.id.	43200	IN	A	117.53.44.164
 
 There are no IPv6 Glue records for dapur.my.id
-</pre>
+```
 
 ##### Install and configure Bind DNS Server
 
 ##### Install Bind DNS Server
 
-<pre>
+```
 yum update -y
 yum install bind bind-utils -y
-</pre>
+```
 
 #### Configure Bind DNS Server
 
 Edit file `/etc/named.conf`
 
-<pre>
+```bash
 mv /etc/named.conf /etc/named.conf-backup
 vim /etc/named.conf
-</pre>
+```
 
 Add the following lines:
 
-<pre>
+```bash
 options {
         listen-on port 53 { 127.0.0.1; 117.53.44.164; };
         directory "/var/named";
@@ -81,7 +81,7 @@ zone "dapur.my.id" {
                 type master;
                 file "/var/named/dapur.fwd";
                 };
-</pre>
+```
 
 #### Create Zone file
 
@@ -93,7 +93,7 @@ Create `dapur.fwd` file in the `/var/named` directory.
 
 Add the following lines:
 
-<pre>
+```bash
 $TTL 86400
 @       IN      SOA      ns1.dapur.my.id. root.dapur.my.id.(
                                 2019100914      ;Serial
@@ -111,30 +111,30 @@ ns1     IN      A       117.53.44.164
 ns2     IN      A       117.53.44.164
 
 www     IN      CNAME   dapur.my.id.
-</pre>
+```
 
 #### Check configuration file
 
 Check DNS default configuration file:
 
-<pre>
+```bash
 named-checkconf /etc/named.conf
-</pre>
+```
 
 If it returns nothing, the configuration file is valid.
 
 Check zone file:
 
-<pre>
+```bash
 named-checkzone dapur.my.id /var/named/dapur.fwd
-</pre>
+```
 
 Sample output: 
 
-<pre>
+```bash
 zone dapur.my.id/IN: loaded serial 2019100914
 OK
-</pre>
+```
 
 #### Start DNS server
 
@@ -148,13 +148,13 @@ systemctl status named
 
 ### Test DNS Server
 
-<pre>
+```bash
 dig dapur.my.id
-</pre>
+```
 
 Sample output:
 
-<pre>
+```bash
 [root@dns01 ~]# dig dapur.my.id
 
 ; <<>> DiG 9.11.4-P2-RedHat-9.11.4-9.P2.el7 <<>> dapur.my.id
@@ -175,21 +175,21 @@ dapur.my.id.            86400   IN      A       117.53.44.164
 ;; SERVER: 43.224.19.110#53(43.224.19.110)
 ;; WHEN: Wed Oct 09 12:06:56 WIB 2019
 ;; MSG SIZE  rcvd: 56
-</pre>
+```
 
-<pre>
+```
 nslookup dapur.my.id
-</pre>
+```
 
 Sample output:
 
-<pre>
+```
 Server:         43.224.19.110
 Address:        43.224.19.110#53
 
 Non-authoritative answer:
 Name:   dapur.my.id
 Address: 117.53.44.164
-</pre>
+```
 
 To make sure DNS is resolved, you can use a website like **https://intodns.com** or **https://whatsmydns.com**.

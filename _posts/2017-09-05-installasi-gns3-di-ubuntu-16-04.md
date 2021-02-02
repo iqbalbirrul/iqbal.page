@@ -15,29 +15,39 @@ Baiklah, langsung saja, bagaimana cara install GNS3. Sebelumnya, dalam hal ini s
 Catatan: Prosedur instalasi ini dapat pula dilakukan di Ubuntu (atau bahkan distro lain, utamanya turunan Debian) versi lain dengan penyesuaian.
 
 Tambahkan PPA GNS3
+
 ``` bash
   sudo add-apt-repository ppa:gns3/ppa
 ```
+
 Tekan Enter, Ketikkan password, lalu Enter lagi. Lalu update repository kita dengan perintah :
+
 ``` bash
   sudo apt update
 ```
+
 Jika proses di atas sudah selesai, kita dapat menginstall GNS3 :
+
 ``` bash
   sudo apt install gns3-gui
 ```
+
 Selesai instalasi, aplikasi GNS3 dapat diakses melalui menu `Aplikasi > Edukasi > GNS3`, atau dengan mengetikkan perintah di terminal :
+
 ``` bash
   gns3
 ```
+
 Tampilannya sebagai berikut :
 
 ![Tampilan GNS3](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-2.png)
 
 Sebagai tambahan yang diperlukan, kita juga meng-install `qemu` :
+
 ``` bash
 sudo apt install qemu
 ```
+
 Qemu digunakan untuk menjalankan OS MikroTik di dalam GNS3.
 
 Lihat video ini, bisa di copas lho :).

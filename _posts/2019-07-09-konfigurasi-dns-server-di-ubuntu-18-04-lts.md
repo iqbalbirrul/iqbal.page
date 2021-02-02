@@ -44,32 +44,32 @@ Saya belajar membuat DNS server menggunakan sistem operasi Ubuntu Server 18.04 L
 
 - Langkah pertama yaitu install `bind9`
 
-<pre>
+```bash
 root@cloudsrv2:~# apt update
 root@cloudsrv2:~# apt install bind9 bind9utils
-</pre>
+```
 
 - Konfigurasi `bind9`
 
-<pre>
+```bash
 root@cloudsrv2:~# cd /etc/bind/
 root@cloudsrv2:/etc/bind# vi named.conf
-</pre>
+```
 
 -  Edit file `named.conf` menjadi seperti berikut:
 
-<pre>
+```bash
 include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
 
 # include "/etc/bind/named.conf.default-zones";
 
 include "/etc/bind/named.conf.external";
-</pre>
+```
 
 - Edit file `named.conf.options`, menjadi seperti berikut:
 
-<pre>
+```bash
 root@cloudsrv2:/etc/bind# vi named.conf.options
 # buat konfigurasi seperti berikut
 options {
@@ -82,11 +82,11 @@ options {
         auth-nxdomain no;    # conform to RFC1035
         listen-on-v6 { none; };
 };
-</pre>
+```
 
 - Buat file `named.conf.external`:
 
-<pre>
+```bash
 root@cloudsrv2:/etc/bind# vi named.conf.external
 
 # masukan konfigurasi seperti berikut
@@ -102,11 +102,11 @@ view "external" {
                 allow-update { none; };
         };
 };                       
-</pre>
+```
 
 - Buat file zone untuk record-record DNS `server1.db`:
 
-<pre>
+```bash
 root@cloudsrv2:/etc/bind# vi server1.db
 
 # buat zone sebagai berikut:
@@ -131,13 +131,13 @@ ns2     IN      A       117.53.46.186
 cloudsrv2       IN      A       117.53.46.186
 
 www     IN      CNAME iqbalbirrul.web.id.
-</pre>
+```
 
 - Konfigurasi selesai, sekarang jalankan service `bind9`
 
-<pre>
+```bash
 root@cloudsrv2:~# systemctl start bind9
-</pre>
+```
 
 ### Private Nameserver
 
@@ -145,13 +145,13 @@ Setelah membuat DNS server, silakan membuat private nameserver/glue record untuk
 
 Berikut nameserver yang harus di tambahkan:
 
-<pre>
+```bash
 Nameserver: ns1
 IP Address: IP Address DNS Server
 
 Nameserver: ns2
 IP Address: IP Address DNS Server
-</pre>
+```
 
 - Kemudian ubah nameserver domain ke private nameserver yang telah dibuat.
 
@@ -159,7 +159,7 @@ IP Address: IP Address DNS Server
 
 - Kemudian, test apakah domain sudah terhubung ke nameserver dengan cara berikut:
 
-<pre>
+```bash
 iqbal@ThinkPad-E450:~$ dig iqbalbirrul.web.id +short
 117.53.46.186
 iqbal@ThinkPad-E450:~$ nslookup iqbalbirrul.web.id
@@ -169,7 +169,7 @@ Address:	127.0.0.53#53
 Non-authoritative answer:
 Name:	iqbalbirrul.web.id
 Address: 117.53.46.186
-</pre>
+```
 
 Konfigurasi selesai, semoga bermanfaat
 

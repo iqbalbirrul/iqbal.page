@@ -28,6 +28,7 @@ Pada tulisan ini, installasi menggunakan sistem operasi Ubuntu 18.04 LTS
 ## Installasi di Ubuntu 18.04 LTS
 
 Sebelum Jekyll di install, terlebih dahulu install paket yang dibutuhkan
+
 ```bash
 $ sudo apt update
 $ sudo apt install ruby-full build-essential zlib1g-dev
@@ -36,6 +37,7 @@ $ sudo apt install ruby-full build-essential zlib1g-dev
 Usahakan tidak menggunakan root saat install `Ruby Gems`. Oleh karena itu, buat directory installasi `gem` untuk user Anda.
 
 Tambahkan beberapa konfigurasi pada file `./bashrc` dengan perintah berikut:
+
 ```bash
 $ echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 $ echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
@@ -44,6 +46,7 @@ $ source ~/.bashrc
 ```
 
 Selanjutnya, install jekyll dengan perintah berikut:
+
 ```bash
 $ gem install jekyll bundler
 ```
@@ -53,18 +56,21 @@ Sekarang Jekyll siap digunakan.
 ## Buat Blog dengan Jekyll
 
 Siapkan directory untuk Jekyll
+
 ```bash
 $ mkdir Jekyll
 $ cd Jekyll
 ```
 
 Kemudian buat Jekyll Site.
+
 ```bash
 ~/Jekyll$ jekyll new iqbal-jekyll
 ~/Jekyll$ cd iqbal-jekyll
 ```
 
 Jalankan Jekyllnya
+
 ```bash
 ~/Jekyll/iqbal-jekyll$ bundle exec jekyll serve
 Configuration file: /home/iqbal/Jekyll/iqbal-jekyll/_config.yml
@@ -86,6 +92,7 @@ Akses jekyll dengan alamat [_http://localhost:4000/_](http://localhost:4000/)
 ### Konfigurasi Jekyll
 
 Untuk configurasi Jekyll sendiri berada pada file `_config.yml`.
+
 ```bash
 title: Iqbal Birrul Walidain
 email: kontak@iqbalbirrul.com

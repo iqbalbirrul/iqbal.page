@@ -21,16 +21,21 @@ sudo apt install git-core
 ```
 Install NodeJS, bisa lihat disini: [Cara Install NodeJS di Linux Ubuntu 16.04](/cara-install-nodejs-di-linux-ubuntu-16.04)
 Jika sudah terinstall Git dan NodeJS, sekarang kita install Hexo dengan perintah berikut.
+
 ```bash
 npm install -g hexo-cli
 ```
+
 Setelah Hexo terinstal , jalankan perintah berikut untuk menginisialisasi Hexo di target
+
 ```bash
 hexo init <folder>
 cd <folder>
 npm install
 ```
+
 Setelah menjalankan perintah diatas, maka folder tadi akan terlihat seperti ini.
+
 ```bash
 .
 ├── _config.yml
@@ -59,19 +64,27 @@ deploy:
   branch: [branch]
   message: [message]
 ```
+
 Untuk membuat artikel.
+
 ```bash
 hexo new post <title>
 ```
+
 Generate terlebih dahulu website Hexo-nya.
+
 ```bash
 hexo generate
 ```
+
 Lalu deploy ke github.
+
 ```bash
 hexo deploy
 ```
+
 Atau bisa juga menjalankan di server lokal kita dengan perintah berikut.
+
 ```bash
 hexo server
 ```

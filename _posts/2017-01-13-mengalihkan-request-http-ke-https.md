@@ -15,11 +15,11 @@ Setelah aktif domain saya sudah bisa diakses melalui `https://iqbalbirrul.web.id
 
 Buka file manager lewat cpanel atau FTP, lalu edit file `.htaccess` yang terletak didalam folder root `public_html` dan masukan kode berikut kedalam file `.htaccess`
 
-<pre>
+```bash
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-</pre>
+```
 
 Jika sudah, sekarang domain saya sudah bisa mengakses  `http://iqbalbirrul.web.id` akan langsung mengarah ke `https://iqbalbirrul.web.id`
 

@@ -8,7 +8,7 @@ tags:
 author: iqbal
 ---
 
-[Membuat Efek Anyaman](/tutorial-gimp-membuat-efek-anyaman)- Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.
+Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.
 
 ![Efek Anyaman](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-anyaman.png)
 

@@ -14,9 +14,11 @@ Hallo :D kali ini saya akan share tentang [Cara mudah Merekam layar Desktop di L
 
 Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.
 Yang pertama adalah  masukan perintah berikut di Terminal.
+
 ``` bash
 sudo apt-get install recordmydesktop
 ```
+
 ![Installasi Recordmydesktop](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_1.png)
 
 Jika sudah selesai, jalankan `RecordMyDesktop` melalui terminal, dengan perintah `recordmydesktop` maka akan secara otomatis merekam layar Desktop sobat.

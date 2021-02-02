@@ -72,7 +72,6 @@ server {
         ssl_prefer_server_ciphers on;
 }
 ```
-[Generate SSL Let's Encrypt di CentOS 7](/generate-ssl-lets-encrypt-di-centos-7/)
 
 Dan ini untuk konfigurasi Nginx sebagai Reverse Proxy:
 

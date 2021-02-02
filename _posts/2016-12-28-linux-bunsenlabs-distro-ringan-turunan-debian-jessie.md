@@ -25,9 +25,9 @@ Untuk mendapatkan BunsenLabs, bisa di unduh melalui halaman resmi [BunsenLabs](h
 
 Untuk membuat USB Bootable, usahakan menggunakan linux dengan perintah di terminal :
 
-<pre>
+```bash
 dd if=/path/to/bunsenlab.iso of=/dev/sd{letter}
-</pre>
+```
 
 karena jika menggunakan YUMI atau Unetbootin di windows akan menimbulkan error.
 

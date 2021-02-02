@@ -4,13 +4,33 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-03T05:21:49+07:00</updated>
+ <updated>2021-02-03T05:29:38+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Run Jekyll sebagai daemon di Linux</title>
+   <link href="https://iqbal.page/2021/02/run-jekyll-sebagai-daemon-di-linux.html"/>
+   <updated>2021-02-03T05:28:18+07:00</updated>
+   <id>https://iqbal.page/2021/02/run-jekyll-sebagai-daemon-di-linux</id>
+   <content type="html">&lt;p&gt;Secara default jekyll tidak bisa dijalankan sebagai daemon, jadi ada cara tersendiri untuk membuat jekyll berjalan dalam background.&lt;/p&gt;
+
+&lt;p&gt;Berikut perintahnya:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &amp;amp;&amp;gt;/dev/null &amp;lt;/dev/null &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Untuk hostnya bisa disesuikan akan listen di IP Address ingin dipakai.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Plesk:  How to Cancel a stuck task in Plesk Panel</title>
@@ -59,12 +79,15 @@ service sw-engine start
    <updated>2021-02-02T05:20:34+07:00</updated>
    <id>https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux</id>
    <content type="html">&lt;p&gt;Gunakan perintah &lt;code&gt;ftp&lt;/code&gt; jika tidak pakai ssl &lt;code&gt;ftp-ssl&lt;/code&gt; jika pakai ssl, seperti berikut:&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;ftp-ssl
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Hasil:&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;root@new:~# ftp-ssl
 ftp&amp;gt; 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Konek ke ftp server dengan perintah &lt;code&gt;open &amp;lt;hostname&amp;gt;&lt;/code&gt; lalu masukan user dan password, contoh:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ftp&amp;gt; open hostname.domain.com
@@ -148,6 +171,8 @@ ftp&amp;gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
 </content>
  </entry>
  

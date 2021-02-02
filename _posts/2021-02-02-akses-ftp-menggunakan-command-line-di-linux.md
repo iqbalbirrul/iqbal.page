@@ -7,14 +7,17 @@ date: '2021-02-02 05:20:34'
 ---
 
 Gunakan perintah `ftp` jika tidak pakai ssl `ftp-ssl` jika pakai ssl, seperti berikut:
+
 ```
 ftp-ssl
 ```
 Hasil:
+
 ```
 root@new:~# ftp-ssl
 ftp> 
 ```
+
 Konek ke ftp server dengan perintah `open <hostname>` lalu masukan user dan password, contoh:
 
 ```
@@ -52,3 +55,5 @@ Untuk perintah-perintah nya dibawah ini:
 | put | upload file dari local ke server ftp |
 | mput | upload beberapa file dari local ke server ftp |
 | quit | untuk keluar dari server ftp |
+
+Semoga bermanfaat.

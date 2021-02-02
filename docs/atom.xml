@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-03T05:11:52+07:00</updated>
+ <updated>2021-02-03T05:21:49+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -13,9 +13,50 @@
 
  
  <entry>
+   <title>Plesk:  How to Cancel a stuck task in Plesk Panel</title>
+   <link href="https://iqbal.page/2021/02/plesk-how-to-cancel-a-stuck-task-in-plesk-panel.html"/>
+   <updated>2021-02-03T05:19:13+07:00</updated>
+   <id>https://iqbal.page/2021/02/plesk-how-to-cancel-a-stuck-task-in-plesk-panel</id>
+   <content type="html">&lt;p&gt;Connect ke Plesk via SSH.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;plesk db dump &amp;gt; /root/psa_dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;plesk db &quot;SELECT id,type,status,finishTime FROM longtasks WHERE status &amp;lt;&amp;gt; 'done'&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt; ~]# plesk db &quot;SELECT id,type,status,finishTime FROM longtasks WHERE status &amp;lt;&amp;gt; 'done'&quot;
++----+---------------------+---------+---------------------+
+| id | type                | status  | finishTime          |
++----+---------------------+---------+---------------------+
+| 13 | ext-catalog-install | started | 0000-00-00 00:00:00 |
++----+---------------------+---------+---------------------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Catat id yang didapat.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;plesk db &quot;DELETE FROM longtasks WHERE id=13&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;plesk db &quot;DELETE FROM longtaskparams WHERE task_id=13&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;pkill task-async-executor
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;service sw-engine stop
+service sw-engine start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Akses FTP Menggunakan Command Line di Linux</title>
    <link href="https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html"/>
-   <updated>2021-02-02T00:00:00+07:00</updated>
+   <updated>2021-02-02T05:20:34+07:00</updated>
    <id>https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux</id>
    <content type="html">&lt;p&gt;Gunakan perintah &lt;code&gt;ftp&lt;/code&gt; jika tidak pakai ssl &lt;code&gt;ftp-ssl&lt;/code&gt; jika pakai ssl, seperti berikut:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ftp-ssl

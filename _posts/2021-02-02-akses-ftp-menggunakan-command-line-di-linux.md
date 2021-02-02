@@ -3,6 +3,7 @@ title: Akses FTP Menggunakan Command Line di Linux
 tags:
 - ftp
 - cli
+date: '2021-02-02 05:20:34'
 ---
 
 Gunakan perintah `ftp` jika tidak pakai ssl `ftp-ssl` jika pakai ssl, seperti berikut:

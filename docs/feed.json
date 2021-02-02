@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/02/plesk-how-to-cancel-a-stuck-task-in-plesk-panel.html",
+            "title": "Plesk:  How to Cancel a stuck task in Plesk Panel",
+            "summary": null,
+            "content_text": "Connect ke Plesk via SSH.plesk db dump &gt; /root/psa_dump.sqlplesk db \"SELECT id,type,status,finishTime FROM longtasks WHERE status &lt;&gt; 'done'\" ~]# plesk db \"SELECT id,type,status,finishTime FROM longtasks WHERE status &lt;&gt; 'done'\"+----+---------------------+---------+---------------------+| id | type                | status  | finishTime          |+----+---------------------+---------+---------------------+| 13 | ext-catalog-install | started | 0000-00-00 00:00:00 |+----+---------------------+---------+---------------------+  Catat id yang didapat.plesk db \"DELETE FROM longtasks WHERE id=13\"plesk db \"DELETE FROM longtaskparams WHERE task_id=13\"pkill task-async-executorservice sw-engine stopservice sw-engine startSemoga bermanfaat.",
+            "content_html": "<p>Connect ke Plesk via SSH.</p><pre><code class=\"language-bash\">plesk db dump &gt; /root/psa_dump.sql</code></pre><pre><code class=\"language-bash\">plesk db \"SELECT id,type,status,finishTime FROM longtasks WHERE status &lt;&gt; 'done'\"</code></pre><pre><code class=\"language-bash\"> ~]# plesk db \"SELECT id,type,status,finishTime FROM longtasks WHERE status &lt;&gt; 'done'\"+----+---------------------+---------+---------------------+| id | type                | status  | finishTime          |+----+---------------------+---------+---------------------+| 13 | ext-catalog-install | started | 0000-00-00 00:00:00 |+----+---------------------+---------+---------------------+</code></pre><blockquote>  <p>Catat id yang didapat.</p></blockquote><pre><code class=\"language-bash\">plesk db \"DELETE FROM longtasks WHERE id=13\"</code></pre><pre><code class=\"language-bash\">plesk db \"DELETE FROM longtaskparams WHERE task_id=13\"</code></pre><pre><code class=\"language-bash\">pkill task-async-executor</code></pre><pre><code class=\"language-bash\">service sw-engine stopservice sw-engine start</code></pre><p>Semoga bermanfaat.</p>",
+            "url": "https://iqbal.page/2021/02/plesk-how-to-cancel-a-stuck-task-in-plesk-panel.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-02-03T05:19:13+07:00",
+            "date_modified": "2021-02-03T05:19:13+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html",
             "title": "Akses FTP Menggunakan Command Line di Linux",
             "summary": null,
@@ -28,8 +52,8 @@
             
             "tags": ["ftp","cli"],
             
-            "date_published": "2021-02-02T00:00:00+07:00",
-            "date_modified": "2021-02-02T00:00:00+07:00",
+            "date_published": "2021-02-02T05:20:34+07:00",
+            "date_modified": "2021-02-02T05:20:34+07:00",
             
                 "author":  {
                 "name": "iqbalbirrul",
@@ -681,25 +705,6 @@
             
             "date_published": "2016-02-24T07:59:00+07:00",
             "date_modified": "2016-02-24T07:59:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/02/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux.html",
-            "title": "Cara membuat Bootable dengan Aplikasi Multisystem di Linux",
-            "summary": null,
-            "content_text": "Multisystem adalah aplikasi di linux Ubuntu dan turunannya yang memungkinkan seseorang untuk dapat membuat multiboot sistem operasi pada media Flashdisk. Dengan aplikasi Multisystem ini kita dapat menambah atau membuat beberapa bootable atau installer sistem operasi seperti Windows, Linux (Ubuntu, Linux Mint) dan masih banyak lagi.Kini saya akan membagikan Cara membuat Bootable dengan Aplikasi Multisystem di Linux.Pertama, download terlebih dahulu installer multisystemnya, di SINI.Ekastrak file tar.bz2 tersebut, lalu Anda akan mendapati file .sh.Install Multisystem dengan mengetikan perintah berikut di Terminal.Masukan password, dan tunggu Installasi hingga selesai.Masukan USB FlashDisk ke Komputer, ukuran FlashDisk minimal 8 GB dan pastikan sudah di Format menggunakan filesystem fat32.Buka aplikasi multisystem. Menu &gt; Accessories &gt; Multisystem, lalu klik Konfirmasi.Jika muncul dialog Harap konfirmasi installasi grub2 di volume:/dev/sdb1 klik Ok.Lalu klik ikon CD untuk memilih file .iso.Pilih file .iso yang akan di jadikan Installer, lalu klik OK.Masukan Password lalu tekan Enter dan tunggu hingga Proses pembuatan Installer selesai.Untuk menambahkan Installer Lainnya, caranya sama saja.Kemudian tes Installer untuk melihat sudah berjalan dengan baik atau belum dengan klik menu Boot &gt; Tes LiveUSB Anda di Qemu, lalu masukan Password dan tekan Enter.Ini adalah tampilan Bootable saat proses Booting.Selesai, semoga bermanfaat :).",
-            "content_html": "<p>Multisystem adalah aplikasi di linux Ubuntu dan turunannya yang memungkinkan seseorang untuk dapat membuat multiboot sistem operasi pada media Flashdisk. Dengan aplikasi Multisystem ini kita dapat menambah atau membuat beberapa bootable atau installer sistem operasi seperti Windows, Linux (Ubuntu, Linux Mint) dan masih banyak lagi.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png\" alt=\"Multisystem\" /></p><p>Kini saya akan membagikan Cara membuat Bootable dengan Aplikasi Multisystem di Linux.</p><p>Pertama, download terlebih dahulu installer multisystemnya, di <a href=\"http://idsly.com/EjGo59PM\">SINI</a>.</p><p>Ekastrak file <code>tar.bz2</code> tersebut, lalu Anda akan mendapati file <code>.sh</code>.</p><p>Install Multisystem dengan mengetikan perintah berikut di Terminal.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_1.png\" alt=\"Installasi 1\" /></p><p>Masukan password, dan tunggu Installasi hingga selesai.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_2.png\" alt=\"Installasi Selesai\" /></p><p>Masukan USB FlashDisk ke Komputer, ukuran FlashDisk minimal 8 GB dan pastikan sudah di Format menggunakan filesystem <code>fat32</code>.Buka aplikasi multisystem. <code>Menu &gt; Accessories &gt; Multisystem</code>, lalu klik Konfirmasi.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_3.png\" alt=\"Interface\" /></p><p>Jika muncul dialog Harap konfirmasi <code>installasi grub2 di volume:/dev/sdb1</code> klik Ok.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_4.png\" alt=\"Installasi Grub2\" /></p><p>Lalu klik ikon CD untuk memilih file <code>.iso</code>.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-5.png\" alt=\"Memilih File .iso\" /></p><p>Pilih file .iso yang akan di jadikan Installer, lalu klik OK.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-6.png\" alt=\"Pilih File\" /></p><p>Masukan Password lalu tekan Enter dan tunggu hingga Proses pembuatan Installer selesai.</p><p><img src=\"https://cdn.iqbal.gdn/assets/images/multisystem-7.png\" alt=\"Masukan Password\" /></p><p>Untuk menambahkan Installer Lainnya, caranya sama saja.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-8.png\" alt=\"Multisystem\" /></p><p>Kemudian tes Installer untuk melihat sudah berjalan dengan baik atau belum dengan klik menu <code>Boot &gt; Tes LiveUSB Anda di Qemu</code>, lalu masukan Password dan tekan Enter.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-9.png\" alt=\"Password Again\" /></p><p>Ini adalah tampilan Bootable saat proses Booting.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-10.png\" alt=\"Tampilan Bootable\" /></p><p>Selesai, semoga bermanfaat :).</p>",
-            "url": "https://iqbal.page/2016/02/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux.html",
-            
-            
-            
-            "tags": ["multisystem","bootable"],
-            
-            "date_published": "2016-02-23T22:27:00+07:00",
-            "date_modified": "2016-02-23T22:27:00+07:00",
             
                 "author": "iqbal"
             

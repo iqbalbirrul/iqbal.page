@@ -89,6 +89,54 @@
         },
     
         {
+            "id": "https://iqbal.page/2020/11/konfigurasi-nat-iptables.html",
+            "title": "Konfigurasi NAT Iptables",
+            "summary": null,
+            "content_text": "Sebelumnya saya sedang mencoba membuat website WordPress dengan topology load balancing, dengan detailnya dibawah ini:  1 VM LB  2 VM Web Server  1 VM DatabaseUntuk VM LB, terdapat 2 interface yaitu IP Publik (eth0) dan IP Private sebagai gateway (eth1) . Sedangkan untuk 3 VM lainnya hanya mempunyai 1 interface saja yaitu IP Private (eth0), sehingga untuk 3 VM ini tidak mendapatkan akses ke internet untuk install maupun update package.Guna mengatasi hal tersebut saya memasukan beberapa konfigurasi pada Iptables, agar si eth1 ini mendapatkan akses internet. Cara sebagai berikut:Backup terlebih dahulu konfigurasi Iptables yang adacp /etc/sysconfig/iptables-config /etc/sysconfig/iptables-config.bakMasukan konfigurasi pada kernelecho 1 &gt; /proc/sys/net/ipv4/ip_forwardsed -i \"s/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g\" /etc/sysctl.confTambahkan konfigurasi pada Iptablesiptables -t nat -A POSTROUTING -o eth0 -j MASQUERADEiptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPTiptables -A FORWARD -i eth1 -o eth0 -j ACCEPTRestart Iptablessystemctl reload iptablesKonfigurasi diatas bertujuan agar koneksi internet bisa diteruskan dari eth0 ke eth1, shingga IP Private yang lain dengan subnet yang sama akan mendapatkan akses internet.Segitu saja, semoga bermanfaat.",
+            "content_html": "<p>Sebelumnya saya sedang mencoba membuat website WordPress dengan topology load balancing, dengan detailnya dibawah ini:</p><ul>  <li>1 VM LB</li>  <li>2 VM Web Server</li>  <li>1 VM Database</li></ul><p>Untuk VM LB, terdapat 2 interface yaitu IP Publik (eth0) dan IP Private sebagai gateway (eth1) . Sedangkan untuk 3 VM lainnya hanya mempunyai 1 interface saja yaitu IP Private (eth0), sehingga untuk 3 VM ini tidak mendapatkan akses ke internet untuk install maupun update package.</p><p>Guna mengatasi hal tersebut saya memasukan beberapa konfigurasi pada Iptables, agar si eth1 ini mendapatkan akses internet. Cara sebagai berikut:</p><p>Backup terlebih dahulu konfigurasi Iptables yang ada</p><pre><code class=\"language-bash\">cp /etc/sysconfig/iptables-config /etc/sysconfig/iptables-config.bak</code></pre><p>Masukan konfigurasi pada kernel</p><pre><code class=\"language-bash\">echo 1 &gt; /proc/sys/net/ipv4/ip_forwardsed -i \"s/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g\" /etc/sysctl.conf</code></pre><p>Tambahkan konfigurasi pada Iptables</p><pre><code class=\"language-bash\">iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADEiptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPTiptables -A FORWARD -i eth1 -o eth0 -j ACCEPT</code></pre><p>Restart Iptables</p><pre><code class=\"language-bash\">systemctl reload iptables</code></pre><p>Konfigurasi diatas bertujuan agar koneksi internet bisa diteruskan dari <code>eth0</code> ke<code> eth1</code>, shingga IP Private yang lain dengan subnet yang sama akan mendapatkan akses internet.</p><p>Segitu saja, semoga bermanfaat.</p>",
+            "url": "https://iqbal.page/2020/11/konfigurasi-nat-iptables.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-11-20T13:36:00+07:00",
+            "date_modified": "2020-11-20T13:36:00+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://iqbal.page/2020/11/membuat-repository-git.html",
+            "title": "Membuat Repository Git",
+            "summary": null,
+            "content_text": "Pertama-tama kita perlu buat akun github atau gitlab, jika mempunyai server git sendiri itu bagus.Silakan daftar akun github/gitlab pada link dibawah ini.  GitHub  GitLabSetelah punya akun github/gitlab, siapkan repository di akun github/gitlab masing-masing.Install git pada sistem operasi masing-masing, disini saya pakai linux dengan distro ubuntu.Untuk install git, gunakan perintah berikut:apt install gitUntuk cek versi, gunakan perintah berikut:git --versionSetelah installasi dilakukan, lakukan konfigurasi awal dengan perintah berikut:git config --global user.name \"Lime\"git config --global user.email \"limegit@gmail.com\"Buat directory dimana repositorymu akan diletakan.mkdir test-gitcd test-gitLakukan remote ke repository di github/gitlab, berikut perintahnya:git initgit remote add &lt;nama-remote&gt; &lt;url-remote&gt;&lt;nama-remote&gt; merupakan nama dari repository, sedangkan &lt;url-remote&gt; merupakan url dari repository github/gitlab.Sebagai contoh:git remote add gitlab https://gitlab.com/limegit/jeruk.gitKetikan perintah git remote -v untuk melihat repository mana saja yang diremote:root@node:~/git-test/jeruk# git remote -vgitlab  https://gitlab.com/limegit/jeruk.git (fetch)gitlab  https://gitlab.com/limegit/jeruk.git (push)Buat 1 file sebagai untuk test push dari lokal ke github/gitlab:touch README.mdgit add README.mdgit commit -m \"add readme\"Perintah commit disini berfungsi untuk memberikan pesan/catatan perubahan apa saja yang telah dilakukan.Langkah terakhir adalah push ke repository:git push -u gitlab masterKemudian akan muncul form untuk memasukan credential, karena sebelumnya remote yang digunakan adalah https sehingga memerlukan authentikasi.Apabila sudah selesai push, cek pada laman repository github/gitlab. Sebagai contoh file yang sudah dipush ada pada gambar dibawah ini.Selesai, semoga bermanfaat.",
+            "content_html": "<p>Pertama-tama kita perlu buat akun github atau gitlab, jika mempunyai server git sendiri itu bagus.</p><p>Silakan daftar akun github/gitlab pada link dibawah ini.</p><ul>  <li><a href=\"https://github.com/join\">GitHub</a></li>  <li><a href=\"https://gitlab.com/users/sign_up\">GitLab</a></li></ul><p>Setelah punya akun github/gitlab, siapkan repository di akun github/gitlab masing-masing.</p><p>Install git pada sistem operasi masing-masing, disini saya pakai linux dengan distro ubuntu.</p><p>Untuk install git, gunakan perintah berikut:</p><pre><code class=\"language-bash\">apt install git</code></pre><p>Untuk cek versi, gunakan perintah berikut:</p><pre><code class=\"language-bash\">git --version</code></pre><p>Setelah installasi dilakukan, lakukan konfigurasi awal dengan perintah berikut:</p><pre><code class=\"language-bash\">git config --global user.name \"Lime\"git config --global user.email \"limegit@gmail.com\"</code></pre><p>Buat directory dimana repositorymu akan diletakan.</p><pre><code class=\"language-bash\">mkdir test-gitcd test-git</code></pre><p>Lakukan remote ke repository di github/gitlab, berikut perintahnya:</p><pre><code class=\"language-bash\">git initgit remote add &lt;nama-remote&gt; &lt;url-remote&gt;</code></pre><p><code>&lt;nama-remote&gt;</code> merupakan nama dari repository, sedangkan <code>&lt;url-remote&gt;</code> merupakan url dari repository github/gitlab.</p><p>Sebagai contoh:</p><pre><code class=\"language-bash\">git remote add gitlab https://gitlab.com/limegit/jeruk.git</code></pre><p>Ketikan perintah <code>git remote -v</code> untuk melihat repository mana saja yang diremote:</p><pre><code class=\"language-bash\">root@node:~/git-test/jeruk# git remote -vgitlab  https://gitlab.com/limegit/jeruk.git (fetch)gitlab  https://gitlab.com/limegit/jeruk.git (push)</code></pre><p>Buat 1 file sebagai untuk test push dari lokal ke github/gitlab:</p><pre><code class=\"language-bash\">touch README.mdgit add README.mdgit commit -m \"add readme\"</code></pre><p>Perintah commit disini berfungsi untuk memberikan pesan/catatan perubahan apa saja yang telah dilakukan.</p><p>Langkah terakhir adalah push ke repository:</p><pre><code class=\"language-bash\">git push -u gitlab master</code></pre><p>Kemudian akan muncul form untuk memasukan credential, karena sebelumnya remote yang digunakan adalah https sehingga memerlukan authentikasi.</p><p>Apabila sudah selesai push, cek pada laman repository github/gitlab. Sebagai contoh file yang sudah di<em>push</em> ada pada gambar dibawah ini.</p><p><img src=\"https://i.imgur.com/EP7bwya.png\" alt=\"File Repository\" /></p><p>Selesai, semoga bermanfaat.</p>",
+            "url": "https://iqbal.page/2020/11/membuat-repository-git.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-11-19T05:46:39+07:00",
+            "date_modified": "2020-11-19T05:46:39+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2020/08/install-plesk-panel-obisidian.html",
             "title": "Install Plesk Panel Obsidian",
             "summary": null,
@@ -672,44 +720,6 @@
             
             "date_published": "2016-02-26T09:46:00+07:00",
             "date_modified": "2016-02-26T09:46:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux.html",
-            "title": "Cara mudah Merekam layar Desktop di Linux",
-            "summary": null,
-            "content_text": "Hallo :D kali ini saya akan share tentang Cara mudah Merekam layar Desktop di Linux.Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.Yang pertama adalah  masukan perintah berikut di Terminal.sudo apt-get install recordmydesktopJika sudah selesai, jalankan RecordMyDesktop melalui terminal, dengan perintah recordmydesktop maka akan secara otomatis merekam layar Desktop sobat.Proses rekam akan terilihat seperti iniTekan Ctrl+C untuk Stop dan otomatis menyimpan hasil rekaman.File hasil rekaman akan masuk ke folde Home ex : /home/iqbal/Nah mudah kan :D , semoga bermanfaat :) .",
-            "content_html": "<p>Hallo :D kali ini saya akan share tentang <a href=\"/cara-mudah-merekam-layar-desktop-di-linux\">Cara mudah Merekam layar Desktop di Linux</a>.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop.png\" alt=\"Record My Desktop\" /></p><p>Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.Yang pertama adalah  masukan perintah berikut di Terminal.</p><pre><code class=\"language-bash\">sudo apt-get install recordmydesktop</code></pre><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_1.png\" alt=\"Installasi Recordmydesktop\" /></p><p>Jika sudah selesai, jalankan <code>RecordMyDesktop</code> melalui terminal, dengan perintah <code>recordmydesktop</code> maka akan secara otomatis merekam layar Desktop sobat.</p><p>Proses rekam akan terilihat seperti ini</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_2.png\" alt=\"Proses Rekam\" /></p><p>Tekan Ctrl+C untuk Stop dan otomatis menyimpan hasil rekaman.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_3.png\" alt=\"Setop\" /></p><p>File hasil rekaman akan masuk ke folde Home ex : <code>/home/iqbal/</code></p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_4.png\" alt=\"Hasil\" /></p><p>Nah mudah kan :D , semoga bermanfaat :) .</p>",
-            "url": "https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux.html",
-            
-            
-            
-            "tags": ["multimedia","recordmydesktop"],
-            
-            "date_published": "2016-02-25T09:32:00+07:00",
-            "date_modified": "2016-02-25T09:32:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux.html",
-            "title": "Cara cek Whois Domain lewat Terminal Linux",
-            "summary": null,
-            "content_text": "Yap kali ini saya akan ngeshare Cara Whois Nama Domain lewat Terminal Linux.Biasanya orang-orang ngecek Whois domain lewat beberapa website seperti who.is, whois.domaintools.com, whois.pandi.id (.id only), whois.icann.org, whois.net, whois.com, whois.namecheckup.com dan masih banyak lagi.Dan sekarang tinggal Lewat Terminal Linux, Cek Whois di Linux emang sudah lama ada, tapi Iqbal hanya sekedar berbagi. BERBAGI GAK DOSA KAN??Ok, langsung saja.Pertama install dulu whoisnya, tentunya lewat Terminalsudo apt-get install whoisMasukan Password dan tunggu hingga selesai.Untuk melakukan Whois cuku ketikan whois namadomain.com.di terminal (tanpa tanda petik).Nah mudah bukan?? selamat mencoba :) .",
-            "content_html": "<p>Yap kali ini saya akan ngeshare <a href=\"/cara-cek-whois-domain-lewat-terminal-linux\">Cara Whois Nama Domain lewat Terminal Linux</a>.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois.png\" alt=\"Whois Record\" /></p><p>Biasanya orang-orang ngecek Whois domain lewat beberapa website seperti <code>who.is, whois.domaintools.com, whois.pandi.id (.id only), whois.icann.org, whois.net, whois.com, whois.namecheckup.com</code> dan masih banyak lagi.</p><p>Dan sekarang tinggal Lewat Terminal Linux, Cek Whois di Linux emang sudah lama ada, tapi Iqbal hanya sekedar berbagi. BERBAGI GAK DOSA KAN??</p><p>Ok, langsung saja.</p><p>Pertama install dulu whoisnya, tentunya lewat Terminal</p><pre><code class=\"language-bash\">sudo apt-get install whois</code></pre><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_1.png\" alt=\"Installasi\" /></p><p>Masukan Password dan tunggu hingga selesai.</p><p>Untuk melakukan Whois cuku ketikan <code>whois namadomain.com</code>.</p><p>di terminal (tanpa tanda petik).</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_2.png\" alt=\"Cek Whois\" /><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_3.png\" alt=\"Cek Whois\" /></p><p>Nah mudah bukan?? selamat mencoba :) .</p>",
-            "url": "https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux.html",
-            
-            
-            
-            "tags": ["domaintools","whois"],
-            
-            "date_published": "2016-02-24T11:57:00+07:00",
-            "date_modified": "2016-02-24T11:57:00+07:00",
             
                 "author": "iqbal"
             

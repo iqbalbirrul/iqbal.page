@@ -141,6 +141,14 @@
 <lastmod>2020-08-12T09:59:41+07:00</lastmod>
 </url>
 <url>
+<loc>https://iqbal.page/2020/11/membuat-repository-git.html</loc>
+<lastmod>2020-11-19T05:46:39+07:00</lastmod>
+</url>
+<url>
+<loc>https://iqbal.page/2020/11/konfigurasi-nat-iptables.html</loc>
+<lastmod>2020-11-20T13:36:00+07:00</lastmod>
+</url>
+<url>
 <loc>https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html</loc>
 <lastmod>2021-02-02T05:20:34+07:00</lastmod>
 </url>
@@ -322,6 +330,9 @@
 </url>
 <url>
 <loc>https://iqbal.page/tag/plesk/</loc>
+</url>
+<url>
+<loc>https://iqbal.page/tag/iptables/</loc>
 </url>
 <url>
 <loc>https://iqbal.page/tag/ftp/</loc>

@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-03T05:29:38+07:00</updated>
+ <updated>2021-02-03T05:49:33+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -173,6 +173,135 @@ ftp&amp;gt;
 &lt;/table&gt;
 
 &lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Konfigurasi NAT Iptables</title>
+   <link href="https://iqbal.page/2020/11/konfigurasi-nat-iptables.html"/>
+   <updated>2020-11-20T13:36:00+07:00</updated>
+   <id>https://iqbal.page/2020/11/konfigurasi-nat-iptables</id>
+   <content type="html">&lt;p&gt;Sebelumnya saya sedang mencoba membuat website WordPress dengan topology load balancing, dengan detailnya dibawah ini:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1 VM LB&lt;/li&gt;
+  &lt;li&gt;2 VM Web Server&lt;/li&gt;
+  &lt;li&gt;1 VM Database&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Untuk VM LB, terdapat 2 interface yaitu IP Publik (eth0) dan IP Private sebagai gateway (eth1) . Sedangkan untuk 3 VM lainnya hanya mempunyai 1 interface saja yaitu IP Private (eth0), sehingga untuk 3 VM ini tidak mendapatkan akses ke internet untuk install maupun update package.&lt;/p&gt;
+
+&lt;p&gt;Guna mengatasi hal tersebut saya memasukan beberapa konfigurasi pada Iptables, agar si eth1 ini mendapatkan akses internet. Cara sebagai berikut:&lt;/p&gt;
+
+&lt;p&gt;Backup terlebih dahulu konfigurasi Iptables yang ada&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cp /etc/sysconfig/iptables-config /etc/sysconfig/iptables-config.bak
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Masukan konfigurasi pada kernel&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward
+sed -i &quot;s/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g&quot; /etc/sysctl.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tambahkan konfigurasi pada Iptables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Restart Iptables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl reload iptables
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Konfigurasi diatas bertujuan agar koneksi internet bisa diteruskan dari &lt;code&gt;eth0&lt;/code&gt; ke&lt;code&gt; eth1&lt;/code&gt;, shingga IP Private yang lain dengan subnet yang sama akan mendapatkan akses internet.&lt;/p&gt;
+
+&lt;p&gt;Segitu saja, semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Membuat Repository Git</title>
+   <link href="https://iqbal.page/2020/11/membuat-repository-git.html"/>
+   <updated>2020-11-19T05:46:39+07:00</updated>
+   <id>https://iqbal.page/2020/11/membuat-repository-git</id>
+   <content type="html">&lt;p&gt;Pertama-tama kita perlu buat akun github atau gitlab, jika mempunyai server git sendiri itu bagus.&lt;/p&gt;
+
+&lt;p&gt;Silakan daftar akun github/gitlab pada link dibawah ini.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/join&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gitlab.com/users/sign_up&quot;&gt;GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Setelah punya akun github/gitlab, siapkan repository di akun github/gitlab masing-masing.&lt;/p&gt;
+
+&lt;p&gt;Install git pada sistem operasi masing-masing, disini saya pakai linux dengan distro ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Untuk install git, gunakan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;apt install git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Untuk cek versi, gunakan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git --version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah installasi dilakukan, lakukan konfigurasi awal dengan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git config --global user.name &quot;Lime&quot;
+git config --global user.email &quot;limegit@gmail.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Buat directory dimana repositorymu akan diletakan.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mkdir test-git
+cd test-git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lakukan remote ke repository di github/gitlab, berikut perintahnya:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git init
+git remote add &amp;lt;nama-remote&amp;gt; &amp;lt;url-remote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;nama-remote&amp;gt;&lt;/code&gt; merupakan nama dari repository, sedangkan &lt;code&gt;&amp;lt;url-remote&amp;gt;&lt;/code&gt; merupakan url dari repository github/gitlab.&lt;/p&gt;
+
+&lt;p&gt;Sebagai contoh:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git remote add gitlab https://gitlab.com/limegit/jeruk.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ketikan perintah &lt;code&gt;git remote -v&lt;/code&gt; untuk melihat repository mana saja yang diremote:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;root@node:~/git-test/jeruk# git remote -v
+gitlab  https://gitlab.com/limegit/jeruk.git (fetch)
+gitlab  https://gitlab.com/limegit/jeruk.git (push)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Buat 1 file sebagai untuk test push dari lokal ke github/gitlab:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;touch README.md
+git add README.md
+git commit -m &quot;add readme&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Perintah commit disini berfungsi untuk memberikan pesan/catatan perubahan apa saja yang telah dilakukan.&lt;/p&gt;
+
+&lt;p&gt;Langkah terakhir adalah push ke repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git push -u gitlab master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kemudian akan muncul form untuk memasukan credential, karena sebelumnya remote yang digunakan adalah https sehingga memerlukan authentikasi.&lt;/p&gt;
+
+&lt;p&gt;Apabila sudah selesai push, cek pada laman repository github/gitlab. Sebagai contoh file yang sudah di&lt;em&gt;push&lt;/em&gt; ada pada gambar dibawah ini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EP7bwya.png&quot; alt=&quot;File Repository&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
 </content>
  </entry>
  

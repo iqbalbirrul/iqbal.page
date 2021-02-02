@@ -35,6 +35,28 @@
   
     {
 
+      "title"    : "Konfigurasi NAT Iptables",
+      "url"      : "/2020/11/konfigurasi-nat-iptables.html",
+      "category" : "",
+      "tags"     : "iptables",
+      "date"     : "2020-11-20 13:36:00 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Membuat Repository Git",
+      "url"      : "/2020/11/membuat-repository-git.html",
+      "category" : "",
+      "tags"     : "git",
+      "date"     : "2020-11-19 05:46:39 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Install Plesk Panel Obsidian",
       "url"      : "/2020/08/install-plesk-panel-obisidian.html",
       "category" : "",

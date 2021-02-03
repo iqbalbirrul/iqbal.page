@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-03T05:49:33+07:00</updated>
+ <updated>2021-02-03T07:07:47+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -1990,36 +1990,29 @@ IMPORTANT NOTES:
    <link href="https://iqbal.page/2019/01/server-blocks-nginx.html"/>
    <updated>2019-01-01T08:59:48+07:00</updated>
    <id>https://iqbal.page/2019/01/server-blocks-nginx</id>
-   <content type="html">&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;![Nginx Logo&lt;/td&gt;
-      &lt;td&gt;https://dwglogo.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/nginx-logo.png)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/nginx-logo.png&quot; alt=&quot;Nginx Logo https://dwglogo.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Berikut contoh konfigurasi server block Nginx:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
-  listen 80;
-  listen [::]:80;
+&lt;h3 id=&quot;server-block-umum&quot;&gt;Server Block Umum&lt;/h3&gt;
 
-  server_name say.iqbal.es;
-  root /var/www/say.iqbal;
+&lt;pre&gt;&lt;code&gt;server {
+  listen 80;
+
+  server_name domain.tld;
+  root /var/www/public_html;
 
   index index.html index.php;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Server block jika menggunakan php-fpm:&lt;/p&gt;
+&lt;h3 id=&quot;nginx-dengan-php-fpm-socket&quot;&gt;Nginx dengan PHP FPM Socket&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
- listen 89;
- listen [::]:89;
+&lt;pre&gt;&lt;code&gt;server {
+ listen 80;
 
- server_name _;
- root /var/www/whois;
+ server_name domain.tld;
+ root /var/www/public_html;
 
  index index.php;
 
@@ -2032,49 +2025,182 @@ IMPORTANT NOTES:
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jika menggunakan SSL, berikut contoh konfigurasinya:&lt;/p&gt;
+&lt;h3 id=&quot;nginx-dengan-ssl&quot;&gt;Nginx dengan SSL&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+&lt;pre&gt;&lt;code&gt;server {
   listen 80;
-  listen [::]:80;
 
-  server_name say.iqbal.es;
-  return 301 https://$server_name$request_uri;
+  server_name domain.tld;
 }
+
 server {
-        listen 443;
-        server_name say.iqbal.es;
-        root /var/www/say.iqbal;
+    listen 443 quic reuseport;
+    listen 443 http2 ssl;
+    
+    server_name  domain.tld;
 
-        index index.html index.php;
-
-        ssl on;
-        ssl_certificate     /etc/letsencrypt/live/say.iqbal.es/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/say.iqbal.es/privkey.pem;
-        ssl_session_timeout 15m;
-        ssl_protocols SSLv3 TLSv1;
-        ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
-        ssl_prefer_server_ciphers on;
+    ssl_certificate     /etc/fullchain.pem;
+    ssl_certificate_key /etc/privkey.pem;
+    ssl_session_timeout 15m;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+    ssl_prefer_server_ciphers on;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Dan ini untuk konfigurasi Nginx sebagai Reverse Proxy:&lt;/p&gt;
+&lt;h3 id=&quot;redirect-http-to-https&quot;&gt;Redirect http to https&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+&lt;pre&gt;&lt;code&gt;server {
+    server_name domain.tld;
+
+    # Redirect to https://domain
+    return 301 https://domain.tld$request_uri;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;redirect-www-to-non-www&quot;&gt;Redirect www to non-www&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+    server_name domain.tld;
+
+    # Redirect to https://domain
+    return 301 https://domain.tld$request_uri;
+}
+
+server {
+   listen 443;
+    server_name www.domain.tld;
+  
+    # Redirect to https://domain
+    return 301 https://domain.tld$request_uri;
+
+    # SSL for redirect
+    ssl_certificate     /etc/fullchain.pem;
+    ssl_certificate_key /etc/privkey.pem;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;nginx-sebagai-reverse-proxy&quot;&gt;Nginx sebagai Reverse Proxy&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
   listen 80;
-  listen [::]:80;
 
-  server_name k.iqbal.es;
+  server_name domain.tld;
 
   location / {
-      proxy_pass http://k.iqbal.es:6969;
+      proxy_pass http://192.168.2.2:9000;
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Semoga bermanfaat :3&lt;/p&gt;
+&lt;h3 id=&quot;nginx-wordpress-server-blocks&quot;&gt;Nginx: WordPress Server Blocks&lt;/h3&gt;
 
-&lt;p&gt;Sumber : &lt;a href=&quot;https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/&quot;&gt;https://www.nginx.com&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;upstream php {
+        server unix:/tmp/php-cgi.socket;
+        server 127.0.0.1:9000;
+}
+
+server {
+        listen 80;
+        listen [::]:80;
+        ## Your website name goes here.
+        server_name xxx.xxx.xxx;
+        ## Your only path reference.
+        root /var/www/html/web/wordpress;
+        ## This should be in your http block and if it is, it's not needed here.
+        index index.php;
+
+        location = /favicon.ico {
+                log_not_found off;
+                access_log off;
+        }
+
+        location = /robots.txt {
+                allow all;
+                log_not_found off;
+                access_log off;
+        }
+
+        location / {
+                # This is cool because no php is touched for static content.
+                # include the &quot;?$args&quot; part so non-default permalinks doesn't break when using query string
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+        location ~ \.php$ {
+                #NOTE: You should have &quot;cgi.fix_pathinfo = 0;&quot; in php.ini
+                include fastcgi_params;
+                fastcgi_intercept_errors on;
+                fastcgi_pass php;
+                #The following parameter can be also included in fastcgi_params file
+                fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        }
+
+        location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+                expires max;
+                log_not_found off;
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;nginx-jekyll-server-blocks&quot;&gt;Nginx: Jekyll Server Blocks&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;server {
+   listen 80;
+   
+   server_name domain.tld;
+   return 301 https://$http_host$request_uri;
+}
+
+server {
+    listen 443 quic reuseport;
+    listen 443 http2 ssl;
+
+    server_name domain.tld;
+
+    ssl_certificate     /etc/fullchain.pem;
+    ssl_certificate_key /etc/privkey.pem;
+    ssl_session_timeout 15m;
+    ssl_protocols SSLv3 TLSv1.2;
+    ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+    ssl_prefer_server_ciphers on;
+
+    location / {
+        proxy_pass http://192.168.1.2:4000;
+        allow 123.123.123.123;
+        deny all;
+    }
+
+    # Jekyll Admin
+    location ~ ^/(admin|_api)(/.*)? {
+        auth_basic &quot;Administration&quot;;
+        auth_basic_user_file /etc/nginx/htpasswd;
+
+        allow 123.123.123.123;
+        deny all;
+
+        proxy_pass http://192.168.1.2:4000/$1$2;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $http_host;
+
+   }
+
+    error_page 403 /403.html;
+    location = /403.html {
+        root /usr/local/nginx/html/;
+        internal;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Semoga bermanfaat.
+Sumber : &lt;a href=&quot;https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/&quot;&gt;https://www.nginx.com&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

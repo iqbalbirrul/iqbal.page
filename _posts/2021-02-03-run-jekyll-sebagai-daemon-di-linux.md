@@ -13,6 +13,6 @@ Berikut perintahnya:
 setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &>/dev/null </dev/null &
 ```
 
-> Untuk hostnya disesuaikan IP Address yang ingin dipakai.
+> Untuk hostnya disesuaikan dengan IP Address yang ingin dipakai.
 
 Semoga bermanfaat.

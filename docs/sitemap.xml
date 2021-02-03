@@ -167,6 +167,9 @@
 <loc>https://iqbal.page/</loc>
 </url>
 <url>
+<loc>https://iqbal.page/search</loc>
+</url>
+<url>
 <loc>https://iqbal.page/tag/multisystem/</loc>
 </url>
 <url>
@@ -336,9 +339,5 @@
 </url>
 <url>
 <loc>https://iqbal.page/tag/ftp/</loc>
-</url>
-<url>
-<loc>https://iqbal.page/search.html</loc>
-<lastmod>2021-02-02T04:23:22+07:00</lastmod>
 </url>
 </urlset>

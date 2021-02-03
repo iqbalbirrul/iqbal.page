@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-03T07:07:47+07:00</updated>
+ <updated>2021-02-03T07:11:59+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -25,7 +25,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Untuk hostnya bisa disesuikan akan listen di IP Address ingin dipakai.&lt;/p&gt;
+  &lt;p&gt;Untuk hostnya bisa disesuaikan akan listen di IP Address ingin dipakai.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
@@ -78,7 +78,7 @@ service sw-engine start
    <link href="https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux.html"/>
    <updated>2021-02-02T05:20:34+07:00</updated>
    <id>https://iqbal.page/2021/02/akses-ftp-menggunakan-command-line-di-linux</id>
-   <content type="html">&lt;p&gt;Gunakan perintah &lt;code&gt;ftp&lt;/code&gt; jika tidak pakai ssl &lt;code&gt;ftp-ssl&lt;/code&gt; jika pakai ssl, seperti berikut:&lt;/p&gt;
+   <content type="html">&lt;p&gt;Gunakan perintah &lt;code&gt;ftp&lt;/code&gt; jika tidak pakai ssl atau &lt;code&gt;ftp-ssl&lt;/code&gt; jika pakai ssl, seperti berikut:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ftp-ssl
 &lt;/code&gt;&lt;/pre&gt;

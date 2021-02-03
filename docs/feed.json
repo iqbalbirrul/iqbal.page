@@ -20,8 +20,8 @@
             "id": "https://iqbal.page/2021/02/run-jekyll-sebagai-daemon-di-linux.html",
             "title": "Run Jekyll sebagai daemon di Linux",
             "summary": null,
-            "content_text": "Secara default jekyll tidak bisa dijalankan sebagai daemon, jadi ada cara tersendiri untuk membuat jekyll berjalan dalam background.Berikut perintahnya:setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &amp;&gt;/dev/null &lt;/dev/null &amp;  Untuk hostnya bisa disesuaikan akan listen di IP Address ingin dipakai.Semoga bermanfaat.",
-            "content_html": "<p>Secara default jekyll tidak bisa dijalankan sebagai daemon, jadi ada cara tersendiri untuk membuat jekyll berjalan dalam background.</p><p>Berikut perintahnya:</p><pre><code class=\"language-bash\">setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &amp;&gt;/dev/null &lt;/dev/null &amp;</code></pre><blockquote>  <p>Untuk hostnya bisa disesuaikan akan listen di IP Address ingin dipakai.</p></blockquote><p>Semoga bermanfaat.</p>",
+            "content_text": "Secara default jekyll tidak bisa dijalankan sebagai daemon, jadi ada cara tersendiri untuk membuat jekyll berjalan dalam background.Berikut perintahnya:setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &amp;&gt;/dev/null &lt;/dev/null &amp;  Untuk hostnya disesuaikan IP Address yang ingin dipakai.Semoga bermanfaat.",
+            "content_html": "<p>Secara default jekyll tidak bisa dijalankan sebagai daemon, jadi ada cara tersendiri untuk membuat jekyll berjalan dalam background.</p><p>Berikut perintahnya:</p><pre><code class=\"language-bash\">setsid bundle exec jekyll serve --port 4000 --host 127.0.0.1 --watch --force_polling &amp;&gt;/dev/null &lt;/dev/null &amp;</code></pre><blockquote>  <p>Untuk hostnya disesuaikan IP Address yang ingin dipakai.</p></blockquote><p>Semoga bermanfaat.</p>",
             "url": "https://iqbal.page/2021/02/run-jekyll-sebagai-daemon-di-linux.html",
             
             

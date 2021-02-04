@@ -8,10 +8,10 @@ If you want to donate, you can use the crypto currency below.
 
 | Blockchain | Address |
 | -------- | -------- |
-| Ethereum     | 0xB6a8B0a411548ab1D9F9A1a3af1e898982E9f54D |
-| Smart Chain (BNB) | 0xB6a8B0a411548ab1D9F9A1a3af1e898982E9f54D |
-| Dogecoin | DSXVBi2vVJvUqvPy4V2Ckhcr6vrBbCQ4Vv |
-| Tron | TAM2YJkm22VWqYgnVKAnvDyC4DdzjRGh1p |
-| Elrond (eGLD)  | erd1n2kysd3398jq7v0z9kn8rt2k7htrrj78rkn48h7c0aqf5nl6rcxsuzepry	|
+| Ethereum     | [0xB6a8B0a411548ab1D9F9A1a3af1e898982E9f54D](https://etherscan.io/address/0xB6a8B0a411548ab1D9F9A1a3af1e898982E9f54D) |
+| BNB (BEP20) | [0xB6a8B0a411548ab1D9F9A1a3af1e898982E9f54D](https://bscscan.com/address/0xb6a8b0a411548ab1d9f9a1a3af1e898982e9f54d) |
+| Dogecoin | [DMQbim41HjRh4Z6JuabhGDaUSXm5aAijMh](https://blockchair.com/dogecoin/address/DMQbim41HjRh4Z6JuabhGDaUSXm5aAijMh) |
+| Tron (TRC20) | [TAM2YJkm22VWqYgnVKAnvDyC4DdzjRGh1p](https://tronscan.org/#/address/TAM2YJkm22VWqYgnVKAnvDyC4DdzjRGh1p) |
+| Elrond (eGLD)  | [erd1e63r43yekvxpwp5kpvv5x55fqzjcsekha94ew292v774ucr977wqkwscrz](https://explorer.elrond.com/accounts/erd1e63r43yekvxpwp5kpvv5x55fqzjcsekha94ew292v774ucr977wqkwscrz)	|
 
 Feel free to contact me at [surel@iqbal.page](mailto:surel@iqbal.page)

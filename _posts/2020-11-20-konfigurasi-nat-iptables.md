@@ -45,3 +45,5 @@ systemctl reload iptables
 Konfigurasi diatas bertujuan agar koneksi internet bisa diteruskan dari `eth0` ke` eth1`, shingga IP Private yang lain dengan subnet yang sama akan mendapatkan akses internet.
 
 Segitu saja, semoga bermanfaat.
+
+> Sc: archive [lime.web.id](http://lime.web.id)

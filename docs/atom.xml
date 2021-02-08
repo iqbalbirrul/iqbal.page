@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-08T12:42:02+07:00</updated>
+ <updated>2021-02-08T13:56:24+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -28,6 +28,10 @@
 &amp;gt; origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
 &amp;gt; origin  https://github.com/USERNAME/REPOSITORY.git (push)
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -86,6 +90,10 @@ sync{
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -106,6 +114,10 @@ Group www-data
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;User group disesuaikan dengan default dari sistem operasi yang digunakan.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -126,6 +138,10 @@ Group www-data
 &lt;/blockquote&gt;
 
 &lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -167,6 +183,10 @@ service sw-engine start
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -270,6 +290,10 @@ ftp&amp;gt;
 &lt;/table&gt;
 
 &lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -316,6 +340,10 @@ iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
 &lt;p&gt;Konfigurasi diatas bertujuan agar koneksi internet bisa diteruskan dari &lt;code&gt;eth0&lt;/code&gt; ke&lt;code&gt; eth1&lt;/code&gt;, shingga IP Private yang lain dengan subnet yang sama akan mendapatkan akses internet.&lt;/p&gt;
 
 &lt;p&gt;Segitu saja, semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://lime.web.id&quot;&gt;lime.web.id&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -399,6 +427,10 @@ git commit -m &quot;add readme&quot;
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EP7bwya.png&quot; alt=&quot;File Repository&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://lime.web.id&quot;&gt;lime.web.id&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  

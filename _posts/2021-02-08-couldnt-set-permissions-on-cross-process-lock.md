@@ -19,3 +19,5 @@ Group www-data
 ```
 
 User group disesuaikan dengan default dari sistem operasi yang digunakan.
+
+> Sc: archive [kuro.zone](http://kuro.zone)

@@ -43,3 +43,5 @@ service sw-engine start
 ```
 
 Semoga bermanfaat.
+
+> Sc: archive [kuro.zone](http://kuro.zone)

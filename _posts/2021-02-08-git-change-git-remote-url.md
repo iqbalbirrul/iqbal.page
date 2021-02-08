@@ -19,3 +19,5 @@ $ git remote -v
 > origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
 > origin  https://github.com/USERNAME/REPOSITORY.git (push)
 ```
+
+> Sc: archive [kuro.zone](http://kuro.zone)

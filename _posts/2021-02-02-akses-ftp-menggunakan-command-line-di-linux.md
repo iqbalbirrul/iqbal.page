@@ -57,3 +57,5 @@ Untuk perintah-perintah nya dibawah ini:
 | quit | untuk keluar dari server ftp |
 
 Semoga bermanfaat.
+
+> Sc: archive [kuro.zone](http://kuro.zone)

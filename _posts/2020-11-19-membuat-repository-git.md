@@ -87,3 +87,5 @@ Apabila sudah selesai push, cek pada laman repository github/gitlab. Sebagai con
 ![File Repository](https://i.imgur.com/EP7bwya.png)
 
 Selesai, semoga bermanfaat.
+
+> Sc: archive [lime.web.id](http://lime.web.id)

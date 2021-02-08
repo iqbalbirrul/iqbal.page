@@ -57,3 +57,5 @@ sync{
     }
 }
 ```
+
+> Sc: archive [kuro.zone](http://kuro.zone)

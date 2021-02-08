@@ -4,13 +4,110 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-08T09:54:23+07:00</updated>
+ <updated>2021-02-08T12:42:02+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Git: Change git remote URL</title>
+   <link href="https://iqbal.page/2021/02/git-change-git-remote-url.html"/>
+   <updated>2021-02-08T12:38:21+07:00</updated>
+   <id>https://iqbal.page/2021/02/git-change-git-remote-url</id>
+   <content type="html">&lt;p&gt;Masuk ke repository terlebih dahulu, kemudian gunakan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+# Verify new remote URL
+&amp;gt; origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+&amp;gt; origin  https://github.com/USERNAME/REPOSITORY.git (push)
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Lsyncd: Ubuntu 18.04 Config</title>
+   <link href="https://iqbal.page/2021/02/lsyncd-ubuntu-18-04-config.html"/>
+   <updated>2021-02-08T12:35:08+07:00</updated>
+   <id>https://iqbal.page/2021/02/lsyncd-ubuntu-18-04-config</id>
+   <content type="html">&lt;h3 id=&quot;default&quot;&gt;Default&lt;/h3&gt;
+
+&lt;p&gt;Edit file &lt;code&gt;/etc/lsyncd/lsyncd.conf.lua&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;settings {
+        logfile         = &quot;/var/log/lsyncd/lsyncd.log&quot;,
+        statusFile      = &quot;/tmp/lsyncd.stat&quot;,
+        statusInterval  = 1,
+}
+sync {
+        default.rsync,
+        source  = &quot;/var/www/html/web&quot;,
+        target  = &quot;192.168.xx.x:/var/www/html/web&quot;,
+}
+rsync = {
+        update  = true,
+        perms   = true,
+        owner   = true,
+        group   = true,
+        rsh     = &quot;/usr/bin/ssh -l root -i /root/.ssh/id_rsa&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;custom-port&quot;&gt;Custom Port&lt;/h3&gt;
+
+&lt;p&gt;Edit file &lt;code&gt;/etc/lsyncd/lsyncd.conf.lua&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;settings {
+
+	logfile = &quot;/var/log/lsyncd/lsyncd.log&quot;,
+	statusFile = &quot;/var/log/lsyncd/lsyncd.status&quot;
+}
+
+sync{
+    default.rsync,
+    source    = &quot;/var/www/html&quot;,
+    target    = &quot;103.41.207.214:/data/public_html&quot;,
+    rsync     = {
+        archive  = true,
+        compress = true,
+        update  = true,
+        perms   = true,
+--      port    = 2022,
+        owner   = true,
+        group   = true,
+        rsh     = &quot;/usr/bin/ssh -p 2022 -o StrictHostKeyChecking=no&quot;,
+        _extra   = {&quot;--omit-dir-times&quot;,&quot;-e ssh -i /root/.ssh/id_rsa&quot;}
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Couldn't set permissions on cross-process lock</title>
+   <link href="https://iqbal.page/2021/02/couldnt-set-permissions-on-cross-process-lock.html"/>
+   <updated>2021-02-08T12:32:32+07:00</updated>
+   <id>https://iqbal.page/2021/02/couldnt-set-permissions-on-cross-process-lock</id>
+   <content type="html">&lt;p&gt;Apache Error Permission&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[emerg] (22)Invalid argument: Couldn't set permissions on cross-process lock; check User and Group directives
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Untuk melakukan pembenahan, coba tambahkan baris berikut pada &lt;code&gt;/etc/apache2/apache2.conf&lt;/code&gt; atau &lt;code&gt;/etc/httpd/conf/httpd.conf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;User www-data
+Group www-data
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;User group disesuaikan dengan default dari sistem operasi yang digunakan.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Run Jekyll sebagai daemon di Linux</title>

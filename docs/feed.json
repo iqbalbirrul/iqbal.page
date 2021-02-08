@@ -17,6 +17,78 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/02/git-change-git-remote-url.html",
+            "title": "Git: Change git remote URL",
+            "summary": null,
+            "content_text": "Masuk ke repository terlebih dahulu, kemudian gunakan perintah berikut:$ git remote -v$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git$ git remote -v# Verify new remote URL&gt; origin  https://github.com/USERNAME/REPOSITORY.git (fetch)&gt; origin  https://github.com/USERNAME/REPOSITORY.git (push)",
+            "content_html": "<p>Masuk ke repository terlebih dahulu, kemudian gunakan perintah berikut:</p><pre><code>$ git remote -v</code></pre><pre><code>$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git</code></pre><pre><code>$ git remote -v# Verify new remote URL&gt; origin  https://github.com/USERNAME/REPOSITORY.git (fetch)&gt; origin  https://github.com/USERNAME/REPOSITORY.git (push)</code></pre>",
+            "url": "https://iqbal.page/2021/02/git-change-git-remote-url.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-02-08T12:38:21+07:00",
+            "date_modified": "2021-02-08T12:38:21+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://iqbal.page/2021/02/lsyncd-ubuntu-18-04-config.html",
+            "title": "Lsyncd: Ubuntu 18.04 Config",
+            "summary": null,
+            "content_text": "DefaultEdit file /etc/lsyncd/lsyncd.conf.luasettings {        logfile         = \"/var/log/lsyncd/lsyncd.log\",        statusFile      = \"/tmp/lsyncd.stat\",        statusInterval  = 1,}sync {        default.rsync,        source  = \"/var/www/html/web\",        target  = \"192.168.xx.x:/var/www/html/web\",}rsync = {        update  = true,        perms   = true,        owner   = true,        group   = true,        rsh     = \"/usr/bin/ssh -l root -i /root/.ssh/id_rsa\"}Custom PortEdit file /etc/lsyncd/lsyncd.conf.luasettings {\tlogfile = \"/var/log/lsyncd/lsyncd.log\",\tstatusFile = \"/var/log/lsyncd/lsyncd.status\"}sync{    default.rsync,    source    = \"/var/www/html\",    target    = \"103.41.207.214:/data/public_html\",    rsync     = {        archive  = true,        compress = true,        update  = true,        perms   = true,--      port    = 2022,        owner   = true,        group   = true,        rsh     = \"/usr/bin/ssh -p 2022 -o StrictHostKeyChecking=no\",        _extra   = {\"--omit-dir-times\",\"-e ssh -i /root/.ssh/id_rsa\"}    }}",
+            "content_html": "<h3 id=\"default\">Default</h3><p>Edit file <code>/etc/lsyncd/lsyncd.conf.lua</code></p><pre><code>settings {        logfile         = \"/var/log/lsyncd/lsyncd.log\",        statusFile      = \"/tmp/lsyncd.stat\",        statusInterval  = 1,}sync {        default.rsync,        source  = \"/var/www/html/web\",        target  = \"192.168.xx.x:/var/www/html/web\",}rsync = {        update  = true,        perms   = true,        owner   = true,        group   = true,        rsh     = \"/usr/bin/ssh -l root -i /root/.ssh/id_rsa\"}</code></pre><h3 id=\"custom-port\">Custom Port</h3><p>Edit file <code>/etc/lsyncd/lsyncd.conf.lua</code></p><pre><code>settings {\tlogfile = \"/var/log/lsyncd/lsyncd.log\",\tstatusFile = \"/var/log/lsyncd/lsyncd.status\"}sync{    default.rsync,    source    = \"/var/www/html\",    target    = \"103.41.207.214:/data/public_html\",    rsync     = {        archive  = true,        compress = true,        update  = true,        perms   = true,--      port    = 2022,        owner   = true,        group   = true,        rsh     = \"/usr/bin/ssh -p 2022 -o StrictHostKeyChecking=no\",        _extra   = {\"--omit-dir-times\",\"-e ssh -i /root/.ssh/id_rsa\"}    }}</code></pre>",
+            "url": "https://iqbal.page/2021/02/lsyncd-ubuntu-18-04-config.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-02-08T12:35:08+07:00",
+            "date_modified": "2021-02-08T12:35:08+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://iqbal.page/2021/02/couldnt-set-permissions-on-cross-process-lock.html",
+            "title": "Couldn't set permissions on cross-process lock",
+            "summary": null,
+            "content_text": "Apache Error Permission[emerg] (22)Invalid argument: Couldn't set permissions on cross-process lock; check User and Group directivesUntuk melakukan pembenahan, coba tambahkan baris berikut pada /etc/apache2/apache2.conf atau /etc/httpd/conf/httpd.conf.User www-dataGroup www-dataUser group disesuaikan dengan default dari sistem operasi yang digunakan.",
+            "content_html": "<p>Apache Error Permission</p><pre><code>[emerg] (22)Invalid argument: Couldn't set permissions on cross-process lock; check User and Group directives</code></pre><p>Untuk melakukan pembenahan, coba tambahkan baris berikut pada <code>/etc/apache2/apache2.conf</code> atau <code>/etc/httpd/conf/httpd.conf</code>.</p><pre><code>User www-dataGroup www-data</code></pre><p>User group disesuaikan dengan default dari sistem operasi yang digunakan.</p>",
+            "url": "https://iqbal.page/2021/02/couldnt-set-permissions-on-cross-process-lock.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-02-08T12:32:32+07:00",
+            "date_modified": "2021-02-08T12:32:32+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/02/run-jekyll-sebagai-daemon-di-linux.html",
             "title": "Run Jekyll sebagai daemon di Linux",
             "summary": null,
@@ -663,63 +735,6 @@
             
             "date_published": "2016-03-19T17:30:00+07:00",
             "date_modified": "2016-03-19T17:30:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux.html",
-            "title": "Cara melihat Cuaca di Terminal Linux",
-            "summary": null,
-            "content_text": "Langsung simak saja, pertama yang harusa dilakukan adalah Install curl.sudo apt-get install curlJika sudah terinstall langsung saja,curl http://wttr.in/namakotamuLihat gambar di bawah :)mudah bukan? semoga bermanfaat.",
-            "content_html": "<p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca.png\" alt=\"Cuaca\" /></p><p>Langsung simak saja, pertama yang harusa dilakukan adalah Install <code>curl</code>.</p><pre><code class=\"language-bash\">sudo apt-get install curl</code></pre><p>Jika sudah terinstall langsung saja,</p><pre><code class=\"language-bash\">curl http://wttr.in/namakotamu</code></pre><p>Lihat gambar di bawah :)</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca_1.png\" alt=\"Wttr.in\" /></p><p>mudah bukan? semoga bermanfaat.</p>",
-            "url": "https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux.html",
-            
-            
-            
-            "tags": ["cli","cuaca","curl"],
-            
-            "date_published": "2016-03-13T13:15:00+07:00",
-            "date_modified": "2016-03-13T13:15:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/02/menjalankan-aplikasi-windows-di-linux.html",
-            "title": "Menjalankan Aplikasi Windows di Linux",
-            "summary": null,
-            "content_text": "Apakah sobat pernah berpikir bahwa aplikasi Windows tidak bisa dijalankan di Lain sistem operasi? Jawabannya adalah tentu saja bisa. Ada beberapa cara untuk menjalankan aplikasi Windows di linux kita tercinta ini seperti menggunakan Virtual Machine, PlayOnLinux, Wine, dan Remote Desktop. Tapi kali saya akan menggunakan Wine.Wine merupakan salah satu Software gratis untuk menjalankan aplikasi Windows di Linux. Tetapi tidak semua aplikasi Windows dapat dijalankan di oleh Wine, untuk mengetahui apa saja yang dapat di jalankan oleh Wine lihat di Wine Application Database.Caranya :Pertama Install Wine terlebih dahulu dengan mengetikan perintah berikut di terminal.sudo apt-get install winelalu masukan password dan tekan enter, dan tunggu hingga Installasi selesai.Pastikan Wine sudah terinstall dengan membuka Menu &gt; Wine.Kemudian siapkan aplikasi Windows yang akan di install, pada kasus ini saya akan install Line Desktop.Klik kana pada LineInst.exe lalu pilih Buka dengan Wine.Kemudian lanjutkan proses installasi seperti saat menginstall aplikasi di Windows dan tunggu sampai Installasi selesai.Jika sudah selesai maka aplikasi akan otomatis berada di Desktop, jika tidak ada bisa buka di Menu &gt; Wine &gt; Nama Aplikasi.Jalankan aplikasi layaknya menggunakan aplikasi tersebut di Windows.Semoga bermanfaat :D.",
-            "content_html": "<p>Apakah sobat pernah berpikir bahwa aplikasi <em>Windows</em> tidak bisa dijalankan di Lain sistem operasi? Jawabannya adalah tentu saja bisa. Ada beberapa cara untuk menjalankan aplikasi <em>Windows</em> di linux kita tercinta ini seperti menggunakan Virtual Machine, PlayOnLinux, Wine, dan Remote Desktop. Tapi kali saya akan menggunakan Wine.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/Wine_Line.png\" alt=\"Line\" /></p><p>Wine merupakan salah satu Software gratis untuk menjalankan aplikasi Windows di Linux. Tetapi tidak semua aplikasi <em>Windows</em> dapat dijalankan di oleh Wine, untuk mengetahui apa saja yang dapat di jalankan oleh Wine lihat di <a href=\"http://appdb.winehq.org/\">Wine Application Database</a>.</p><p>Caranya :</p><p>Pertama Install Wine terlebih dahulu dengan mengetikan perintah berikut di terminal.</p><pre><code class=\"language-bash\">sudo apt-get install wine</code></pre><p>lalu masukan password dan tekan enter, dan tunggu hingga Installasi selesai.</p><p>Pastikan Wine sudah terinstall dengan membuka <code>Menu &gt; Wine</code>.</p><p>Kemudian siapkan aplikasi <em>Windows</em> yang akan di install, pada kasus ini saya akan install Line Desktop.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_1.png\" alt=\"Line App\" /></p><p>Klik kana pada <code>LineInst.exe</code> lalu pilih Buka dengan Wine.</p><p>Kemudian lanjutkan proses installasi seperti saat menginstall aplikasi di <em>Windows</em> dan tunggu sampai Installasi selesai.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_2.png\" alt=\"Install Line\" /></p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_3.png\" alt=\"Install Line\" /></p><p>Jika sudah selesai maka aplikasi akan otomatis berada di Desktop, jika tidak ada bisa buka di <code>Menu &gt; Wine &gt; Nama Aplikasi</code>.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_4.png\" alt=\"Aplikasi sudah terinstall\" /></p><p>Jalankan aplikasi layaknya menggunakan aplikasi tersebut di <em>Windows</em>.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_5.png\" alt=\"Line\" /></p><p>Semoga bermanfaat :D.</p>",
-            "url": "https://iqbal.page/2016/02/menjalankan-aplikasi-windows-di-linux.html",
-            
-            
-            
-            "tags": ["windows","line","wine"],
-            
-            "date_published": "2016-02-29T08:16:00+07:00",
-            "date_modified": "2016-02-29T08:16:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/02/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit.html",
-            "title": "Cara Install Aplikasi Atom di Linux Mint Via PPA [32bit + 64bit]",
-            "summary": null,
-            "content_text": "Atom adalah sebuah Aplikasi teks editor seperti halnya Notepad++ di Windows.  Atom sendiri adalah Aplikasi yang bersifat Cross Platform yang artinya bisa dijalankan dibeberapa sistem operasi seperti Linux dan Mac OsX.Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).Pertama tambahkan repository berikut :sudo add-apt-repository ppa:webupd8team/atomKemudian ketikansudo apt-get updateSetelah update selesai tingggal langkah terakhir yaitu install Atom-nya dengan cara seperti biasa yakni :sudo apt-get install atomTunggu hingga Installasi selesai, jika sudah selesai buka Atom di Menu &gt; Pengembang &gt; Atom.Ini dia penampakan Aplikasi AtomSemoga bermanfaat :) .",
-            "content_html": "<p>Atom adalah sebuah Aplikasi teks editor seperti halnya Notepad++ di <em>Windows.</em>  Atom sendiri adalah Aplikasi yang bersifat Cross Platform yang artinya bisa dijalankan dibeberapa sistem operasi seperti Linux dan Mac OsX.</p><p>Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom.png\" alt=\"Atom\" /></p><p>Pertama tambahkan repository berikut :</p><pre><code class=\"language-bash\">sudo add-apt-repository ppa:webupd8team/atom</code></pre><p>Kemudian ketikan</p><pre><code class=\"language-bash\">sudo apt-get update</code></pre><p>Setelah update selesai tingggal langkah terakhir yaitu install Atom-nya dengan cara seperti biasa yakni :</p><pre><code class=\"language-bash\">sudo apt-get install atom</code></pre><p>Tunggu hingga Installasi selesai, jika sudah selesai buka Atom di <code>Menu &gt; Pengembang &gt; Atom</code>.</p><p>Ini dia penampakan Aplikasi Atom</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom_1.png\" alt=\"Atom\" /></p><p>Semoga bermanfaat :) .</p>",
-            "url": "https://iqbal.page/2016/02/cara-install-aplikasi-atom-di-linux-mint-via-ppa-32bit-64bit.html",
-            
-            
-            
-            
-            
-            "date_published": "2016-02-26T09:46:00+07:00",
-            "date_modified": "2016-02-26T09:46:00+07:00",
             
                 "author": "iqbal"
             

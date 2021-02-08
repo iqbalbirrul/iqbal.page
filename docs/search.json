@@ -2,6 +2,39 @@
   
     {
 
+      "title"    : "Git: Change git remote URL",
+      "url"      : "/2021/02/git-change-git-remote-url.html",
+      "category" : "",
+      "tags"     : "git",
+      "date"     : "2021-02-08 12:38:21 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Lsyncd: Ubuntu 18.04 Config",
+      "url"      : "/2021/02/lsyncd-ubuntu-18-04-config.html",
+      "category" : "",
+      "tags"     : "lsyncd",
+      "date"     : "2021-02-08 12:35:08 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Couldn&#39;t set permissions on cross-process lock",
+      "url"      : "/2021/02/couldnt-set-permissions-on-cross-process-lock.html",
+      "category" : "",
+      "tags"     : "apache",
+      "date"     : "2021-02-08 12:32:32 +0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Run Jekyll sebagai daemon di Linux",
       "url"      : "/2021/02/run-jekyll-sebagai-daemon-di-linux.html",
       "category" : "",

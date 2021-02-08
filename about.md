@@ -14,4 +14,4 @@ If you want to donate, you can use the crypto currency below.
 | Tron (TRC20) | [TAM2YJkm22VWqYgnVKAnvDyC4DdzjRGh1p](https://tronscan.org/#/address/TAM2YJkm22VWqYgnVKAnvDyC4DdzjRGh1p) |
 | Elrond (eGLD)  | [erd1e63r43yekvxpwp5kpvv5x55fqzjcsekha94ew292v774ucr977wqkwscrz](https://explorer.elrond.com/accounts/erd1e63r43yekvxpwp5kpvv5x55fqzjcsekha94ew292v774ucr977wqkwscrz)	|
 
-Feel free to contact me at [surel@iqbal.page](mailto:surel@iqbal.page)
+Feel free to contact me at [surel@iqbal.page](mailto:iqbalbirrul@gmail.com)

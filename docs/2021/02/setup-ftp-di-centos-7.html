@@ -11,10 +11,11 @@ allow_writeable_chroot=YES
 </code></pre><h5 id="tambah-user-list">Tambah user list</h5><p>Masih dengan mode edit file <code>/etc/vsftpd/vsftpd.conf</code>, sesuaikan dengan konfigurasi berikut:</p><pre><code>userlist_enable=YES
 </code></pre><pre><code>userlist_file=/etc/vsftpd/user_list
 </code></pre><pre><code>userlist_deny=NO
-</code></pre><pre><code>systemctl restart vsftpd
+</code></pre><p>Simpan perubahan kemudian restart <code>vsftpd</code>.</p><pre><code>systemctl restart vsftpd
 </code></pre><p>Tambah user:</p><pre><code>adduser user1
 </code></pre><pre><code>passwd user1
-</code></pre><p>Masukan user baru ke list user ftp:</p><pre><code>echo “testuser” | sudo tee –a /etc/vsftpd/user_list
+</code></pre><p>Masukan user baru ke list user ftp:</p><pre><code>echo “user1” | sudo tee –a /etc/vsftpd/user_list
+</code></pre><p>Restart kembali <code>vsftpd</code>.</p><pre><code>systemctl restart vsftpd
 </code></pre><h4 id="testing">Testing</h4><pre><code>~]# ftp
 ftp&gt; open IP_ADDRESS_or_HOSTNAME
 </code></pre><p><img src="/assets/ftp-cli-test1.png" alt="ftp" /></p><p>Semoga bermanfaat.</p><span class="meta"><time datetime="2021-02-09T14:45:14+07:00">February 9, 2021</time> &middot; <a href="/tag/linux">linux</a>, <a href="/tag/ftp">ftp</a></span></section></main></body></html>

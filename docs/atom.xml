@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-09T14:48:43+07:00</updated>
+ <updated>2021-02-09T14:51:54+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -53,6 +53,8 @@ allow_writeable_chroot=YES
 &lt;pre&gt;&lt;code&gt;userlist_deny=NO
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;Simpan perubahan kemudian restart &lt;code&gt;vsftpd&lt;/code&gt;.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;systemctl restart vsftpd
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -64,7 +66,12 @@ allow_writeable_chroot=YES
 
 &lt;p&gt;Masukan user baru ke list user ftp:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;echo “testuser” | sudo tee –a /etc/vsftpd/user_list
+&lt;pre&gt;&lt;code&gt;echo “user1” | sudo tee –a /etc/vsftpd/user_list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Restart kembali &lt;code&gt;vsftpd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl restart vsftpd
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;testing&quot;&gt;Testing&lt;/h4&gt;

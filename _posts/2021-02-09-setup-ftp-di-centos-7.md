@@ -53,6 +53,8 @@ userlist_file=/etc/vsftpd/user_list
 userlist_deny=NO
 ```
 
+Simpan perubahan kemudian restart `vsftpd`.
+
 ```
 systemctl restart vsftpd
 ```
@@ -68,7 +70,13 @@ passwd user1
 Masukan user baru ke list user ftp:
 
 ```
-echo “testuser” | sudo tee –a /etc/vsftpd/user_list
+echo “user1” | sudo tee –a /etc/vsftpd/user_list
+```
+
+Restart kembali `vsftpd`.
+
+```
+systemctl restart vsftpd
 ```
 
 #### Testing

@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/02/generate-ssl-lets-encrypt-wildcard.html",
+            "title": "Generate SSL Let's Encrypt Wildcard",
+            "summary": null,
+            "content_text": "CertbotGunakan certbot untuk generate Wildcard SSL.DNS Only VerificationWildcard SSLcertbot certonly --manual --preferred-challenges=dns --email email@domain.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.domain.com -d domain.comProses generate membutuhkan verifikasi dns, jadi record dns yang dibutuhkan harus ditambahkan di dns management domain. Record dns yang perlu ditambahkan akan muncul pada saat proses generate.Semoga bermanfaat.  Sc: archive kuro.zone",
+            "content_html": "<h3 id=\"certbot\">Certbot</h3><p>Gunakan certbot untuk generate Wildcard SSL.</p><h5 id=\"dns-only-verification\">DNS Only Verification</h5><p>Wildcard SSL</p><pre><code>certbot certonly --manual --preferred-challenges=dns --email email@domain.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.domain.com -d domain.com</code></pre><p>Proses generate membutuhkan verifikasi dns, jadi record dns yang dibutuhkan harus ditambahkan di dns management domain. Record dns yang perlu ditambahkan akan muncul pada saat proses generate.</p><p>Semoga bermanfaat.</p><blockquote>  <p>Sc: archive <a href=\"http://kuro.zone\">kuro.zone</a></p></blockquote>",
+            "url": "https://iqbal.page/2021/02/generate-ssl-lets-encrypt-wildcard.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-02-09T11:44:54+07:00",
+            "date_modified": "2021-02-09T11:44:54+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/02/git-change-git-remote-url.html",
             "title": "Git: Change git remote URL",
             "summary": null,
@@ -716,25 +740,6 @@
             
             "date_published": "2016-03-23T06:23:00+07:00",
             "date_modified": "2016-03-23T06:23:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh.html",
-            "title": "Browsing Melalui Terminal Linux? Coba Deh!!",
-            "summary": null,
-            "content_text": "Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux? Saya rasa sudah banyak yang pernah mencobanya.Langsung saja, pertama sobat harus menginstall elinks, seperti biasa :sudo apt-get install elinksika sudah terinstall, buka elinks dengan mengetikan perintah elinks di Terminal, maka akan muncul tampilan seperti gambar di bawah.Bisa juga dengan menggunakan perintah elinks namadomain.com.Tombol penggunaang : untuk membuka url dialogt : untuk membuka tab baruc : untuk menutup tab saat iniesc : untuk menampilkan toolbarIni screenshot hasil Browsing saya di ElinksSemoga bermanfaat, thanks :) .",
-            "content_html": "<p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png\" alt=\"Elinks\" /></p><p>Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux? Saya rasa sudah banyak yang pernah mencobanya.</p><p>Langsung saja, pertama sobat harus menginstall <code>elinks</code>, seperti biasa :</p><pre><code class=\"language-bash\">sudo apt-get install elinks</code></pre><p>ika sudah terinstall, buka <code>elinks</code> dengan mengetikan perintah <code>elinks</code> di Terminal, maka akan muncul tampilan seperti gambar di bawah.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-1.png\" alt=\"Masukan URL\" /></p><p>Bisa juga dengan menggunakan perintah <code>elinks namadomain.com</code>.</p><pre><code>Tombol penggunaang : untuk membuka url dialogt : untuk membuka tab baruc : untuk menutup tab saat iniesc : untuk menampilkan toolbar</code></pre><p>Ini screenshot hasil Browsing saya di <code>Elinks</code></p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-4.png\" alt=\"Facebook\" /></p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-5.png\" alt=\"Google\" /></p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-6.png\" alt=\"Google\" /></p><p>Semoga bermanfaat, thanks :) .</p>",
-            "url": "https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh.html",
-            
-            
-            
-            
-            
-            "date_published": "2016-03-19T17:30:00+07:00",
-            "date_modified": "2016-03-19T17:30:00+07:00",
             
                 "author": "iqbal"
             

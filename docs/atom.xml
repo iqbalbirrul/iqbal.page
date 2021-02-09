@@ -4,13 +4,39 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-08T13:56:24+07:00</updated>
+ <updated>2021-02-09T11:47:50+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Generate SSL Let's Encrypt Wildcard</title>
+   <link href="https://iqbal.page/2021/02/generate-ssl-lets-encrypt-wildcard.html"/>
+   <updated>2021-02-09T11:44:54+07:00</updated>
+   <id>https://iqbal.page/2021/02/generate-ssl-lets-encrypt-wildcard</id>
+   <content type="html">&lt;h3 id=&quot;certbot&quot;&gt;Certbot&lt;/h3&gt;
+
+&lt;p&gt;Gunakan certbot untuk generate Wildcard SSL.&lt;/p&gt;
+
+&lt;h5 id=&quot;dns-only-verification&quot;&gt;DNS Only Verification&lt;/h5&gt;
+
+&lt;p&gt;Wildcard SSL&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;certbot certonly --manual --preferred-challenges=dns --email email@domain.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.domain.com -d domain.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Proses generate membutuhkan verifikasi dns, jadi record dns yang dibutuhkan harus ditambahkan di dns management domain. Record dns yang perlu ditambahkan akan muncul pada saat proses generate.&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sc: archive &lt;a href=&quot;http://kuro.zone&quot;&gt;kuro.zone&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Git: Change git remote URL</title>

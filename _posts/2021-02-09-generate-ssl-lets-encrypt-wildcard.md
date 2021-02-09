@@ -1,0 +1,25 @@
+---
+title: Generate SSL Let's Encrypt Wildcard
+date: '2021-02-09 11:44:54'
+tags:
+- ssl
+---
+
+### Certbot
+
+Gunakan certbot untuk generate Wildcard SSL.
+
+##### DNS Only Verification
+
+Wildcard SSL
+
+```
+certbot certonly --manual --preferred-challenges=dns --email email@domain.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.domain.com -d domain.com
+```
+
+Proses generate membutuhkan verifikasi dns, jadi record dns yang dibutuhkan harus ditambahkan di dns management domain. Record dns yang perlu ditambahkan akan muncul pada saat proses generate.
+
+Semoga bermanfaat.
+
+
+> Sc: archive [kuro.zone](http://kuro.zone)

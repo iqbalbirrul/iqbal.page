@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/02/setup-ftp-di-centos-7.html",
+            "title": "Setup FTP di CentOS 7",
+            "summary": null,
+            "content_text": "Install  VSFTPDyum update -yyum install vsftpd -ysystemctl start vsftpdsystemctl enable vsftpdKonfigurasi VSFTPDcp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.defaultEdit file /etc/vsftpd/vsftpd.conf dan sesuaikan dengan konfigurasi berikut:anonymous_enable=NOlocal_enable=YESwrite_enable=YESchroot_local_user=YESallow_writeable_chroot=YESTambah user listMasih dengan mode edit file /etc/vsftpd/vsftpd.conf,  sesuaikan dengan konfigurasi berikut:userlist_enable=YESuserlist_file=/etc/vsftpd/user_listuserlist_deny=NOsystemctl restart vsftpdTambah user:adduser user1passwd user1Masukan user baru ke list user ftp:echo “testuser” | sudo tee –a /etc/vsftpd/user_listTesting~]# ftpftp&gt; open IP_ADDRESS_or_HOSTNAMESemoga bermanfaat.",
+            "content_html": "<h4 id=\"install--vsftpd\">Install  VSFTPD</h4><pre><code>yum update -y</code></pre><pre><code>yum install vsftpd -y</code></pre><pre><code>systemctl start vsftpdsystemctl enable vsftpd</code></pre><h4 id=\"konfigurasi-vsftpd\">Konfigurasi VSFTPD</h4><pre><code>cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.default</code></pre><p>Edit file <code>/etc/vsftpd/vsftpd.conf</code> dan sesuaikan dengan konfigurasi berikut:</p><pre><code>anonymous_enable=NO</code></pre><pre><code>local_enable=YES</code></pre><pre><code>write_enable=YES</code></pre><pre><code>chroot_local_user=YESallow_writeable_chroot=YES</code></pre><h5 id=\"tambah-user-list\">Tambah user list</h5><p>Masih dengan mode edit file <code>/etc/vsftpd/vsftpd.conf</code>,  sesuaikan dengan konfigurasi berikut:</p><pre><code>userlist_enable=YES</code></pre><pre><code>userlist_file=/etc/vsftpd/user_list</code></pre><pre><code>userlist_deny=NO</code></pre><pre><code>systemctl restart vsftpd</code></pre><p>Tambah user:</p><pre><code>adduser user1</code></pre><pre><code>passwd user1</code></pre><p>Masukan user baru ke list user ftp:</p><pre><code>echo “testuser” | sudo tee –a /etc/vsftpd/user_list</code></pre><h4 id=\"testing\">Testing</h4><pre><code>~]# ftpftp&gt; open IP_ADDRESS_or_HOSTNAME</code></pre><p><img src=\"/assets/ftp-cli-test1.png\" alt=\"ftp\" /></p><p>Semoga bermanfaat.</p>",
+            "url": "https://iqbal.page/2021/02/setup-ftp-di-centos-7.html",
+            
+            
+            
+            "tags": ["linux","ftp"],
+            
+            "date_published": "2021-02-09T14:45:14+07:00",
+            "date_modified": "2021-02-09T14:45:14+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/02/generate-ssl-lets-encrypt-wildcard.html",
             "title": "Generate SSL Let's Encrypt Wildcard",
             "summary": null,
@@ -721,25 +745,6 @@
             
             "date_published": "2016-05-09T01:44:00+07:00",
             "date_modified": "2016-05-09T01:44:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/03/definisi-multiboot-atau-dualboot.html",
-            "title": "Definisi Multi-Boot atau Dual-Boot",
-            "summary": null,
-            "content_text": "Multi-Boot atau Dual-Boot, adalah nama atau sebutan untuk menginstall dua sistem operasi atau lebih pada satu komputer, misalnya Ubuntu (Linux) dengan Windows.Dua sistem operasi atau lebih dapat diinstall pada harddisk yang sama namun pada partisi yang terpisah, atau dua sistem operasi atau lebih yang diinstall pada partisi yang sama namun hard disk yang terpisah. Hal ini memungkinkan bila komputer memiliki lebih dari satu hard disk yang terinstall.Dengan meng install dua sistem operasi atau lebih akan lebih menguntungkan bila dibandingkan hanya meng install satu sistem operasi saja. Tapi tentu saja untuk meng install lebih dari satu sistem operasi, kapasitas hard disk harus mencukupi dan komputer harus memenuhi syarat sistem minimum yang ditentukan oleh masing-masing sistem operasi.Semoga bermanfaat, Terimakasih :) .Sumber : mulyonoeko.mywapblog.com",
-            "content_html": "<p>Multi-Boot atau Dual-Boot, adalah nama atau sebutan untuk menginstall dua sistem operasi atau lebih pada satu komputer, misalnya Ubuntu (Linux) dengan Windows.</p><p><img src=\"https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png\" alt=\"Multisystem\" /></p><p>Dua sistem operasi atau lebih dapat diinstall pada harddisk yang sama namun pada partisi yang terpisah, atau dua sistem operasi atau lebih yang diinstall pada partisi yang sama namun hard disk yang terpisah. Hal ini memungkinkan bila komputer memiliki lebih dari satu hard disk yang terinstall.</p><p>Dengan meng install dua sistem operasi atau lebih akan lebih menguntungkan bila dibandingkan hanya meng install satu sistem operasi saja. Tapi tentu saja untuk meng install lebih dari satu sistem operasi, kapasitas hard disk harus mencukupi dan komputer harus memenuhi syarat sistem minimum yang ditentukan oleh masing-masing sistem operasi.</p><p>Semoga bermanfaat, Terimakasih :) .</p><p>Sumber : <a href=\"http://mulyonoeko.mywapblog.com/\">mulyonoeko.mywapblog.com</a></p>",
-            "url": "https://iqbal.page/2016/03/definisi-multiboot-atau-dualboot.html",
-            
-            
-            
-            "tags": ["multiboot","dualboot"],
-            
-            "date_published": "2016-03-23T06:23:00+07:00",
-            "date_modified": "2016-03-23T06:23:00+07:00",
             
                 "author": "iqbal"
             

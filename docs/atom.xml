@@ -4,13 +4,79 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-09T11:47:50+07:00</updated>
+ <updated>2021-02-09T14:48:27+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Setup FTP di CentOS 7</title>
+   <link href="https://iqbal.page/2021/02/setup-ftp-di-centos-7.html"/>
+   <updated>2021-02-09T14:45:14+07:00</updated>
+   <id>https://iqbal.page/2021/02/setup-ftp-di-centos-7</id>
+   <content type="html">&lt;h4 id=&quot;install--vsftpd&quot;&gt;Install  VSFTPD&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;yum update -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;yum install vsftpd -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;systemctl start vsftpd
+systemctl enable vsftpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;konfigurasi-vsftpd&quot;&gt;Konfigurasi VSFTPD&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.default
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit file &lt;code&gt;/etc/vsftpd/vsftpd.conf&lt;/code&gt; dan sesuaikan dengan konfigurasi berikut:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;anonymous_enable=NO
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;local_enable=YES
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;write_enable=YES
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;chroot_local_user=YES
+allow_writeable_chroot=YES
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;tambah-user-list&quot;&gt;Tambah user list&lt;/h5&gt;
+
+&lt;p&gt;Masih dengan mode edit file &lt;code&gt;/etc/vsftpd/vsftpd.conf&lt;/code&gt;,  sesuaikan dengan konfigurasi berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;userlist_enable=YES
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;userlist_file=/etc/vsftpd/user_list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;userlist_deny=NO
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl restart vsftpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tambah user:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;adduser user1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;passwd user1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Masukan user baru ke list user ftp:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo “testuser” | sudo tee –a /etc/vsftpd/user_list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;testing&quot;&gt;Testing&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;~]# ftp
+ftp&amp;gt; open IP_ADDRESS_or_HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/ftp-cli-test1.png&quot; alt=&quot;ftp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Generate SSL Let's Encrypt Wildcard</title>

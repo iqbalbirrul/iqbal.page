@@ -90,7 +90,7 @@ Untuk melihat status jail fail2ban dapat menggunakan perintah berikut:
 fail2ban-client status sshd
 ```
 
-![Jail status](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-jail-status.png)
+![Jail status](/assets/images/images-old/2020/fail2ban-jail-status.png)
 
 Masukan perintah berikut untuk melihat log fail2ban:
 
@@ -98,7 +98,7 @@ Masukan perintah berikut untuk melihat log fail2ban:
 tail -f /var/log/fail2ban.log
 ```
 
-![Log fail2ban](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-banned-ip.png)
+![Log fail2ban](/assets/images/images-old/2020/fail2ban-banned-ip.png)
 
 ### Unban IP
 

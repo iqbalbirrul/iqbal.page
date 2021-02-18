@@ -11,7 +11,7 @@ author: iqbal
 
 DNS, stands for Domain Name System, translates hostnames or URLs into IP addresses. For example, if we type **red.my.id** in browser, the DNS server translates the domain name into its associated ip address. Since the IP addresses are hard to remember all time, DNS servers are used to translate the hostnames like **red.my.id** to `104.xx.xx.xxx`. So it makes easy to remember the domain names instead of its IP address.
 
-![DNS Server](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png)
+![DNS Server](/assets/images/images-old/2019/dns.png)
 
 ----
 

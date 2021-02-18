@@ -4,7 +4,7 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-18T22:11:31+07:00</updated>
+ <updated>2021-02-18T23:12:39+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
@@ -589,17 +589,17 @@ git commit -m &quot;add readme&quot;
     &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sh &amp;lt;(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install_centos.png&quot; alt=&quot;Installation Command&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-install_centos.png&quot; alt=&quot;Installation Command&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Setelah installasi selesai, klik tautan yang tersedia pada instruksi untuk membuka setup pada web browser.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-finish_centos.png&quot; alt=&quot;Installation Completed&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-install-finish_centos.png&quot; alt=&quot;Installation Completed&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Pada setup web, masukan data-data yang dibutukan seperti nama, email, password dan lisensi lalu klik &lt;strong&gt;Enter Plesk&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb_centos.png&quot; alt=&quot;Web Setup&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-install-setupweb_centos.png&quot; alt=&quot;Web Setup&quot; /&gt;&lt;/p&gt;
 
     &lt;blockquote&gt;
       &lt;p&gt;*) &lt;em&gt;Untuk lesensi trial/percobaan bisa didapatkan melalui tautan berikut: https://www.plesk.com/plesk-free-download/&lt;/em&gt;
@@ -609,12 +609,12 @@ Silakan daftar menggunakan email.&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;Tunggu sampai proses initializing selesai.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb2_centos.png&quot; alt=&quot;Initializing&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-install-setupweb2_centos.png&quot; alt=&quot;Initializing&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Setelah proses initializing selesai, maka kita akan dibawa ke halaman dashboard Plesk Panel.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard.png&quot; alt=&quot;Dashboard Plesk&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-dashboard.png&quot; alt=&quot;Dashboard Plesk&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -626,17 +626,17 @@ Silakan daftar menggunakan email.&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;Klik &lt;strong&gt;Add Domain&lt;/strong&gt; pada dashboard Plesk Panel, kemudian masukan data-data yang dibutuhkan lalu klik &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain.png&quot; alt=&quot;Add a Domain&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-dashboard-adddomain.png&quot; alt=&quot;Add a Domain&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Setelah itu tunggu sampai proses penambahan domain selesai.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain-finish.png&quot; alt=&quot;Add a Domain Completed&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-dashboard-adddomain-finish.png&quot; alt=&quot;Add a Domain Completed&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Berikut ini merupakan tampilan default dari laman website yang ditambahkan pada Plesk Panel.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-default-pages.png&quot; alt=&quot;Plesk Default Pages&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/plesk/plesk-default-pages.png&quot; alt=&quot;Plesk Default Pages&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -687,7 +687,7 @@ Query OK, 0 rows affected (0.00 sec)
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;select * from user where user='username' \G
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-privileges1.png&quot; alt=&quot;Privileges 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/mariadb/remote-access/mariadb-privileges1.png&quot; alt=&quot;Privileges 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;User tersebut belum mendapatkan hak akses. Tambahkan hak akses terlebih dahulu pada user tersebut.&lt;/p&gt;
 
@@ -700,7 +700,7 @@ MariaDB [mysql]&amp;gt; update user SET Grant_priv='Y'  WHERE User = 'kilat';
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;select * from user where user='username' \G
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-privileges2.png&quot; alt=&quot;Privileges 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/mariadb/remote-access/mariadb-privileges2.png&quot; alt=&quot;Privileges 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sekarang user tersebut sudah mendapatkan hak akses penuh pada MySQL/MariaDB.&lt;/p&gt;
 
@@ -711,14 +711,14 @@ MariaDB [mysql]&amp;gt; update user SET Grant_priv='Y'  WHERE User = 'kilat';
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ telnet IP_DATABASE 3306
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-testing1.png&quot; alt=&quot;Testing 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/mariadb/remote-access/mariadb-testing1.png&quot; alt=&quot;Testing 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tes login ke MySQL/MariaDB:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ mysql -h IP_DATABASE -u username -p
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/mariadb/remote-access/mariadb-testing2.png&quot; alt=&quot;Testing 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/mariadb/remote-access/mariadb-testing2.png&quot; alt=&quot;Testing 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selesai.&lt;/p&gt;
 </content>
@@ -804,14 +804,14 @@ systemctl enable fail2ban
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;fail2ban-client status sshd
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-jail-status.png&quot; alt=&quot;Jail status&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/fail2ban-jail-status.png&quot; alt=&quot;Jail status&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masukan perintah berikut untuk melihat log fail2ban:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;tail -f /var/log/fail2ban.log
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/fail2ban-banned-ip.png&quot; alt=&quot;Log fail2ban&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/fail2ban-banned-ip.png&quot; alt=&quot;Log fail2ban&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;unban-ip&quot;&gt;Unban IP&lt;/h3&gt;
 
@@ -882,23 +882,23 @@ systemctl enable fail2ban
   &lt;li&gt;Buka website &lt;a href=&quot;https://netlify.com&quot;&gt;Netlify&lt;/a&gt;, dan buat akun.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Apabila akun sudah dibuat, klik New Site from Git.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-new-site.png&quot; alt=&quot;New Site&quot; /&gt;&lt;/p&gt;
+ &lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-new-site.png&quot; alt=&quot;New Site&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Pilih antara GitHub, GitLab atau BitBucket tempat dimana repository Hugo sebelumnya dideploy.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deployment.png&quot; alt=&quot;Continuous Deployment&quot; /&gt;&lt;/p&gt;
+ &lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-deployment.png&quot; alt=&quot;Continuous Deployment&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Pilih repository.
-  &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-repo.png&quot; alt=&quot;Select Repository&quot; /&gt;&lt;/p&gt;
+  &lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-repo.png&quot; alt=&quot;Select Repository&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Klik Deploy Site.
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deploy-site.png&quot; alt=&quot;Deploy Site&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-deploy-site.png&quot; alt=&quot;Deploy Site&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Tunggu beberapa saat, dan Hugo berhasil dideploy ke Netlify.
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-deploy-success.png&quot; alt=&quot;Deploy Success&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-deploy-success.png&quot; alt=&quot;Deploy Success&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Nantinya setiap kita melakukan update konten dan push repository, maka website pada Netlify akan secara otomatis terupdate.&lt;/p&gt;
   &lt;/li&gt;
@@ -911,24 +911,24 @@ systemctl enable fail2ban
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Masuk ke Site Settings
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-site-settings.png&quot; alt=&quot;Site Settings&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-site-settings.png&quot; alt=&quot;Site Settings&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Pada Site Details, klik Change site name
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name.png&quot; alt=&quot;Site Details&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-change-site-name.png&quot; alt=&quot;Site Details&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Ubah subdomain, sesuai keinginan (bila tersedia) lalu klik Save.
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name-save.png&quot; alt=&quot;Change Site Name&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-change-site-name-save.png&quot; alt=&quot;Change Site Name&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Subdomain berhasil diubah.
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-change-site-name-success.png&quot; alt=&quot;New Site Details&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-change-site-name-success.png&quot; alt=&quot;New Site Details&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Akses subdomain
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-subdomain.png&quot; alt=&quot;Website Hugo&quot; /&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/netlify/netlify-subdomain2.png&quot; alt=&quot;Website Hugo&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-subdomain.png&quot; alt=&quot;Website Hugo&quot; /&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/netlify/netlify-subdomain2.png&quot; alt=&quot;Website Hugo&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Selesai..&lt;/p&gt;
@@ -953,10 +953,10 @@ systemctl enable fail2ban
   &lt;li&gt;Repo 2: &lt;em&gt;username&lt;/em&gt;.github.io (untuk github pages)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project.png&quot; alt=&quot;Repositori Project&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/hugo/repo-project.png&quot; alt=&quot;Repositori Project&quot; /&gt;
 Repositori &lt;code&gt;bloghugo&lt;/code&gt; berfungsi untuk menyimpan semua file project Hugo. Repositori ini bisa digunakan sebagai backup.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages.png&quot; alt=&quot;GitHub Pages&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/hugo/repo-pages.png&quot; alt=&quot;GitHub Pages&quot; /&gt;
 Sementara repositori &lt;code&gt;username.github.io&lt;/code&gt; untuk menyimpan file yang ada di &lt;code&gt;public&lt;/code&gt; atau hasil render dari Hugo.&lt;/p&gt;
 
 &lt;p&gt;Semua file statis yang ada di repositori &lt;code&gt;username.github.io&lt;/code&gt;, nantinya akan diakses melalui https://username.github.io.&lt;/p&gt;
@@ -1179,8 +1179,8 @@ root@static:~/bloghugo#
 
 &lt;p&gt;Deploy selesai..&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/hugo/repo-project-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;
+&lt;img src=&quot;/assets/images/images-old/2020/hugo/repo-pages-deployed.png&quot; alt=&quot;Deploy sukses&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sekarang, akses alamat &lt;em&gt;https://username.github.io&lt;/em&gt;.&lt;/p&gt;
 
@@ -1332,7 +1332,7 @@ Press Ctrl+C to stop
 
 &lt;p&gt;Akses website hugo dengan alamat &lt;a href=&quot;http://127.0.0.1:1313/&quot;&gt;http://127.0.0.1:1313/&lt;/a&gt; atau &lt;a href=&quot;http://hostname:1313/&quot;&gt;http://hostname:1313/&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/localhost-hugo-site.png&quot; alt=&quot;Hugo Localhost&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2020/hugo/localhost-hugo-site.png&quot; alt=&quot;Hugo Localhost&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sekian, semoga bermanfaat…&lt;/p&gt;
 
@@ -1347,7 +1347,7 @@ Press Ctrl+C to stop
    <id>https://iqbal.page/2020/02/setup-bind-dns-server-centos-7</id>
    <content type="html">&lt;p&gt;DNS, stands for Domain Name System, translates hostnames or URLs into IP addresses. For example, if we type &lt;strong&gt;red.my.id&lt;/strong&gt; in browser, the DNS server translates the domain name into its associated ip address. Since the IP addresses are hard to remember all time, DNS servers are used to translate the hostnames like &lt;strong&gt;red.my.id&lt;/strong&gt; to &lt;code&gt;104.xx.xx.xxx&lt;/code&gt;. So it makes easy to remember the domain names instead of its IP address.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1527,7 +1527,7 @@ Address: 117.53.44.164
    <content type="html">&lt;h1 id=&quot;dns&quot;&gt;DNS&lt;/h1&gt;
 &lt;p&gt;DNS (Domain Name System) adalah layanan yang menerjemahkan nama domain situs web seperti, contoh: &lt;code&gt;google.com&lt;/code&gt; menjadi alamat IP (IP Address) sehingga pengguna internet bisa membuka situs tujuan dengan cepat.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/dns.png&quot; alt=&quot;DNS Server&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;fungsi-dns&quot;&gt;Fungsi DNS&lt;/h2&gt;
 &lt;ul&gt;
@@ -1722,7 +1722,7 @@ Address: 117.53.46.186
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;![Logo Zoho&lt;/td&gt;
-      &lt;td&gt;sumber: zoho.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-logo.png)&lt;/td&gt;
+      &lt;td&gt;sumber: zoho.com](/assets/images/images-old/2019/zoho/zoho-logo.png)&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1743,15 +1743,15 @@ Address: 117.53.46.186
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Masukan nama domain-nya (&lt;em&gt;misal: kwt.web.id&lt;/em&gt;) » klik &lt;strong&gt;Add&lt;/strong&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-1.png&quot; alt=&quot;Gambar 1: Masukan nama domain&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-1.png&quot; alt=&quot;Gambar 1: Masukan nama domain&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Lengkapi data-data yang diperlukan dan centang (&lt;em&gt;I agree to the Terms of Service and Privacy Policy.&lt;/em&gt;) kemudian klik &lt;strong&gt;PROCEED&lt;/strong&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-2.png&quot; alt=&quot;Gambar 2: Lengkapi data-data yang diperlukan&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-2.png&quot; alt=&quot;Gambar 2: Lengkapi data-data yang diperlukan&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Klik &lt;strong&gt;Sign Up&lt;/strong&gt; kembali
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-3.png&quot; alt=&quot;Gambar 3: Konfirmasi data-data&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-3.png&quot; alt=&quot;Gambar 3: Konfirmasi data-data&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Anda akan disuruh untuk memverifikasi akun dengan memasukan kode yang telah dikirimkan ke nomor ponsel yang Anda inputkan sebelumnya. Kemudian klik &lt;strong&gt;VERIFIKASI TELEPON SELULAR&lt;/strong&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-4.png&quot; alt=&quot;Gambar 4: Verifikasi telepon selular&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-4.png&quot; alt=&quot;Gambar 4: Verifikasi telepon selular&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Selanjutnya, Anda akan disuruh untuk mengaktifkan Autentikasi Dua Faktor, Anda bisa men-skip tahap ini &lt;em&gt;terlebih dahulu&lt;/em&gt; dengan klik &lt;em&gt;&lt;strong&gt;Ingatkan saya nanti&lt;/strong&gt;&lt;/em&gt; atau Anda dapat mengaktifkannya untuk keamanan akun.
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-5.png&quot; alt=&quot;Gambar 5: Aktifkan autentikasi dua faktor&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-5.png&quot; alt=&quot;Gambar 5: Aktifkan autentikasi dua faktor&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;domain-setup&quot;&gt;Domain Setup&lt;/h2&gt;
@@ -1761,61 +1761,61 @@ Address: 117.53.46.186
     &lt;ul&gt;
       &lt;li&gt;Pilih DNS manager: &lt;strong&gt;Others&lt;/strong&gt;&lt;/li&gt;
       &lt;li&gt;Pilih verifikasi menggunakan CNAME atau dapat menggunakan metode Upload Files.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-6.png&quot; alt=&quot;Gambar 6: Pilih verifikasi menggunakan CNAME&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-6.png&quot; alt=&quot;Gambar 6: Pilih verifikasi menggunakan CNAME&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian tambahkan CNAME tersebut pada DNS management domain Anda.&lt;/li&gt;
       &lt;li&gt;Penambahan record DNS pada domain akan membuat domain mengalami propagasi dan proses propagasi biasa memakan waktu 48 Jam tergantung ISP yang Anda gunakan.&lt;/li&gt;
       &lt;li&gt;Apabila CNAME telah ditambahkan, klik &lt;strong&gt;Proceed to CNAME Verification&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-7.png&quot; alt=&quot;Gambar 7: CNAME sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-7.png&quot; alt=&quot;Gambar 7: CNAME sudah ditambahkan&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian klik &lt;strong&gt;Verify Now&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-8.png&quot; alt=&quot;Gambar 8: Verify Now&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-8.png&quot; alt=&quot;Gambar 8: Verify Now&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian klik &lt;strong&gt;Create Account&lt;/strong&gt; (isi sama seperti di step 3 saat mendaftarkan akun)
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-9.png&quot; alt=&quot;Gambar 9: Create Administrator Account &quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-9.png&quot; alt=&quot;Gambar 9: Create Administrator Account &quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Add User
     &lt;ul&gt;
       &lt;li&gt;Klik &lt;strong&gt;Proceed to Add Users&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-10.png&quot; alt=&quot;Gambar 10: Add User&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-10.png&quot; alt=&quot;Gambar 10: Add User&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Tambahkan user atau bisa di skip untuk melanjutkan prosesnya.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-11.png&quot; alt=&quot;Gambar 11: Tambah user&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-11.png&quot; alt=&quot;Gambar 11: Tambah user&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;User sudah ditambahkan, kemudian klik &lt;strong&gt;Back to Setup&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-12.png&quot; alt=&quot;Gambar 12: User sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-12.png&quot; alt=&quot;Gambar 12: User sudah ditambahkan&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Create Groups
     &lt;ul&gt;
       &lt;li&gt;Anda dapat melewati tahap ini jika tidak diperlukan group untuk distribution list atau dapat Anda lanjutkan dengan klik &lt;strong&gt;Proceed to Create Groups&lt;/strong&gt;.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-13.png&quot; alt=&quot;Gambar 13: Create Groups 1&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-13.png&quot; alt=&quot;Gambar 13: Create Groups 1&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Klik &lt;strong&gt;Back to Setup&lt;/strong&gt; untuk kembali ke &lt;strong&gt;Domain Setup&lt;/strong&gt;, atau klik &lt;strong&gt;Add Group&lt;/strong&gt; untuk membuat group.
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-14.png&quot; alt=&quot;Gambar 14: Create Groups 2&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-14.png&quot; alt=&quot;Gambar 14: Create Groups 2&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Configure Email Delivery
     &lt;ul&gt;
       &lt;li&gt;Kemudian tambahkan mx record yang tertera pada gambar 15 ke DNS management domain
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-15.png&quot; alt=&quot;Gambar 15: Tambahkan MX record pada DNS management&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-15.png&quot; alt=&quot;Gambar 15: Tambahkan MX record pada DNS management&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Apabila MX record sudah ditambahkan, cek dengan menekan tombol &lt;strong&gt;MX Lookup&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-17.png&quot; alt=&quot;Gambar 17: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-17.png&quot; alt=&quot;Gambar 17: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian klik &lt;strong&gt;OK&lt;/strong&gt; lalu klik &lt;strong&gt;Next&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-16.png&quot; alt=&quot;Gambar 16: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-16.png&quot; alt=&quot;Gambar 16: MX record sudah ditambahkan&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;SPF/DKIM
     &lt;ul&gt;
       &lt;li&gt;Tambahkan SPF record pada DNS management domain
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-18.png&quot; alt=&quot;Gambar 18: &quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-18.png&quot; alt=&quot;Gambar 18: &quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Klik Procees to Configure DKIM untuk konfigurasi DKIM
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-19.png&quot; alt=&quot;Gambar 19: DKIM&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-19.png&quot; alt=&quot;Gambar 19: DKIM&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Klik tombol edit untuk mengaktifkan DKIM
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-20.png&quot; alt=&quot;Gambar 20: Edit DKIM&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-20.png&quot; alt=&quot;Gambar 20: Edit DKIM&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian klik &lt;strong&gt;Add Selector&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-21.png&quot; alt=&quot;Gambar 21: Add Selector&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-21.png&quot; alt=&quot;Gambar 21: Add Selector&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Masukan nama Selector kemudian klik &lt;strong&gt;Save&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-22.png&quot; alt=&quot;Gambar 22: Simpan perubahan&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-22.png&quot; alt=&quot;Gambar 22: Simpan perubahan&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Tambahkan record TXT yang dihasilkan pada DNS management domain kemudian klik &lt;strong&gt;Verify&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-23.png&quot; alt=&quot;Gambar 23: Tambah record DKIM&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-23.png&quot; alt=&quot;Gambar 23: Tambah record DKIM&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Pastikan record SPF dan DKIM sudah resolve pada domain
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-24.png&quot; alt=&quot;Gambar 24: SPF dan DKIM sudah resolve&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-24.png&quot; alt=&quot;Gambar 24: SPF dan DKIM sudah resolve&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Klik &lt;strong&gt;Back to Setup&lt;/strong&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -1834,15 +1834,15 @@ Address: 117.53.46.186
       &lt;li&gt;Masuk ke https://mail.zoho.com/zm/&lt;/li&gt;
       &lt;li&gt;Klik New Mail&lt;/li&gt;
       &lt;li&gt;Masukan email tujuan, subjek, isi email kemudian &lt;strong&gt;Send&lt;/strong&gt;
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-25.png&quot; alt=&quot;Gambar 25: Test kirim email&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-25.png&quot; alt=&quot;Gambar 25: Test kirim email&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;Kemudian periksa pada kotak masuk email tujuan
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-26.png&quot; alt=&quot;Gambar 26: Email sudah masuk&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-26.png&quot; alt=&quot;Gambar 26: Email sudah masuk&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;SPF dan DKIM bekerja
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-27.png&quot; alt=&quot;Gambar 27: SPF dan DKIM bekerja&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-27.png&quot; alt=&quot;Gambar 27: SPF dan DKIM bekerja&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Test menerima email
- &lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/zoho/zoho-28.png&quot; alt=&quot;Gambar 28: berhasil menerima email&quot; /&gt;&lt;/li&gt;
+ &lt;img src=&quot;/assets/images/images-old/2019/zoho/zoho-28.png&quot; alt=&quot;Gambar 28: berhasil menerima email&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Selesai dan email siap digunakan..&lt;/p&gt;
@@ -1868,7 +1868,7 @@ Address: 117.53.46.186
    <id>https://iqbal.page/2019/02/make-a-private-git-repository-using-gitlab-ce</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;GitLab Community Edition (CE)&lt;/strong&gt; adalah platform pengembangan end-to-end perangkat lunak open source dengan built-in version control, issue tracking, code review, CI/CD, dan banyak lagi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce.png&quot; alt=&quot;GitLab CE&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/gitlab-ce.png&quot; alt=&quot;GitLab CE&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;requirments&quot;&gt;Requirments&lt;/h1&gt;
 
@@ -2021,9 +2021,9 @@ letsencrypt['auto_renew_day_of_month'] = &quot;*/4&quot;
 
 &lt;p&gt;Setelah proses reconfigure selesai, semua pengguna akan otomatis menggunakan protocol HTTPS.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce-site.png&quot; alt=&quot;https://repo.iqbal.es&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/gitlab-ce-site.png&quot; alt=&quot;https://repo.iqbal.es&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/gitlab-ce-dashboard.png&quot; alt=&quot;Dashboard GitLab CE&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/gitlab-ce-dashboard.png&quot; alt=&quot;Dashboard GitLab CE&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Untuk installasi pada sistem operasi lain, silakan ikuti tautan berikut:&lt;/p&gt;
 
@@ -2044,7 +2044,7 @@ letsencrypt['auto_renew_day_of_month'] = &quot;*/4&quot;
 
 &lt;p&gt;Jekyll ditulis dalam bahasa pemrograman &lt;code&gt;Ruby&lt;/code&gt; oleh &lt;strong&gt;Tom Preston-Werner&lt;/strong&gt;, co-founder GitHub, dan didistribusikan di bawah lisensi &lt;a href=&quot;https://id.wikipedia.org/wiki/Sumber_terbuka&quot;&gt;sumber terbuka&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/jekyll-logo.png&quot; alt=&quot;Jekyll&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/jekyll-logo.png&quot; alt=&quot;Jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;installasi-jekyll&quot;&gt;Installasi Jekyll&lt;/h1&gt;
 &lt;p&gt;Jekyll dapat diinstal pada sistem operasi macOS, Ubuntu, &lt;a href=&quot;https://jekyllrb.com/docs/installation/other-linux&quot;&gt;Distro Linux Lain&lt;/a&gt;, Windows.&lt;/p&gt;
@@ -2115,7 +2115,7 @@ Configuration file: /home/iqbal/Jekyll/iqbal-jekyll/_config.yml
 
 &lt;p&gt;Akses jekyll dengan alamat &lt;a href=&quot;http://localhost:4000/&quot;&gt;&lt;em&gt;http://localhost:4000/&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/jekyll-localhost.png&quot; alt=&quot;Localhost Jekyll&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/jekyll-localhost.png&quot; alt=&quot;Localhost Jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;konfigurasi-jekyll&quot;&gt;Konfigurasi Jekyll&lt;/h3&gt;
 
@@ -2154,7 +2154,7 @@ plugins:
    <link href="https://iqbal.page/2019/02/generate-ssl-lets-encrypt-di-centos-7.html"/>
    <updated>2019-02-15T02:40:14+07:00</updated>
    <id>https://iqbal.page/2019/02/generate-ssl-lets-encrypt-di-centos-7</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/ssl-letsencrypt.png&quot; alt=&quot;Let's Encrypt https://seeklogo.com&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/ssl-letsencrypt.png&quot; alt=&quot;Let's Encrypt https://seeklogo.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Install terlebih dahulu repository &lt;code&gt;epel-release&lt;/code&gt;&lt;/p&gt;
 
@@ -2218,7 +2218,7 @@ IMPORTANT NOTES:
    <link href="https://iqbal.page/2019/01/server-blocks-nginx.html"/>
    <updated>2019-01-01T08:59:48+07:00</updated>
    <id>https://iqbal.page/2019/01/server-blocks-nginx</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/nginx-logo.png&quot; alt=&quot;Nginx Logo https://dwglogo.com&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2019/nginx-logo.png&quot; alt=&quot;Nginx Logo https://dwglogo.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Berikut contoh konfigurasi server block Nginx:&lt;/p&gt;
 
@@ -2439,7 +2439,7 @@ Sumber : &lt;a href=&quot;https://www.nginx.com/resources/wiki/start/topics/exam
    <id>https://iqbal.page/2018/03/membuat-halaman-404-not-found-di-github-pages</id>
    <content type="html">&lt;p&gt;Untuk yang sering otak-atik GitHub Pages pasti tahu, bahwa di GitHub Pages jika kita mengakses halaman yang error/tidak ada, maka muncul halaman &lt;code&gt;404 Not Found&lt;/code&gt; bawaan dari GitHub Pages.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/404.png&quot; alt=&quot;404 Not Found&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/404.png&quot; alt=&quot;404 Not Found&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Mau sebagus apapun template yang kita buat di GitHub Pages, pasti jika terdapat halaman yang tidak ada, maka akan ditampilkan dengan halaman &lt;code&gt;404 Not Found&lt;/code&gt; bawaan GitHub Pages.
 Untuk mengatasi hal tersebut sangatlah mudah, supaya halaman &lt;code&gt;404 Not Found&lt;/code&gt; bisa sesuai dengan keinginan kita/sama seperti template yang kita buat.
@@ -2456,7 +2456,7 @@ Untuk Blog statis (Hexo, Jekyll), caranya cukup mudah. Cukup buat halaman &lt;co
    <id>https://iqbal.page/2018/02/mengaktifkan-ssl-gratis-cloudflare-di-github-pages-custom-domain</id>
    <content type="html">&lt;p&gt;Sebenarnya, di GitHub sudah tersedia ssl gratis untuk setiap halaman yang dibuat (&lt;em&gt;GitHub Pages&lt;/em&gt;). Namun untuk yang menggunakan nama domain sendiri atau custom domain, github tidak menyediakan ssl gratis.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare.png&quot; alt=&quot;Cloudflare&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare.png&quot; alt=&quot;Cloudflare&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Contoh halaman github menggunakan ssl : &lt;code&gt;https://iqbalbirrul.github.io&lt;/code&gt;
 Lihat pada &lt;code&gt;https&lt;/code&gt; yang menandakan ssl-nya aktif, sedangkan untuk custom domain, &lt;code&gt;http://www.iqbalbirrul.com&lt;/code&gt; tidak diberi ssl.&lt;/p&gt;
@@ -2470,26 +2470,26 @@ Lihat pada &lt;code&gt;https&lt;/code&gt; yang menandakan ssl-nya aktif, sedangk
 &lt;p&gt;Langkah pertama, buatlah akun &lt;a href=&quot;https://cloudflare.com&quot;&gt;Cloudflare&lt;/a&gt; dan setting agar domain mengarah ke &lt;code&gt;name server&lt;/code&gt; Cloudflare.
 Jika domain sudah mengarah ke &lt;code&gt;name server&lt;/code&gt; Cloudflare, masuk ke menu &lt;strong&gt;DNS&lt;/strong&gt; dan setting dns di Cloudflare agar mengarah ke GitHub Pages , contoh seperti pada gambar dibawah ini.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-1.png&quot; alt=&quot;DNS Cloudflare&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-1.png&quot; alt=&quot;DNS Cloudflare&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Artinya, situs GitHub Pages kita akan melewati Cloudflare, baru kemudian diteruskan ke client.
 Setelah domain berhasil di arahkan ke GitHub Pages, masuk ke menu &lt;strong&gt;Crypto&lt;/strong&gt;, lalu atur ssl-nya menjadi &lt;strong&gt;Full&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-2.png&quot; alt=&quot;Mengaktifkan SSL&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-2.png&quot; alt=&quot;Mengaktifkan SSL&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ada 4 pilihan, &lt;code&gt;Off, Flexible, Full, dan Full (strict)&lt;/code&gt;. Perbedaannya seperti ini:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-3.png&quot; alt=&quot;Cloudflare SSL Modules&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-3.png&quot; alt=&quot;Cloudflare SSL Modules&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;membuat-page-rules&quot;&gt;Membuat Page Rules&lt;/h5&gt;
 &lt;p&gt;Agar &lt;code&gt;http&lt;/code&gt; diarahkan ke &lt;code&gt;https&lt;/code&gt;, maka buatlah page rules. Masuk ke menu &lt;strong&gt;Page Rules&lt;/strong&gt;, kemudian tambahkan &lt;em&gt;rules&lt;/em&gt; seperti ini.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-4.png&quot; alt=&quot;301 - Permanent Redirect&quot; /&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-5.png&quot; alt=&quot;Always Use HTTPS&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-4.png&quot; alt=&quot;301 - Permanent Redirect&quot; /&gt;
+&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-5.png&quot; alt=&quot;Always Use HTTPS&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tambahkan juga &lt;em&gt;rules&lt;/em&gt; untuk chace-nya, seperti ini:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-6.png&quot; alt=&quot;Chace Everything&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-6.png&quot; alt=&quot;Chace Everything&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;mengubah-cname&quot;&gt;Mengubah CNAME&lt;/h5&gt;
 &lt;p&gt;Karena kita ingin menggunakan alamat domain dengan &lt;code&gt;https&lt;/code&gt;, maka perlu mengubah konfigurasi pada setelan situs.
@@ -2506,7 +2506,7 @@ root: /
 
 &lt;p&gt;Masukan ke dalam folder &lt;code&gt;/source&lt;/code&gt;, lalu generate dan deploy. Dan ssl-pun sudah aktif sepenuhnya.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2018/ssl-cloudflare-7.png&quot; alt=&quot;Iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2018/ssl-cloudflare-7.png&quot; alt=&quot;Iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
 
@@ -2524,9 +2524,9 @@ root: /
    <id>https://iqbal.page/2017/09/unsur-instrinsik-novel-sekuntum-ruh-dalam-merah</id>
    <content type="html">&lt;p&gt;Kemarin, waktu saya masih duduk di bangku kelas 3 SMK, saya dan semua jurusan di kelas 3 diberi tugas untuk membuat laporan &lt;code&gt;Identifikasi Unsur Intrinsik Novel&lt;/code&gt;, dan saya membuat laporan tentang sebuah Novel yang sangat luar biasa (menurut saya) yaitu &lt;code&gt;Sekuntum Ruh dalam Merah&lt;/code&gt; karya &lt;code&gt;NANING PRANOTO&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/srdm-1.png&quot; alt=&quot;Sekuntum Ruh dalam Merah&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/srdm-1.png&quot; alt=&quot;Sekuntum Ruh dalam Merah&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Dan sekarang saya akan membagikan hasil final Laporan yang sudah saya buat. Anda dapat mengunduh file tersebut di &lt;a href=&quot;https://earth-id-jkt-1.bal.web.id/assets/dokumen/2017/sekuntum-ruh-dalam-merah-iqbalbirrul.com.pdf&quot;&gt;&lt;strong&gt;sini&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Dan sekarang saya akan membagikan hasil final Laporan yang sudah saya buat. Anda dapat mengunduh file tersebut di &lt;a href=&quot;/assets/images/dokumen/2017/sekuntum-ruh-dalam-merah-iqbalbirrul.com.pdf&quot;&gt;&lt;strong&gt;sini&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Jika ada kesalahan kata dalam file laporan yang saya buat, mohon untuk dimaklumi :)&lt;/p&gt;
@@ -2543,7 +2543,7 @@ root: /
    <id>https://iqbal.page/2017/09/migrasi-ke-platform-hexo</id>
    <content type="html">&lt;p&gt;Sebelumnya, saya adalah pengguna layanan Blogger.com, setelah beberapa bulan saya membeli layanan Shared Hosting dan berMigrasi ke Platform Wordpress Self-Host.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Namun saya kurang puas, karena saya harus membeli Layanan dengan spesifikasi yang tinggi untuk sebuah situs Wordpress yang powerfull hehe. Saya memutuskan untuk bermigrasi ke Platform Hexo, sebuah Framework blog sederhana tapi POWERFULL yang didukung oleh NodeJs.&lt;/p&gt;
 
@@ -2561,7 +2561,7 @@ $ hexo server -d
 
 &lt;p&gt;Kemudian buka &lt;code&gt;localhost:4000/admin/&lt;/code&gt; dan saya pun mulai mengedit konten yang sudah saya migrasikan, dari mulai mengganti tautan yang rusak, memindahkan gambar yang masih ngehost di hostinnya, dan lain-lain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo-localhost-1.png&quot; alt=&quot;https://iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/hexo-localhost-1.png&quot; alt=&quot;https://iqbalbirrul.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Gambar diatas adalah tampilan dari situs ini.&lt;/p&gt;
 
@@ -2576,7 +2576,7 @@ $ hexo server -d
    <id>https://iqbal.page/2017/09/installasi-gns3-di-ubuntu-16-04</id>
    <content type="html">&lt;p&gt;Baiklah, langsung saja, bagaimana cara install GNS3. Sebelumnya, dalam hal ini sistem operasi yang digunakan adalah Ubuntu 16.04.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-1.png&quot; alt=&quot;GNS3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/gns3-1.png&quot; alt=&quot;GNS3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Catatan: Prosedur instalasi ini dapat pula dilakukan di Ubuntu (atau bahkan distro lain, utamanya turunan Debian) versi lain dengan penyesuaian.&lt;/p&gt;
 
@@ -2602,7 +2602,7 @@ $ hexo server -d
 
 &lt;p&gt;Tampilannya sebagai berikut :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-2.png&quot; alt=&quot;Tampilan GNS3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/gns3-2.png&quot; alt=&quot;Tampilan GNS3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sebagai tambahan yang diperlukan, kita juga meng-install &lt;code&gt;qemu&lt;/code&gt; :&lt;/p&gt;
 
@@ -2630,7 +2630,7 @@ $ hexo server -d
    <id>https://iqbal.page/2017/06/membuat-blog-dengan-framework-hexo-di-github</id>
    <content type="html">&lt;p&gt;Hexo adalah framework blog sederhana tapi powerful yang didukung oleh Node.js. Web statis generator ini super cepat dan hanya membutuhkan waktu beberapa detik untuk membangun website yang lengkap.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/hexo.png&quot; alt=&quot;Hexo.io&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hexo mendukung semua fitur GitHub-flavored Markdown dan sebagian besar plugin Octopress. Salah satu keuntungan utama dari Hexo adalah memungkinkan Anda untuk mentransfer blog atau situs ke web host dengan satu perintah.&lt;/p&gt;
 
@@ -2638,8 +2638,8 @@ $ hexo server -d
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt install git-core
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Install NodeJS, bisa lihat disini: &lt;a href=&quot;/cara-install-nodejs-di-linux-ubuntu-16.04&quot;&gt;Cara Install NodeJS di Linux Ubuntu 16.04&lt;/a&gt;
-Jika sudah terinstall Git dan NodeJS, sekarang kita install Hexo dengan perintah berikut.&lt;/p&gt;
+
+&lt;p&gt;Jika sudah terinstall Git dan NodeJS, sekarang kita install Hexo dengan perintah berikut.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm install -g hexo-cli
 &lt;/code&gt;&lt;/pre&gt;
@@ -2716,7 +2716,7 @@ npm install
    <id>https://iqbal.page/2017/06/cara-install-nodejs-di-linux-ubuntu-16-04</id>
    <content type="html">&lt;p&gt;Singkat cerita, NodeJS adalah sebuah framework Javascript yang dapat dijalankan di server dan dapat mengelola maupun mengolah request data dari client.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/nodejs-img.png&quot; alt=&quot;NodeJS&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/nodejs-img.png&quot; alt=&quot;NodeJS&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tentu saja prosedur pengolahan maupun pengembangan NodeJS tidak sama dengan server side programming pada umumnya seperti PHP atau pun ASP. Prosedur dan pengolahan antara NodeJS dan bahasa pemrograman web lain akan saya bahas pada artikel lain.
 Berikut cara installasi nya:&lt;/p&gt;
@@ -2747,7 +2747,7 @@ Berikut cara installasi nya:&lt;/p&gt;
    <link href="https://iqbal.page/2017/03/cek-kecepatan-koneksi-internet-melalui-terminal-linux.html"/>
    <updated>2017-03-28T12:13:00+07:00</updated>
    <id>https://iqbal.page/2017/03/cek-kecepatan-koneksi-internet-melalui-terminal-linux</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/speedtest.png&quot; alt=&quot;Speedtest&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/speedtest.png&quot; alt=&quot;Speedtest&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seringkali kita sebagai pengguna internet ingin mengetahui berapa kecepatan koneksi internet milik kita. Jika kamu pengguna linux untuk mengecek kecepatan koneksi internet kamu sangatlah mudah. Kita tidak perlu menunggu loading dari situs pengetes koneksi seperti &lt;code&gt;speedtest.net, speedtest.cbn.net.id, speedtest.telin.co.id&lt;/code&gt;.&lt;/p&gt;
 
@@ -2801,7 +2801,7 @@ apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(u
 &lt;pre&gt;&lt;code&gt;modprobe wl
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/wlan.png&quot; alt=&quot;successful&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/wlan.png&quot; alt=&quot;successful&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selesai, semoga bermanfaat.&lt;/p&gt;
 </content>
@@ -2814,7 +2814,7 @@ apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(u
    <id>https://iqbal.page/2017/01/mengalihkan-request-http-ke-https</id>
    <content type="html">&lt;p&gt;Beberapa hari lalu beli hosting dan gratis SSL dari &lt;strong&gt;Let’s Encrypt&lt;/strong&gt; di &lt;a href=&quot;http://idhosts.co.id&quot;&gt;&lt;strong&gt;IDHosts.co.id&lt;/strong&gt;&lt;/a&gt; dan langsung konfigurasi supaya SSLnya aktif.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/https-img.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2017/https-img.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Setelah aktif domain saya sudah bisa diakses melalui &lt;code&gt;https://iqbalbirrul.web.id&lt;/code&gt; namun jika diakses menggunakan protokol &lt;code&gt;http://&lt;/code&gt; saja tidak langsung mengarah ke &lt;code&gt;https://iqbalbirrul.web.id&lt;/code&gt;, dan untuk mengatasinya saya mencari cara di google dan menemukan cara untuk mengalihkan request &lt;code&gt;http&lt;/code&gt; ke &lt;code&gt;https&lt;/code&gt;. Berikut caranya.&lt;/p&gt;
 
@@ -2844,11 +2844,11 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
    <id>https://iqbal.page/2016/12/linux-bunsenlabs-distro-ringan-turunan-debian-jessie</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.bunsenlabs.org&quot;&gt;BunsenLabs&lt;/a&gt; merupakan Distro Linux turunan Debian “Jessie”. Distro ini adalah lanjutan dari Distro Linux &lt;a href=&quot;http://distrowatch.com/crunchbang&quot;&gt;Crunchbang&lt;/a&gt;. Versi rilis terbarunya yaitu Hydrogen RC2.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/bunsenlabs.png&quot; alt=&quot;BunsenLabs&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/bunsenlabs.png&quot; alt=&quot;BunsenLabs&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Distro ini sangat ringan karena menggunakan &lt;a href=&quot;http://openbox.org/wiki/Main_Page&quot;&gt;Openbox&lt;/a&gt; sebagai window managernya. Dan juga menggunakan Thunar sebagai File Managernya.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/bunsenlabs-thunar.png&quot; alt=&quot;Thunar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/bunsenlabs-thunar.png&quot; alt=&quot;Thunar&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aplikasi lain yang terinstall pada BunsenLabs yaitu tint2 panel, conky system monitor, iceweasel, vlc, dan lain lain. Juga dilengkapi software editing seperti Inkscape dan Gimp.&lt;/p&gt;
 
@@ -2879,7 +2879,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
    <id>https://iqbal.page/2016/12/download-video-youtube-melalui-terminal-linux</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://youtube.com&quot;&gt;YouTube&lt;/a&gt; adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/youtube.png&quot; alt=&quot;YouTube&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/youtube.png&quot; alt=&quot;YouTube&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pertama, Install terlebih dahulu YouTube Downloadernya.&lt;/p&gt;
 
@@ -2904,7 +2904,7 @@ Semoga bermanfaat.&lt;/p&gt;
    <id>https://iqbal.page/2016/05/tutorial-gimp-membuat-efek-anyaman</id>
    <content type="html">&lt;p&gt;Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-anyaman.png&quot; alt=&quot;Efek Anyaman&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/gimp-anyaman.png&quot; alt=&quot;Efek Anyaman&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Disini saya akan memberikan tutorial yang mudah dipahami, dan bahkan sangat mudah dengan menggunakan GIMP 2.8, dan kita tidak perlu repot-repot menyeleksi, add layer, dan seterusnya.
 Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/strong&gt; terlebih dahulu. Download G’MIC &lt;a href=&quot;http://gmic.eu/download.shtml&quot;&gt;di sini sana sini&lt;/a&gt; (sesuaikan dengan System).&lt;/p&gt;
@@ -2915,18 +2915,18 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
   &lt;li&gt;Buka Foto yang ingin sobat beri efek pada aplikasi GIMP.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-1.png&quot; alt=&quot;Expo Produk Cilacap&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/gimp-1.png&quot; alt=&quot;Expo Produk Cilacap&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Lalu pada menu Filter, Pilih G’MIC.&lt;/li&gt;
   &lt;li&gt;Pada jendela G’MIC, pilih &lt;code&gt;Patterns &amp;gt; Weave&lt;/code&gt;, lalu sesuaikan dengan keinginan sobat.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-2.png&quot; alt=&quot;G'mic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/gimp-2.png&quot; alt=&quot;G'mic&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dan hasilnya,&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/gimp-hasil-1.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/gimp-hasil-1.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sangat mudah bukan? nah terima kasih sudah berkunjung.&lt;/p&gt;
 
@@ -2945,7 +2945,7 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
    <id>https://iqbal.page/2016/03/definisi-multiboot-atau-dualboot</id>
    <content type="html">&lt;p&gt;Multi-Boot atau Dual-Boot, adalah nama atau sebutan untuk menginstall dua sistem operasi atau lebih pada satu komputer, misalnya Ubuntu (Linux) dengan Windows.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dua sistem operasi atau lebih dapat diinstall pada harddisk yang sama namun pada partisi yang terpisah, atau dua sistem operasi atau lebih yang diinstall pada partisi yang sama namun hard disk yang terpisah. Hal ini memungkinkan bila komputer memiliki lebih dari satu hard disk yang terinstall.&lt;/p&gt;
 
@@ -2962,7 +2962,7 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
    <link href="https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh.html"/>
    <updated>2016-03-19T17:30:00+07:00</updated>
    <id>https://iqbal.page/2016/03/browsing-melalui-terminal-linux-coba-deh</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png&quot; alt=&quot;Elinks&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/elinks.png&quot; alt=&quot;Elinks&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux? Saya rasa sudah banyak yang pernah mencobanya.&lt;/p&gt;
 
@@ -2973,7 +2973,7 @@ Syaratnya, GIMP anda harus sudah terinstall plugin &lt;strong&gt;G’MIC&lt;/str
 
 &lt;p&gt;ika sudah terinstall, buka &lt;code&gt;elinks&lt;/code&gt; dengan mengetikan perintah &lt;code&gt;elinks&lt;/code&gt; di Terminal, maka akan muncul tampilan seperti gambar di bawah.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-1.png&quot; alt=&quot;Masukan URL&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/elinks-1.png&quot; alt=&quot;Masukan URL&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Bisa juga dengan menggunakan perintah &lt;code&gt;elinks namadomain.com&lt;/code&gt;.&lt;/p&gt;
 
@@ -2986,11 +2986,11 @@ esc : untuk menampilkan toolbar
 
 &lt;p&gt;Ini screenshot hasil Browsing saya di &lt;code&gt;Elinks&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-4.png&quot; alt=&quot;Facebook&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/elinks-4.png&quot; alt=&quot;Facebook&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-5.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/elinks-5.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-6.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/elinks-6.png&quot; alt=&quot;Google&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Semoga bermanfaat, thanks :) .&lt;/p&gt;
 </content>
@@ -3001,7 +3001,7 @@ esc : untuk menampilkan toolbar
    <link href="https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux.html"/>
    <updated>2016-03-13T13:15:00+07:00</updated>
    <id>https://iqbal.page/2016/03/cara-melihat-cuaca-di-terminal-linux</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca.png&quot; alt=&quot;Cuaca&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cuaca.png&quot; alt=&quot;Cuaca&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Langsung simak saja, pertama yang harusa dilakukan adalah Install &lt;code&gt;curl&lt;/code&gt;.&lt;/p&gt;
 
@@ -3015,7 +3015,7 @@ esc : untuk menampilkan toolbar
 
 &lt;p&gt;Lihat gambar di bawah :)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cuaca_1.png&quot; alt=&quot;Wttr.in&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cuaca_1.png&quot; alt=&quot;Wttr.in&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;mudah bukan? semoga bermanfaat.&lt;/p&gt;
 </content>
@@ -3028,7 +3028,7 @@ esc : untuk menampilkan toolbar
    <id>https://iqbal.page/2016/02/menjalankan-aplikasi-windows-di-linux</id>
    <content type="html">&lt;p&gt;Apakah sobat pernah berpikir bahwa aplikasi &lt;em&gt;Windows&lt;/em&gt; tidak bisa dijalankan di Lain sistem operasi? Jawabannya adalah tentu saja bisa. Ada beberapa cara untuk menjalankan aplikasi &lt;em&gt;Windows&lt;/em&gt; di linux kita tercinta ini seperti menggunakan Virtual Machine, PlayOnLinux, Wine, dan Remote Desktop. Tapi kali saya akan menggunakan Wine.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/Wine_Line.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/Wine_Line.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Wine merupakan salah satu Software gratis untuk menjalankan aplikasi Windows di Linux. Tetapi tidak semua aplikasi &lt;em&gt;Windows&lt;/em&gt; dapat dijalankan di oleh Wine, untuk mengetahui apa saja yang dapat di jalankan oleh Wine lihat di &lt;a href=&quot;http://appdb.winehq.org/&quot;&gt;Wine Application Database&lt;/a&gt;.&lt;/p&gt;
 
@@ -3044,23 +3044,23 @@ esc : untuk menampilkan toolbar
 
 &lt;p&gt;Kemudian siapkan aplikasi &lt;em&gt;Windows&lt;/em&gt; yang akan di install, pada kasus ini saya akan install Line Desktop.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_1.png&quot; alt=&quot;Line App&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/wine_1.png&quot; alt=&quot;Line App&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Klik kana pada &lt;code&gt;LineInst.exe&lt;/code&gt; lalu pilih Buka dengan Wine.&lt;/p&gt;
 
 &lt;p&gt;Kemudian lanjutkan proses installasi seperti saat menginstall aplikasi di &lt;em&gt;Windows&lt;/em&gt; dan tunggu sampai Installasi selesai.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_2.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/wine_2.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_3.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/wine_3.png&quot; alt=&quot;Install Line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jika sudah selesai maka aplikasi akan otomatis berada di Desktop, jika tidak ada bisa buka di &lt;code&gt;Menu &amp;gt; Wine &amp;gt; Nama Aplikasi&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_4.png&quot; alt=&quot;Aplikasi sudah terinstall&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/wine_4.png&quot; alt=&quot;Aplikasi sudah terinstall&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jalankan aplikasi layaknya menggunakan aplikasi tersebut di &lt;em&gt;Windows&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/wine_5.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/wine_5.png&quot; alt=&quot;Line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Semoga bermanfaat :D.&lt;/p&gt;
 </content>
@@ -3075,7 +3075,7 @@ esc : untuk menampilkan toolbar
 
 &lt;p&gt;Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/atom.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pertama tambahkan repository berikut :&lt;/p&gt;
 
@@ -3096,7 +3096,7 @@ esc : untuk menampilkan toolbar
 
 &lt;p&gt;Ini dia penampakan Aplikasi Atom&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom_1.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/atom_1.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Semoga bermanfaat :) .&lt;/p&gt;
 </content>
@@ -3107,31 +3107,30 @@ esc : untuk menampilkan toolbar
    <link href="https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux.html"/>
    <updated>2016-02-25T09:32:00+07:00</updated>
    <id>https://iqbal.page/2016/02/cara-mudah-merekam-layar-desktop-di-linux</id>
-   <content type="html">&lt;p&gt;Hallo :D kali ini saya akan share tentang &lt;a href=&quot;/cara-mudah-merekam-layar-desktop-di-linux&quot;&gt;Cara mudah Merekam layar Desktop di Linux&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/record_my_desktop.png&quot; alt=&quot;Record My Desktop&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop.png&quot; alt=&quot;Record My Desktop&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.&lt;/p&gt;
 
-&lt;p&gt;Yap pastinya sobat sudah tahu gunanya Perekam layar Desktop bukan? ya itu lah :p . Ok langsung saja.
-Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
+&lt;p&gt;Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install recordmydesktop
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_1.png&quot; alt=&quot;Installasi Recordmydesktop&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/record_my_desktop_1.png&quot; alt=&quot;Installasi Recordmydesktop&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jika sudah selesai, jalankan &lt;code&gt;RecordMyDesktop&lt;/code&gt; melalui terminal, dengan perintah &lt;code&gt;recordmydesktop&lt;/code&gt; maka akan secara otomatis merekam layar Desktop sobat.&lt;/p&gt;
 
 &lt;p&gt;Proses rekam akan terilihat seperti ini&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_2.png&quot; alt=&quot;Proses Rekam&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/record_my_desktop_2.png&quot; alt=&quot;Proses Rekam&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tekan Ctrl+C untuk Stop dan otomatis menyimpan hasil rekaman.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_3.png&quot; alt=&quot;Setop&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/record_my_desktop_3.png&quot; alt=&quot;Setop&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;File hasil rekaman akan masuk ke folde Home ex : &lt;code&gt;/home/iqbal/&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/record_my_desktop_4.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/record_my_desktop_4.png&quot; alt=&quot;Hasil&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nah mudah kan :D , semoga bermanfaat :) .&lt;/p&gt;
 </content>
@@ -3142,9 +3141,7 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
    <link href="https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux.html"/>
    <updated>2016-02-24T11:57:00+07:00</updated>
    <id>https://iqbal.page/2016/02/cara-cek-whois-domain-lewat-terminal-linux</id>
-   <content type="html">&lt;p&gt;Yap kali ini saya akan ngeshare &lt;a href=&quot;/cara-cek-whois-domain-lewat-terminal-linux&quot;&gt;Cara Whois Nama Domain lewat Terminal Linux&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois.png&quot; alt=&quot;Whois Record&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/whois.png&quot; alt=&quot;Whois Record&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Biasanya orang-orang ngecek Whois domain lewat beberapa website seperti &lt;code&gt;who.is, whois.domaintools.com, whois.pandi.id (.id only), whois.icann.org, whois.net, whois.com, whois.namecheckup.com&lt;/code&gt; dan masih banyak lagi.&lt;/p&gt;
 
@@ -3156,7 +3153,7 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo apt-get install whois
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_1.png&quot; alt=&quot;Installasi&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/whois_1.png&quot; alt=&quot;Installasi&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masukan Password dan tunggu hingga selesai.&lt;/p&gt;
 
@@ -3164,8 +3161,8 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
 
 &lt;p&gt;di terminal (tanpa tanda petik).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_2.png&quot; alt=&quot;Cek Whois&quot; /&gt;
-&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/whois_3.png&quot; alt=&quot;Cek Whois&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/whois_2.png&quot; alt=&quot;Cek Whois&quot; /&gt;
+&lt;img src=&quot;/assets/images/images-old/2016/whois_3.png&quot; alt=&quot;Cek Whois&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nah mudah bukan?? selamat mencoba :) .&lt;/p&gt;
 </content>
@@ -3176,11 +3173,9 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
    <link href="https://iqbal.page/2016/02/webcamnya-linux-ya-cheese.html"/>
    <updated>2016-02-24T07:59:00+07:00</updated>
    <id>https://iqbal.page/2016/02/webcamnya-linux-ya-cheese</id>
-   <content type="html">&lt;p&gt;Selamat sore :) iya sore karena mulai nulis jam 17:47 hehe :D.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Sore ini saya mau sharing tentang Cheese, iya aplikasi Webcam di Linux GRATISS :). Ukurannya juga nggak terlalu besar cuma sekitar 182 kb.&lt;/p&gt;
 
-&lt;p&gt;Sore ini saya mau sharing tentang Cheese, iya aplikasi Webcam di Linux GRATISS :). Ukurannya juga nggak terlalu besar cuma sekitar 182 kb.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cheese.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ini cara installnya,&lt;/p&gt;
 
@@ -3190,17 +3185,17 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;tekan enter dan tunggu hingga installasi selesai.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_1.png&quot; alt=&quot;Proses Installasi&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cheese_1.png&quot; alt=&quot;Proses Installasi&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jika sudah selesai, buka Aplikasi Cheese di &lt;code&gt;Menu &amp;gt; Multimedia &amp;gt; Cheese&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_2.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cheese_2.png&quot; alt=&quot;Cheese&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Itulah tampilan Cheese, untuk mengambil gambar tingga klik &lt;code&gt;Take a Photo&lt;/code&gt;. ooh iya untuk Recorder juga bisa lho :) .&lt;/p&gt;
 
 &lt;p&gt;Dan ini adalah hasil Jepretan Cheese dengan Kamera laptop yang agak burem hahaha.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/cheese_3.png&quot; alt=&quot;Hasil Jepretan&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/cheese_3.png&quot; alt=&quot;Hasil Jepretan&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Semoga bermanfaat :), terima kasih sudah berkunjung :).&lt;/p&gt;
 </content>
@@ -3213,7 +3208,7 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
    <id>https://iqbal.page/2016/02/cara-membuat-bootable-dengan-aplikasi-multisystem-di-linux</id>
    <content type="html">&lt;p&gt;Multisystem adalah aplikasi di linux Ubuntu dan turunannya yang memungkinkan seseorang untuk dapat membuat multiboot sistem operasi pada media Flashdisk. Dengan aplikasi Multisystem ini kita dapat menambah atau membuat beberapa bootable atau installer sistem operasi seperti Windows, Linux (Ubuntu, Linux Mint) dan masih banyak lagi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kini saya akan membagikan Cara membuat Bootable dengan Aplikasi Multisystem di Linux.&lt;/p&gt;
 
@@ -3223,44 +3218,44 @@ Yang pertama adalah  masukan perintah berikut di Terminal.&lt;/p&gt;
 
 &lt;p&gt;Install Multisystem dengan mengetikan perintah berikut di Terminal.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_1.png&quot; alt=&quot;Installasi 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem_1.png&quot; alt=&quot;Installasi 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masukan password, dan tunggu Installasi hingga selesai.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_2.png&quot; alt=&quot;Installasi Selesai&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem_2.png&quot; alt=&quot;Installasi Selesai&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masukan USB FlashDisk ke Komputer, ukuran FlashDisk minimal 8 GB dan pastikan sudah di Format menggunakan filesystem &lt;code&gt;fat32&lt;/code&gt;.
 Buka aplikasi multisystem. &lt;code&gt;Menu &amp;gt; Accessories &amp;gt; Multisystem&lt;/code&gt;, lalu klik Konfirmasi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_3.png&quot; alt=&quot;Interface&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem_3.png&quot; alt=&quot;Interface&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jika muncul dialog Harap konfirmasi &lt;code&gt;installasi grub2 di volume:/dev/sdb1&lt;/code&gt; klik Ok.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem_4.png&quot; alt=&quot;Installasi Grub2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem_4.png&quot; alt=&quot;Installasi Grub2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Lalu klik ikon CD untuk memilih file &lt;code&gt;.iso&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-5.png&quot; alt=&quot;Memilih File .iso&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-5.png&quot; alt=&quot;Memilih File .iso&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pilih file .iso yang akan di jadikan Installer, lalu klik OK.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-6.png&quot; alt=&quot;Pilih File&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-6.png&quot; alt=&quot;Pilih File&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masukan Password lalu tekan Enter dan tunggu hingga Proses pembuatan Installer selesai.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.iqbal.gdn/assets/images/multisystem-7.png&quot; alt=&quot;Masukan Password&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-7.png&quot; alt=&quot;Masukan Password&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Untuk menambahkan Installer Lainnya, caranya sama saja.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-8.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-8.png&quot; alt=&quot;Multisystem&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kemudian tes Installer untuk melihat sudah berjalan dengan baik atau belum dengan klik menu &lt;code&gt;Boot &amp;gt; Tes LiveUSB Anda di Qemu&lt;/code&gt;, lalu masukan Password dan tekan Enter.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-9.png&quot; alt=&quot;Password Again&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-9.png&quot; alt=&quot;Password Again&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ini adalah tampilan Bootable saat proses Booting.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/multisystem-10.png&quot; alt=&quot;Tampilan Bootable&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-old/2016/multisystem-10.png&quot; alt=&quot;Tampilan Bootable&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selesai, semoga bermanfaat :).&lt;/p&gt;
 </content>

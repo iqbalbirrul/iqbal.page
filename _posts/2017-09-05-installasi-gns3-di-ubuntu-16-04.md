@@ -10,7 +10,7 @@ author: iqbal
 
 Baiklah, langsung saja, bagaimana cara install GNS3. Sebelumnya, dalam hal ini sistem operasi yang digunakan adalah Ubuntu 16.04.
 
-![GNS3](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-1.png)
+![GNS3](/assets/images/images-old/2017/gns3-1.png)
 
 Catatan: Prosedur instalasi ini dapat pula dilakukan di Ubuntu (atau bahkan distro lain, utamanya turunan Debian) versi lain dengan penyesuaian.
 
@@ -40,7 +40,7 @@ Selesai instalasi, aplikasi GNS3 dapat diakses melalui menu `Aplikasi > Edukasi 
 
 Tampilannya sebagai berikut :
 
-![Tampilan GNS3](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/gns3-2.png)
+![Tampilan GNS3](/assets/images/images-old/2017/gns3-2.png)
 
 Sebagai tambahan yang diperlukan, kita juga meng-install `qemu` :
 

@@ -8,7 +8,7 @@ tags:
 author: iqbal
 ---
 
-![Speedtest](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/speedtest.png)
+![Speedtest](/assets/images/images-old/2017/speedtest.png)
 
 Seringkali kita sebagai pengguna internet ingin mengetahui berapa kecepatan koneksi internet milik kita. Jika kamu pengguna linux untuk mengecek kecepatan koneksi internet kamu sangatlah mudah. Kita tidak perlu menunggu loading dari situs pengetes koneksi seperti `speedtest.net, speedtest.cbn.net.id, speedtest.telin.co.id`.
 

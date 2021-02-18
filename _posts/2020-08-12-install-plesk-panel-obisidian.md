@@ -54,26 +54,26 @@ Untuk sistem operasi yang saya gunakan saat ini adalah CentOS 7 64-bit.
   sh <(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
   ```
 
-  ![Installation Command](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install_centos.png)
+  ![Installation Command](/assets/images/images-old/2020/plesk/plesk-install_centos.png)
 
 - Setelah installasi selesai, klik tautan yang tersedia pada instruksi untuk membuka setup pada web browser.
 
-  ![Installation Completed](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-finish_centos.png)
+  ![Installation Completed](/assets/images/images-old/2020/plesk/plesk-install-finish_centos.png)
 
 - Pada setup web, masukan data-data yang dibutukan seperti nama, email, password dan lisensi lalu klik **Enter Plesk**
 
-  ![Web Setup](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb_centos.png)
+  ![Web Setup](/assets/images/images-old/2020/plesk/plesk-install-setupweb_centos.png)
 
   > *) _Untuk lesensi trial/percobaan bisa didapatkan melalui tautan berikut: https://www.plesk.com/plesk-free-download/_
   > Silakan daftar menggunakan email.
 
 - Tunggu sampai proses initializing selesai.
 
-  ![Initializing](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-install-setupweb2_centos.png)
+  ![Initializing](/assets/images/images-old/2020/plesk/plesk-install-setupweb2_centos.png)
   
 - Setelah proses initializing selesai, maka kita akan dibawa ke halaman dashboard Plesk Panel.
 
-  ![Dashboard Plesk](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard.png)
+  ![Dashboard Plesk](/assets/images/images-old/2020/plesk/plesk-dashboard.png)
   
 ## Tambah Domain
 
@@ -81,14 +81,14 @@ Setelah installasi selesai, sekarang kita tambahkan domain pada Plesk Panel.
 
 - Klik **Add Domain** pada dashboard Plesk Panel, kemudian masukan data-data yang dibutuhkan lalu klik **OK**.
 
-  ![Add a Domain](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain.png)
+  ![Add a Domain](/assets/images/images-old/2020/plesk/plesk-dashboard-adddomain.png)
   
 - Setelah itu tunggu sampai proses penambahan domain selesai.
 
-  ![Add a Domain Completed](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-dashboard-adddomain-finish.png)
+  ![Add a Domain Completed](/assets/images/images-old/2020/plesk/plesk-dashboard-adddomain-finish.png)
 
 - Berikut ini merupakan tampilan default dari laman website yang ditambahkan pada Plesk Panel.
 
-  ![Plesk Default Pages](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/plesk/plesk-default-pages.png)
+  ![Plesk Default Pages](/assets/images/images-old/2020/plesk/plesk-default-pages.png)
 
 Installasi dan penambahan domain pada Plesk Panel telah selesai, semoga bermanfaat.

@@ -10,7 +10,7 @@ author: iqbal
 
 Hexo adalah framework blog sederhana tapi powerful yang didukung oleh Node.js. Web statis generator ini super cepat dan hanya membutuhkan waktu beberapa detik untuk membangun website yang lengkap.
 
-![Hexo.io](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png)
+![Hexo.io](/assets/images/images-old/2017/hexo.png)
 
 Hexo mendukung semua fitur GitHub-flavored Markdown dan sebagian besar plugin Octopress. Salah satu keuntungan utama dari Hexo adalah memungkinkan Anda untuk mentransfer blog atau situs ke web host dengan satu perintah.
 
@@ -19,7 +19,7 @@ Pastikan kamu sudah Install Git.
 ```bash
 sudo apt install git-core
 ```
-Install NodeJS, bisa lihat disini: [Cara Install NodeJS di Linux Ubuntu 16.04](/cara-install-nodejs-di-linux-ubuntu-16.04)
+
 Jika sudah terinstall Git dan NodeJS, sekarang kita install Hexo dengan perintah berikut.
 
 ```bash

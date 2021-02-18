@@ -149,7 +149,7 @@ Press Ctrl+C to stop
 
 Akses website hugo dengan alamat [http://127.0.0.1:1313/](http://127.0.0.1:1313/) atau [http://hostname:1313/](http://hostname:1313/).
 
-![Hugo Localhost](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/localhost-hugo-site.png)
+![Hugo Localhost](/assets/images/images-old/2020/hugo/localhost-hugo-site.png)
 
 Sekian, semoga bermanfaat...
 

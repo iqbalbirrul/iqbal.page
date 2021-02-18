@@ -8,7 +8,7 @@ tags:
 author: iqbal
 ---
 
-![Nginx Logo https://dwglogo.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/nginx-logo.png)
+![Nginx Logo https://dwglogo.com](/assets/images/images-old/2019/nginx-logo.png)
 
 Berikut contoh konfigurasi server block Nginx:
 

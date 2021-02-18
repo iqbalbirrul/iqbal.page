@@ -7,7 +7,7 @@ tags:
 author: iqbal
 ---
 
-![Elinks](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks.png)
+![Elinks](/assets/images/images-old/2016/elinks.png)
 
 Ok langsung saja, udah ada yang pernah Browsing di Terminal Linux? Saya rasa sudah banyak yang pernah mencobanya.
 
@@ -19,7 +19,7 @@ sudo apt-get install elinks
 
 ika sudah terinstall, buka `elinks` dengan mengetikan perintah `elinks` di Terminal, maka akan muncul tampilan seperti gambar di bawah.
 
-![Masukan URL](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-1.png)
+![Masukan URL](/assets/images/images-old/2016/elinks-1.png)
 
 Bisa juga dengan menggunakan perintah `elinks namadomain.com`.
 
@@ -33,10 +33,10 @@ esc : untuk menampilkan toolbar
 
 Ini screenshot hasil Browsing saya di `Elinks`
 
-![Facebook](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-4.png)
+![Facebook](/assets/images/images-old/2016/elinks-4.png)
 
-![Google](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-5.png)
+![Google](/assets/images/images-old/2016/elinks-5.png)
 
-![Google](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/elinks-6.png)
+![Google](/assets/images/images-old/2016/elinks-6.png)
 
 Semoga bermanfaat, thanks :) .

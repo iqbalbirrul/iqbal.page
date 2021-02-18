@@ -12,7 +12,7 @@ author: iqbal
 # DNS
 DNS (Domain Name System) adalah layanan yang menerjemahkan nama domain situs web seperti, contoh: `google.com` menjadi alamat IP (IP Address) sehingga pengguna internet bisa membuka situs tujuan dengan cepat.
 
-![DNS Server](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/dns.png)
+![DNS Server](/assets/images/images-old/2019/dns.png)
 
 ## Fungsi DNS
 - Melakukan identifikasi alamat komputer dalam suatu jaringan.

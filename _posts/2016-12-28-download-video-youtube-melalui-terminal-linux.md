@@ -10,7 +10,7 @@ author: iqbal
 
 [YouTube](https://youtube.com) adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.
 
-![YouTube](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/youtube.png)
+![YouTube](/assets/images/images-old/2016/youtube.png)
 
 Pertama, Install terlebih dahulu YouTube Downloadernya.
 

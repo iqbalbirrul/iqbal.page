@@ -15,10 +15,10 @@ Yang pertama adalah siapkan 2 repository GitHub, sebagai berikut:
 - Repo 1: bloghugo (sebagai repositori project)
 - Repo 2: _username_.github.io (untuk github pages)
 
-![Repositori Project](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project.png)
+![Repositori Project](/assets/images/images-old/2020/hugo/repo-project.png)
 Repositori `bloghugo` berfungsi untuk menyimpan semua file project Hugo. Repositori ini bisa digunakan sebagai backup.
 
-![GitHub Pages](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages.png)
+![GitHub Pages](/assets/images/images-old/2020/hugo/repo-pages.png)
 Sementara repositori `username.github.io` untuk menyimpan file yang ada di `public` atau hasil render dari Hugo.
 
 Semua file statis yang ada di repositori `username.github.io`, nantinya akan diakses melalui https://username.github.io.
@@ -246,8 +246,8 @@ root@static:~/bloghugo#
 
 Deploy selesai..
 
-![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-project-deployed.png)
-![Deploy sukses](https://earth-id-jkt-1.bal.web.id/assets/gambar/2020/hugo/repo-pages-deployed.png)
+![Deploy sukses](/assets/images/images-old/2020/hugo/repo-project-deployed.png)
+![Deploy sukses](/assets/images/images-old/2020/hugo/repo-pages-deployed.png)
 
 Sekarang, akses alamat _https://username.github.io_.
 

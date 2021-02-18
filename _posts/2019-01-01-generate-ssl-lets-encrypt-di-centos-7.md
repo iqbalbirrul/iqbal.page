@@ -9,7 +9,7 @@ tags:
 author: iqbal
 ---
 
-![Let's Encrypt https://seeklogo.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2019/ssl-letsencrypt.png)
+![Let's Encrypt https://seeklogo.com](/assets/images/images-old/2019/ssl-letsencrypt.png)
 
 Install terlebih dahulu repository `epel-release`
 

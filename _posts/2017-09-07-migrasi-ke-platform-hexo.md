@@ -11,7 +11,7 @@ author: iqbal
 
 Sebelumnya, saya adalah pengguna layanan Blogger.com, setelah beberapa bulan saya membeli layanan Shared Hosting dan berMigrasi ke Platform Wordpress Self-Host.
 
-![Hexo.io](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo.png)
+![Hexo.io](/assets/images/images-old/2017/hexo.png)
 
 Namun saya kurang puas, karena saya harus membeli Layanan dengan spesifikasi yang tinggi untuk sebuah situs Wordpress yang powerfull hehe. Saya memutuskan untuk bermigrasi ke Platform Hexo, sebuah Framework blog sederhana tapi POWERFULL yang didukung oleh NodeJs. 
 
@@ -31,7 +31,7 @@ $ hexo server -d
 
 Kemudian buka `localhost:4000/admin/` dan saya pun mulai mengedit konten yang sudah saya migrasikan, dari mulai mengganti tautan yang rusak, memindahkan gambar yang masih ngehost di hostinnya, dan lain-lain.
 
-![https://iqbalbirrul.com](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/hexo-localhost-1.png)
+![https://iqbalbirrul.com](/assets/images/images-old/2017/hexo-localhost-1.png)
 
 Gambar diatas adalah tampilan dari situs ini.
 

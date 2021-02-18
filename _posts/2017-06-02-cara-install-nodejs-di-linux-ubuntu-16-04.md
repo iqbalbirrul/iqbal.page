@@ -10,7 +10,7 @@ author: iqbal
 
 Singkat cerita, NodeJS adalah sebuah framework Javascript yang dapat dijalankan di server dan dapat mengelola maupun mengolah request data dari client.
 
-![NodeJS](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/nodejs-img.png)
+![NodeJS](/assets/images/images-old/2017/nodejs-img.png)
 
 Tentu saja prosedur pengolahan maupun pengembangan NodeJS tidak sama dengan server side programming pada umumnya seperti PHP atau pun ASP. Prosedur dan pengolahan antara NodeJS dan bahasa pemrograman web lain akan saya bahas pada artikel lain.
 Berikut cara installasi nya:

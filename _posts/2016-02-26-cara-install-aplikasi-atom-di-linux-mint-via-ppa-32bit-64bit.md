@@ -11,7 +11,7 @@ Atom adalah sebuah Aplikasi teks editor seperti halnya Notepad++ di _Windows._ 
 
 Atom tidak bisa didownload dalam versi 32 bit, terkecuali kita Install manual lewat terminal linux kita :).
 
-![Atom](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom.png)
+![Atom](/assets/images/images-old/2016/atom.png)
 
 Pertama tambahkan repository berikut :
 
@@ -35,6 +35,6 @@ Tunggu hingga Installasi selesai, jika sudah selesai buka Atom di `Menu > Pengem
 
 Ini dia penampakan Aplikasi Atom
 
-![Atom](https://earth-id-jkt-1.bal.web.id/assets/gambar/2016/atom_1.png)
+![Atom](/assets/images/images-old/2016/atom_1.png)
 
 Semoga bermanfaat :) .

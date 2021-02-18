@@ -35,6 +35,6 @@ dan load modul `wl`
 modprobe wl
 ```
 
-![successful](https://earth-id-jkt-1.bal.web.id/assets/gambar/2017/wlan.png)
+![successful](/assets/images/images-old/2017/wlan.png)
 
 Selesai, semoga bermanfaat.

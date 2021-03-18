@@ -4,13 +4,27 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-02-18T23:12:39+07:00</updated>
+ <updated>2021-03-18T07:48:26+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>NFT 1inch &amp; BAKE</title>
+   <link href="https://iqbal.page/2021/03/nft-1inch-bake.html"/>
+   <updated>2021-03-18T00:30:00+07:00</updated>
+   <id>https://iqbal.page/2021/03/nft-1inch-bake</id>
+   <content type="html">&lt;p&gt;Artist: Hung Chun-Nam on the Ip Man 2 movie starring Sammo Hung. I make this nft for fun on 1inch &amp;amp; BAKE event.&lt;/p&gt;
+
+&lt;p&gt;Event: &lt;a href=&quot;https://twitter.com/pemburu_eth/status/1371899627176222720?s=20&quot;&gt;https://twitter.com/pemburu_eth/status/1371899627176222720?s=20&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NFT Preview: &lt;a href=&quot;https://www.bakeryswap.org/#/exchange/oneInch/oneInchInfo/186/1/0&quot;&gt;https://www.bakeryswap.org/#/exchange/oneInch/oneInchInfo/186/1/0&lt;/a&gt;
+Tx hash: &lt;a href=&quot;https://bscscan.com/tx/0x25314982a0c0e24cc69788f3a0149f3e767e4f457aac37971fa8e38a671e01fa&quot;&gt;https://bscscan.com/tx/0x25314982a0c0e24cc69788f3a0149f3e767e4f457aac37971fa8e38a671e01fa&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Setup FTP di CentOS 7</title>

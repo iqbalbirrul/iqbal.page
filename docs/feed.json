@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/03/nft-1inch-bake.html",
+            "title": "NFT 1inch & BAKE",
+            "summary": null,
+            "content_text": "Artist: Hung Chun-Nam on the Ip Man 2 movie starring Sammo Hung. I make this nft for fun on 1inch &amp; BAKE event.Event: https://twitter.com/pemburu_eth/status/1371899627176222720?s=20NFT Preview: https://www.bakeryswap.org/#/exchange/oneInch/oneInchInfo/186/1/0Tx hash: https://bscscan.com/tx/0x25314982a0c0e24cc69788f3a0149f3e767e4f457aac37971fa8e38a671e01fa",
+            "content_html": "<p>Artist: Hung Chun-Nam on the Ip Man 2 movie starring Sammo Hung. I make this nft for fun on 1inch &amp; BAKE event.</p><p>Event: <a href=\"https://twitter.com/pemburu_eth/status/1371899627176222720?s=20\">https://twitter.com/pemburu_eth/status/1371899627176222720?s=20</a></p><p>NFT Preview: <a href=\"https://www.bakeryswap.org/#/exchange/oneInch/oneInchInfo/186/1/0\">https://www.bakeryswap.org/#/exchange/oneInch/oneInchInfo/186/1/0</a>Tx hash: <a href=\"https://bscscan.com/tx/0x25314982a0c0e24cc69788f3a0149f3e767e4f457aac37971fa8e38a671e01fa\">https://bscscan.com/tx/0x25314982a0c0e24cc69788f3a0149f3e767e4f457aac37971fa8e38a671e01fa</a></p>",
+            "url": "https://iqbal.page/2021/03/nft-1inch-bake.html",
+            
+            
+            
+            "tags": ["nft","blockchain"],
+            
+            "date_published": "2021-03-18T00:30:00+07:00",
+            "date_modified": "2021-03-18T00:30:00+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/02/setup-ftp-di-centos-7.html",
             "title": "Setup FTP di CentOS 7",
             "summary": null,
@@ -726,25 +750,6 @@
             
             "date_published": "2016-12-28T15:03:00+07:00",
             "date_modified": "2016-12-28T15:03:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/05/tutorial-gimp-membuat-efek-anyaman.html",
-            "title": "Tutorial GIMP : Membuat Efek Anyaman",
-            "summary": null,
-            "content_text": "Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.Disini saya akan memberikan tutorial yang mudah dipahami, dan bahkan sangat mudah dengan menggunakan GIMP 2.8, dan kita tidak perlu repot-repot menyeleksi, add layer, dan seterusnya.Syaratnya, GIMP anda harus sudah terinstall plugin G’MIC terlebih dahulu. Download G’MIC di sini sana sini (sesuaikan dengan System).Berikut tutorialnya :  Buka Foto yang ingin sobat beri efek pada aplikasi GIMP.  Lalu pada menu Filter, Pilih G’MIC.  Pada jendela G’MIC, pilih Patterns &gt; Weave, lalu sesuaikan dengan keinginan sobat.Dan hasilnya,Sangat mudah bukan? nah terima kasih sudah berkunjung.Sumber.  http://www.timkicau.com/2013/07/tutorial-gimp-membuat-efek-ketupat-pada_6.html  G’MIC ",
-            "content_html": "<p>Mungkin sebelum ini kalian pernah melihat ataupun membaca sebuah artikel yang membahas tutorial ini pada Photoshop maupun pada GIMP itu sendiri. Dan mungkin dari tutorial-tutorial yang ada sebelumnya mungkin agak susah untuk dipahami.</p><p><img src=\"/assets/images/images-old/2016/gimp-anyaman.png\" alt=\"Efek Anyaman\" /></p><p>Disini saya akan memberikan tutorial yang mudah dipahami, dan bahkan sangat mudah dengan menggunakan GIMP 2.8, dan kita tidak perlu repot-repot menyeleksi, add layer, dan seterusnya.Syaratnya, GIMP anda harus sudah terinstall plugin <strong>G’MIC</strong> terlebih dahulu. Download G’MIC <a href=\"http://gmic.eu/download.shtml\">di sini sana sini</a> (sesuaikan dengan System).</p><p>Berikut tutorialnya :</p><ol>  <li>Buka Foto yang ingin sobat beri efek pada aplikasi GIMP.</li></ol><p><img src=\"/assets/images/images-old/2016/gimp-1.png\" alt=\"Expo Produk Cilacap\" /></p><ol>  <li>Lalu pada menu Filter, Pilih G’MIC.</li>  <li>Pada jendela G’MIC, pilih <code>Patterns &gt; Weave</code>, lalu sesuaikan dengan keinginan sobat.</li></ol><p><img src=\"/assets/images/images-old/2016/gimp-2.png\" alt=\"G'mic\" /></p><p>Dan hasilnya,</p><p><img src=\"/assets/images/images-old/2016/gimp-hasil-1.png\" alt=\"Hasil\" /></p><p>Sangat mudah bukan? nah terima kasih sudah berkunjung.</p><p>Sumber.</p><ul>  <li>http://www.timkicau.com/2013/07/tutorial-gimp-membuat-efek-ketupat-pada_6.html</li>  <li><a href=\"http://gmic.eu/\">G’MIC </a></li></ul>",
-            "url": "https://iqbal.page/2016/05/tutorial-gimp-membuat-efek-anyaman.html",
-            
-            
-            
-            "tags": ["gimp","multimedia"],
-            
-            "date_published": "2016-05-09T01:44:00+07:00",
-            "date_modified": "2016-05-09T01:44:00+07:00",
             
                 "author": "iqbal"
             

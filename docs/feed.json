@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/04/powershell-ssh-copy-id.html",
+            "title": "Powershell ssh-copy-id",
+            "summary": null,
+            "content_text": "type $env:USERPROFILE\\.ssh\\id_rsa.pub | ssh user@domain.com \"cat &gt;&gt;.ssh/authorized_keys\"",
+            "content_html": "<pre><code>type $env:USERPROFILE\\.ssh\\id_rsa.pub | ssh user@domain.com \"cat &gt;&gt;.ssh/authorized_keys\"</code></pre>",
+            "url": "https://iqbal.page/2021/04/powershell-ssh-copy-id.html",
+            
+            
+            
+            "tags": ["ssh","powershell"],
+            
+            "date_published": "2021-04-28T15:08:19+07:00",
+            "date_modified": "2021-04-28T15:08:19+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/03/nft-1inch-bake.html",
             "title": "NFT 1inch & BAKE",
             "summary": null,
@@ -731,25 +755,6 @@
             
             "date_published": "2016-12-28T17:00:00+07:00",
             "date_modified": "2016-12-28T17:00:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/12/download-video-youtube-melalui-terminal-linux.html",
-            "title": "Download Video YouTube melalui Terminal Linux",
-            "summary": null,
-            "content_text": "YouTube adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.Pertama, Install terlebih dahulu YouTube Downloadernya.sudo apt install youtube-dlSetelah ter install, copy url video youtube yang akan di download. contohyoutube-dl https://www.youtube.com/watch?v=FVdQQwXM89Ykemudian Enter. Tinggal tunggu video selesai di Unduh :D.Selesai..Semoga bermanfaat.",
-            "content_html": "<p><a href=\"https://youtube.com\">YouTube</a> adalah salah satu situs web berbagi video secara gratis. Situs ini memungkinkan Anda dapat mengunggah, berbagi dan menonton. YouTube ini merupakan situs web berbagi video paling populer di dunia.</p><p><img src=\"/assets/images/images-old/2016/youtube.png\" alt=\"YouTube\" /></p><p>Pertama, Install terlebih dahulu YouTube Downloadernya.</p><pre><code class=\"language-bash\">sudo apt install youtube-dl</code></pre><p>Setelah ter install, copy url video youtube yang akan di download. contoh</p><pre><code class=\"language-bash\">youtube-dl https://www.youtube.com/watch?v=FVdQQwXM89Y</code></pre><p>kemudian Enter. Tinggal tunggu video selesai di Unduh :D.</p><p>Selesai..Semoga bermanfaat.</p>",
-            "url": "https://iqbal.page/2016/12/download-video-youtube-melalui-terminal-linux.html",
-            
-            
-            
-            "tags": ["youtube","cli"],
-            
-            "date_published": "2016-12-28T15:03:00+07:00",
-            "date_modified": "2016-12-28T15:03:00+07:00",
             
                 "author": "iqbal"
             

@@ -4,13 +4,23 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-03-18T07:48:26+07:00</updated>
+ <updated>2021-04-28T15:15:34+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Powershell ssh-copy-id</title>
+   <link href="https://iqbal.page/2021/04/powershell-ssh-copy-id.html"/>
+   <updated>2021-04-28T15:08:19+07:00</updated>
+   <id>https://iqbal.page/2021/04/powershell-ssh-copy-id</id>
+   <content type="html">&lt;pre&gt;&lt;code&gt;type $env:USERPROFILE\.ssh\id_rsa.pub | ssh user@domain.com &quot;cat &amp;gt;&amp;gt;.ssh/authorized_keys&quot;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
  
  <entry>
    <title>NFT 1inch &amp; BAKE</title>

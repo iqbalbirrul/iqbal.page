@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://iqbal.page/2021/05/generate-csr-multi-domain.html",
+            "title": "Generate CSR Multi-Domain",
+            "summary": null,
+            "content_text": "ContohContoh domain yang akan digunakan:      *.iqbal.page    www.iqbal.id    secure.iqbal.id  ProsesSalin konfigurasi opensslcp /etc/ssl/openssl.cnf /var/www/certs/iqbal.page.cnfBuka file iqbal.page.cnf, cari baris dibawah ini lalu uncommentreq_extensions = v3_reqSetelahnya tambahkan beberapa konfigurasi berikut dibawah baris [ v3_req ]subjectAltName = @alt_names[ alt_names ]DNS.1 = www.iqbal.idDNS.2 = secure.iqbal.idSelesai.GenerateMasih didalam directory certs, lakukan generate privkey.openssl genrsa -out iqbal.page.key 2048Kemudian generate CSR dengan perintah berikut:openssl req -new -key iqbal.page.key -out iqbal.page.csr -config iqbal.page.cnf  option -config harus ditambahkan, jika tidak maka CSR hanya berlaku untuk 1 common name.pada kolom common name saat generate, masukan domain utama, contoh: *.iqbal.pageVerify CSRopenssl req -in iqbal.page.csr -noout -textHasilnya sebagi berikut:",
+            "content_html": "<h4 id=\"contoh\">Contoh</h4><p>Contoh domain yang akan digunakan:</p><blockquote>  <ul>    <li><code>*.iqbal.page</code></li>    <li>www.iqbal.id</li>    <li>secure.iqbal.id</li>  </ul></blockquote><h4 id=\"proses\">Proses</h4><p>Salin konfigurasi openssl</p><pre><code>cp /etc/ssl/openssl.cnf /var/www/certs/iqbal.page.cnf</code></pre><p>Buka file <code>iqbal.page.cnf</code>, cari baris dibawah ini lalu uncomment</p><pre><code>req_extensions = v3_req</code></pre><p>Setelahnya tambahkan beberapa konfigurasi berikut dibawah baris <code>[ v3_req ]</code></p><pre><code>subjectAltName = @alt_names[ alt_names ]DNS.1 = www.iqbal.idDNS.2 = secure.iqbal.id</code></pre><p>Selesai.</p><h4 id=\"generate\">Generate</h4><p>Masih didalam directory <code>certs</code>, lakukan generate privkey.</p><pre><code>openssl genrsa -out iqbal.page.key 2048</code></pre><p>Kemudian generate CSR dengan perintah berikut:</p><pre><code>openssl req -new -key iqbal.page.key -out iqbal.page.csr -config iqbal.page.cnf</code></pre><blockquote>  <p>option <code>-config</code> harus ditambahkan, jika tidak maka CSR hanya berlaku untuk 1 common name.pada kolom common name saat generate, masukan domain utama, contoh: <code>*.iqbal.page</code></p></blockquote><p><img src=\"/assets/images/images-new/csr-generate.png\" alt=\"generate csr\" /></p><p>Verify CSR</p><pre><code>openssl req -in iqbal.page.csr -noout -text</code></pre><p>Hasilnya sebagi berikut:</p><p><img src=\"/assets/images/images-new/csr-preview.png\" alt=\"csr check\" /></p>",
+            "url": "https://iqbal.page/2021/05/generate-csr-multi-domain.html",
+            
+            
+            
+            
+            
+            "date_published": "2021-05-01T23:43:54+07:00",
+            "date_modified": "2021-05-01T23:43:54+07:00",
+            
+                "author":  {
+                "name": "iqbalbirrul",
+                "url": "https://iqbal.page",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://iqbal.page/2021/04/powershell-ssh-copy-id.html",
             "title": "Powershell ssh-copy-id",
             "summary": null,
@@ -736,25 +760,6 @@
             
             "date_published": "2017-01-13T07:44:00+07:00",
             "date_modified": "2017-01-13T07:44:00+07:00",
-            
-                "author": "iqbal"
-            
-        },
-    
-        {
-            "id": "https://iqbal.page/2016/12/linux-bunsenlabs-distro-ringan-turunan-debian-jessie.html",
-            "title": "Linux : BunsenLabs, Distro Ringan Turunan Debian Jessie",
-            "summary": null,
-            "content_text": "BunsenLabs merupakan Distro Linux turunan Debian “Jessie”. Distro ini adalah lanjutan dari Distro Linux Crunchbang. Versi rilis terbarunya yaitu Hydrogen RC2.Distro ini sangat ringan karena menggunakan Openbox sebagai window managernya. Dan juga menggunakan Thunar sebagai File Managernya.Aplikasi lain yang terinstall pada BunsenLabs yaitu tint2 panel, conky system monitor, iceweasel, vlc, dan lain lain. Juga dilengkapi software editing seperti Inkscape dan Gimp.Keunggulan distro ini ialah sedikitnya memori ram yang digunakan ketika idle (tidak menjalankan aplikasi), tetapi masih dibawah Lubuntu.Untuk mendapatkan BunsenLabs, bisa di unduh melalui halaman resmi BunsenLabs.Untuk membuat USB Bootable, usahakan menggunakan linux dengan perintah di terminal :dd if=/path/to/bunsenlab.iso of=/dev/sd{letter}karena jika menggunakan YUMI atau Unetbootin di windows akan menimbulkan error.Sekian, semoga bermanfaat.Sumber :  http://linuxsec.org",
-            "content_html": "<p><a href=\"https://www.bunsenlabs.org\">BunsenLabs</a> merupakan Distro Linux turunan Debian “Jessie”. Distro ini adalah lanjutan dari Distro Linux <a href=\"http://distrowatch.com/crunchbang\">Crunchbang</a>. Versi rilis terbarunya yaitu Hydrogen RC2.</p><p><img src=\"/assets/images/images-old/2016/bunsenlabs.png\" alt=\"BunsenLabs\" /></p><p>Distro ini sangat ringan karena menggunakan <a href=\"http://openbox.org/wiki/Main_Page\">Openbox</a> sebagai window managernya. Dan juga menggunakan Thunar sebagai File Managernya.</p><p><img src=\"/assets/images/images-old/2016/bunsenlabs-thunar.png\" alt=\"Thunar\" /></p><p>Aplikasi lain yang terinstall pada BunsenLabs yaitu tint2 panel, conky system monitor, iceweasel, vlc, dan lain lain. Juga dilengkapi software editing seperti Inkscape dan Gimp.</p><p>Keunggulan distro ini ialah sedikitnya memori ram yang digunakan ketika idle (tidak menjalankan aplikasi), tetapi masih dibawah <strong>Lubuntu</strong>.</p><p>Untuk mendapatkan BunsenLabs, bisa di unduh melalui halaman resmi <a href=\"https://www.bunsenlabs.org/installation.html\">BunsenLabs</a>.</p><p>Untuk membuat USB Bootable, usahakan menggunakan linux dengan perintah di terminal :</p><pre><code class=\"language-bash\">dd if=/path/to/bunsenlab.iso of=/dev/sd{letter}</code></pre><p>karena jika menggunakan YUMI atau Unetbootin di windows akan menimbulkan error.</p><p>Sekian, semoga bermanfaat.</p><p>Sumber :</p><ul>  <li>http://linuxsec.org</li></ul>",
-            "url": "https://iqbal.page/2016/12/linux-bunsenlabs-distro-ringan-turunan-debian-jessie.html",
-            
-            
-            
-            "tags": ["bunsenlabs","debian","crunchbang"],
-            
-            "date_published": "2016-12-28T17:00:00+07:00",
-            "date_modified": "2016-12-28T17:00:00+07:00",
             
                 "author": "iqbal"
             

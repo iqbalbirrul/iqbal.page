@@ -4,13 +4,83 @@
  <title>Iqbal.page</title>
  <link href="https://iqbal.page/atom.xml" rel="self"/>
  <link href="https://iqbal.page/"/>
- <updated>2021-04-28T15:15:34+07:00</updated>
+ <updated>2021-05-02T00:11:08+07:00</updated>
  <id>https://iqbal.page</id>
  <author>
    <name>iqbalbirrul</name>
    <email>iqbalbirrul@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Generate CSR Multi-Domain</title>
+   <link href="https://iqbal.page/2021/05/generate-csr-multi-domain.html"/>
+   <updated>2021-05-01T23:43:54+07:00</updated>
+   <id>https://iqbal.page/2021/05/generate-csr-multi-domain</id>
+   <content type="html">&lt;h4 id=&quot;contoh&quot;&gt;Contoh&lt;/h4&gt;
+
+&lt;p&gt;Contoh domain yang akan digunakan:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;*.iqbal.page&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;www.iqbal.id&lt;/li&gt;
+    &lt;li&gt;secure.iqbal.id&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;proses&quot;&gt;Proses&lt;/h4&gt;
+
+&lt;p&gt;Salin konfigurasi openssl&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cp /etc/ssl/openssl.cnf /var/www/certs/iqbal.page.cnf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Buka file &lt;code&gt;iqbal.page.cnf&lt;/code&gt;, cari baris dibawah ini lalu uncomment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;req_extensions = v3_req
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelahnya tambahkan beberapa konfigurasi berikut dibawah baris &lt;code&gt;[ v3_req ]&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = www.iqbal.id
+DNS.2 = secure.iqbal.id
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Selesai.&lt;/p&gt;
+
+&lt;h4 id=&quot;generate&quot;&gt;Generate&lt;/h4&gt;
+
+&lt;p&gt;Masih didalam directory &lt;code&gt;certs&lt;/code&gt;, lakukan generate privkey.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl genrsa -out iqbal.page.key 2048
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kemudian generate CSR dengan perintah berikut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl req -new -key iqbal.page.key -out iqbal.page.csr -config iqbal.page.cnf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;option &lt;code&gt;-config&lt;/code&gt; harus ditambahkan, jika tidak maka CSR hanya berlaku untuk 1 common name.
+pada kolom common name saat generate, masukan domain utama, contoh: &lt;code&gt;*.iqbal.page&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-new/csr-generate.png&quot; alt=&quot;generate csr&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Verify CSR&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl req -in iqbal.page.csr -noout -text
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hasilnya sebagi berikut:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/images-new/csr-preview.png&quot; alt=&quot;csr check&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Powershell ssh-copy-id</title>
